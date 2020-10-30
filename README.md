@@ -1,86 +1,23 @@
-# MAILTEMPLATES FOR [DOLIBARR ERP CRM](https://www.dolibarr.org)
+# DOLIFRAISPRO POUR [DOLIBARR ERP CRM](https://www.dolibarr.org)
 
-## Features
+## Fonctionnalités
 
-Description...
-
-<!--
-![Screenshot mailtemplates](img/screenshot_mailtemplates.png?raw=true "Mailtemplates"){imgmd}
--->
-
-Other modules are available on [Dolistore.com](https://www.dolistore.com).
-
-## Translations
-
-Translations can be define manually by editing files into directories *langs*.
-
-<!--
-This module contains also a sample configuration for Transifex, under the hidden directory [.tx](.tx), so it is possible to manage translation using this service.
-
-For more informations, see the [translator's documentation](https://wiki.dolibarr.org/index.php/Translator_documentation).
-
-There is a [Transifex project](https://transifex.com/projects/p/dolibarr-module-template) for this module.
--->
-
-<!--
+Module Dolibarr ajoutant des templates de mail incluant le maximum de variable de substitution afin d'adapter les contenus des mails pour chaque objet.
 
 ## Installation
 
-### From the ZIP file and GUI interface
+# Méthode 1 :
 
-- If you get the module in a zip file (like when downloading it from the market place [Dolistore](https://www.dolistore.com)), go into
-menu ```Home - Setup - Modules - Deploy external module``` and upload the zip file.
+Depuis le menu "Déployer/Installer un module externe" de Dolibarr : 
 
-Note: If this screen tell you there is no custom directory, check your setup is correct:
+- Glisser l'archive ZIP 'module_dolimail-1.2.0' et cliquer sur "SEND"
+- Activer le module dans la liste des Modules/Applications installés
+- Dans les réglages du module "Note de frais", activer le modèle 'Extended'
 
-- In your Dolibarr installation directory, edit the ```htdocs/conf/conf.php``` file and check that following lines are not commented:
+# Méthode 2 :
 
-    ```php
-    //$dolibarr_main_url_root_alt ...
-    //$dolibarr_main_document_root_alt ...
-    ```
-
-- Uncomment them if necessary (delete the leading ```//```) and assign a sensible value according to your Dolibarr installation
-
-    For example :
-
-    - UNIX:
-        ```php
-        $dolibarr_main_url_root_alt = '/custom';
-        $dolibarr_main_document_root_alt = '/var/www/Dolibarr/htdocs/custom';
-        ```
-
-    - Windows:
-        ```php
-        $dolibarr_main_url_root_alt = '/custom';
-        $dolibarr_main_document_root_alt = 'C:/My Web Sites/Dolibarr/htdocs/custom';
-        ```
-
-### From a GIT repository
-
-- Clone the repository in ```$dolibarr_main_document_root_alt/mailtemplates```
-
-```sh
-cd ....../custom
-git clone git@github.com:gitlogin/mailtemplates.git mailtemplates
+- Dans le dossier "dolibarr/htdocs/custom" copier la ligne suivante :
+``` 
+git clone https://github.com/Eoxia/dolimail.git
 ```
-
-### <a name="final_steps"></a>Final steps
-
-From your browser:
-
-  - Log into Dolibarr as a super-administrator
-  - Go to "Setup" -> "Modules"
-  - You should now be able to find and enable the module
-
--->
-
-## Licenses
-
-### Main code
-
-GPLv3 or (at your option) any later version. See file COPYING for more information.
-
-### Documentation
-
-All texts and readmes are licensed under GFDL.
+- Retrouver vos modèles de mail dans 'Emails' -> 'Modèles de courriers'
