@@ -3,14 +3,18 @@
 ## Fonctionnalités
 
 Module Dolibarr ajoutant des templates de mail incluant le maximum de variables de substitution afin d'adapter les contenus des mails pour chaque module :
+
 Dans le module Commerce
+
 - Propositions commerciales
 - Commandes
 - Propositions commerciales fournisseurs
 - Commandes fournisseurs
 - Contrats/Abonnement
 - Interventions
+
 Dans le module Facturation/Paiement
+
 - Facture
 - Factures fournisseur
 - Commandes facturables
