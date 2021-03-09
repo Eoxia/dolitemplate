@@ -7,10 +7,10 @@ Module Dolibarr ajoutant des templates de mail incluant le maximum de variables 
 Dans le module Commerce
 
 - Propositions commerciales
-  -PR_Envoi_proposition
-  -PR_Relance_proposition
-  -PR_Relance_proposition_2
-  -PR_Cloture_Proposition
+  - PR_Envoi_proposition
+  - PR_Relance_proposition
+  - PR_Relance_proposition_2
+  - PR_Cloture_Proposition
 - Commandes
 - Propositions commerciales fournisseurs
 - Commandes fournisseurs
