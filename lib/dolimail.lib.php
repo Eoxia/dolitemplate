@@ -1,5 +1,5 @@
 <?php
-/* Copyright (C) 2020 SuperAdmin
+/* Copyright (C) 2021 SuperAdmin
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,9 +16,9 @@
  */
 
 /**
- * \file    mailtemplates/lib/mailtemplates.lib.php
- * \ingroup mailtemplates
- * \brief   Library files with common functions for Mailtemplates
+ * \file    dolimail/lib/dolimail.lib.php
+ * \ingroup dolimail
+ * \brief   Library files with common functions for Dolimail
  */
 
 /**
@@ -26,28 +26,28 @@
  *
  * @return array
  */
-function mailtemplatesAdminPrepareHead()
+function dolimailAdminPrepareHead()
 {
 	global $langs, $conf;
 
-	$langs->load("mailtemplates@mailtemplates");
+	$langs->load("dolimail@dolimail");
 
 	$h = 0;
 	$head = array();
 
-	$head[$h][0] = dol_buildpath("/mailtemplates/admin/setup.php", 1);
+	$head[$h][0] = dol_buildpath("/dolimail/admin/setup.php", 1);
 	$head[$h][1] = $langs->trans("Settings");
 	$head[$h][2] = 'settings';
 	$h++;
 
 	/*
-	$head[$h][0] = dol_buildpath("/mailtemplates/admin/myobject_extrafields.php", 1);
+	$head[$h][0] = dol_buildpath("/dolimail/admin/myobject_extrafields.php", 1);
 	$head[$h][1] = $langs->trans("ExtraFields");
 	$head[$h][2] = 'myobject_extrafields';
 	$h++;
 	*/
 
-	$head[$h][0] = dol_buildpath("/mailtemplates/admin/about.php", 1);
+	$head[$h][0] = dol_buildpath("/dolimail/admin/about.php", 1);
 	$head[$h][1] = $langs->trans("About");
 	$head[$h][2] = 'about';
 	$h++;
@@ -55,12 +55,12 @@ function mailtemplatesAdminPrepareHead()
 	// Show more tabs from modules
 	// Entries must be declared in modules descriptor with line
 	//$this->tabs = array(
-	//	'entity:+tabname:Title:@mailtemplates:/mailtemplates/mypage.php?id=__ID__'
+	//	'entity:+tabname:Title:@dolimail:/dolimail/mypage.php?id=__ID__'
 	//); // to add new tab
 	//$this->tabs = array(
-	//	'entity:-tabname:Title:@mailtemplates:/mailtemplates/mypage.php?id=__ID__'
+	//	'entity:-tabname:Title:@dolimail:/dolimail/mypage.php?id=__ID__'
 	//); // to remove a tab
-	complete_head_from_modules($conf, $langs, null, $head, $h, 'mailtemplates');
+	complete_head_from_modules($conf, $langs, null, $head, $h, 'dolimail');
 
 	return $head;
 }

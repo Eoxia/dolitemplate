@@ -22,12 +22,12 @@
  */
 
 /**
- *	\file       htdocs/core/modules/mailtemplates/doc/doc_generic_myobject_odt.modules.php
- *	\ingroup    mailtemplates
+ *	\file       htdocs/core/modules/dolimail/doc/doc_generic_myobject_odt.modules.php
+ *	\ingroup    dolimail
  *	\brief      File of class to build ODT documents for myobjects
  */
 
-dol_include_once('/mailtemplates/core/modules/mailtemplates/modules_myobject.php');
+dol_include_once('/dolimail/core/modules/dolimail/modules_myobject.php');
 require_once DOL_DOCUMENT_ROOT.'/product/class/product.class.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/company.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
@@ -73,7 +73,7 @@ class doc_generic_myobject_odt extends ModelePDFMyObject
 		$this->db = $db;
 		$this->name = "ODT templates";
 		$this->description = $langs->trans("DocumentModelOdt");
-		$this->scandir = 'MAILTEMPLATES_MYOBJECT_ADDON_PDF_ODT_PATH'; // Name of constant that is used to save list of directories to scan
+		$this->scandir = 'DOLIMAIL_MYOBJECT_ADDON_PDF_ODT_PATH'; // Name of constant that is used to save list of directories to scan
 
 		// Page size for A4 format
 		$this->type = 'odt';
@@ -121,13 +121,13 @@ class doc_generic_myobject_odt extends ModelePDFMyObject
 		$texte .= '<form action="'.$_SERVER["PHP_SELF"].'" method="POST">';
 		$texte .= '<input type="hidden" name="token" value="'.newToken().'">';
 		$texte .= '<input type="hidden" name="action" value="setModuleOptions">';
-		$texte .= '<input type="hidden" name="param1" value="MAILTEMPLATES_MYOBJECT_ADDON_PDF_ODT_PATH">';
+		$texte .= '<input type="hidden" name="param1" value="DOLIMAIL_MYOBJECT_ADDON_PDF_ODT_PATH">';
 		$texte .= '<table class="nobordernopadding" width="100%">';
 
 		// List of directories area
 		$texte .= '<tr><td>';
 		$texttitle = $langs->trans("ListOfDirectories");
-		$listofdir = explode(',', preg_replace('/[\r\n]+/', ',', trim($conf->global->MAILTEMPLATES_MYOBJECT_ADDON_PDF_ODT_PATH)));
+		$listofdir = explode(',', preg_replace('/[\r\n]+/', ',', trim($conf->global->DOLIMAIL_MYOBJECT_ADDON_PDF_ODT_PATH)));
 		$listoffiles = array();
 		foreach ($listofdir as $key=>$tmpdir)
 		{
@@ -151,7 +151,7 @@ class doc_generic_myobject_odt extends ModelePDFMyObject
 		$texte .= $form->textwithpicto($texttitle, $texthelp, 1, 'help', '', 1);
 		$texte .= '<div><div style="display: inline-block; min-width: 100px; vertical-align: middle;">';
 		$texte .= '<textarea class="flat" cols="60" name="value1">';
-		$texte .= $conf->global->MAILTEMPLATES_MYOBJECT_ADDON_PDF_ODT_PATH;
+		$texte .= $conf->global->DOLIMAIL_MYOBJECT_ADDON_PDF_ODT_PATH;
 		$texte .= '</textarea>';
 		$texte .= '</div><div style="display: inline-block; vertical-align: middle;">';
 		$texte .= '<input type="submit" class="button" value="'.$langs->trans("Modify").'" name="Button">';
@@ -159,7 +159,7 @@ class doc_generic_myobject_odt extends ModelePDFMyObject
 
 		// Scan directories
 		$nbofiles = count($listoffiles);
-		if (!empty($conf->global->MAILTEMPLATES_MYOBJECT_ADDON_PDF_ODT_PATH))
+		if (!empty($conf->global->DOLIMAIL_MYOBJECT_ADDON_PDF_ODT_PATH))
 		{
 			$texte .= $langs->trans("NumberOfModelFilesFound").': <b>';
 			//$texte.=$nbofiles?'<a id="a_'.get_class($this).'" href="#">':'';
@@ -285,7 +285,7 @@ class doc_generic_myobject_odt extends ModelePDFMyObject
 				//print "file=".$file;
 				//print "conf->societe->dir_temp=".$conf->societe->dir_temp;
 
-				dol_mkdir($conf->mailtemplates->dir_temp);
+				dol_mkdir($conf->dolimail->dir_temp);
 
 
 				// If CUSTOMER contact defined on order, we use it

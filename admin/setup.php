@@ -1,6 +1,6 @@
 <?php
 /* Copyright (C) 2004-2017 Laurent Destailleur  <eldy@users.sourceforge.net>
- * Copyright (C) 2020 SuperAdmin
+ * Copyright (C) 2021 SuperAdmin
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,9 +17,9 @@
  */
 
 /**
- * \file    mailtemplates/admin/setup.php
- * \ingroup mailtemplates
- * \brief   Mailtemplates setup page.
+ * \file    dolimail/admin/setup.php
+ * \ingroup dolimail
+ * \brief   Dolimail setup page.
  */
 
 // Load Dolibarr environment
@@ -40,11 +40,11 @@ global $langs, $user;
 
 // Libraries
 require_once DOL_DOCUMENT_ROOT."/core/lib/admin.lib.php";
-require_once '../lib/mailtemplates.lib.php';
+require_once '../lib/dolimail.lib.php';
 //require_once "../class/myclass.class.php";
 
 // Translations
-$langs->loadLangs(array("admin", "mailtemplates@mailtemplates"));
+$langs->loadLangs(array("admin", "dolimail@dolimail"));
 
 // Access control
 if (!$user->admin) accessforbidden();
@@ -56,8 +56,8 @@ $backtopage = GETPOST('backtopage', 'alpha');
 $value = GETPOST('value', 'alpha');
 
 $arrayofparameters = array(
-	'MAILTEMPLATES_MYPARAM1'=>array('css'=>'minwidth200', 'enabled'=>1),
-	'MAILTEMPLATES_MYPARAM2'=>array('css'=>'minwidth500', 'enabled'=>1)
+	'DOLIMAIL_MYPARAM1'=>array('css'=>'minwidth200', 'enabled'=>1),
+	'DOLIMAIL_MYPARAM2'=>array('css'=>'minwidth500', 'enabled'=>1)
 );
 
 $error = 0;
@@ -101,7 +101,7 @@ if ($action == 'updateMask')
 	$dirmodels = array_merge(array('/'), (array) $conf->modules_parts['models']);
 	foreach ($dirmodels as $reldir)
 	{
-		$file = dol_buildpath($reldir."core/modules/mailtemplates/doc/pdf_".$modele."_".strtolower($tmpobjectkey).".modules.php", 0);
+		$file = dol_buildpath($reldir."core/modules/dolimail/doc/pdf_".$modele."_".strtolower($tmpobjectkey).".modules.php", 0);
 		if (file_exists($file))
 		{
 			$filefound = 1;
@@ -169,7 +169,7 @@ elseif ($action == 'setdoc')
 	// TODO Check if numbering module chosen can be activated
 	// by calling method canBeActivated
 	$tmpobjectkey = GETPOST('object');
-	$constforval = 'MAILTEMPLATES_'.strtoupper($tmpobjectkey)."_ADDON";
+	$constforval = 'DOLIMAIL_'.strtoupper($tmpobjectkey)."_ADDON";
 	dolibarr_set_const($db, $constforval, $value, 'chaine', 0, '', $conf->entity);
 }
 
@@ -183,20 +183,20 @@ $form = new Form($db);
 
 $dirmodels = array_merge(array('/'), (array) $conf->modules_parts['models']);
 
-$page_name = "MailtemplatesSetup";
+$page_name = "DolimailSetup";
 llxHeader('', $langs->trans($page_name));
 
 // Subheader
 $linkback = '<a href="'.($backtopage ? $backtopage : DOL_URL_ROOT.'/admin/modules.php?restore_lastsearch_values=1').'">'.$langs->trans("BackToModuleList").'</a>';
 
-print load_fiche_titre($langs->trans($page_name), $linkback, 'object_mailtemplates@mailtemplates');
+print load_fiche_titre($langs->trans($page_name), $linkback, 'object_dolimail@dolimail');
 
 // Configuration header
-$head = mailtemplatesAdminPrepareHead();
-dol_fiche_head($head, 'settings', '', -1, "mailtemplates@mailtemplates");
+$head = dolimailAdminPrepareHead();
+dol_fiche_head($head, 'settings', '', -1, "dolimail@dolimail");
 
 // Setup page goes here
-echo '<span class="opacitymedium">'.$langs->trans("MailtemplatesSetupPage").'</span><br><br>';
+echo '<span class="opacitymedium">'.$langs->trans("DolimailSetupPage").'</span><br><br>';
 
 
 if ($action == 'edit')
@@ -252,7 +252,7 @@ if ($action == 'edit')
 }
 
 
-$moduledir = 'mailtemplates';
+$moduledir = 'dolimail';
 $myTmpObjects = array();
 $myTmpObjects['MyObject']=array('includerefgeneration'=>0, 'includedocgeneration'=>0);
 
@@ -318,7 +318,7 @@ foreach ($myTmpObjects as $myTmpObjectKey => $myTmpObjectArray) {
 								print '</td>'."\n";
 
 								print '<td class="center">';
-								$constforvar = 'MAILTEMPLATES_'.strtoupper($myTmpObjectKey).'_ADDON';
+								$constforvar = 'DOLIMAIL_'.strtoupper($myTmpObjectKey).'_ADDON';
 								if ($conf->global->$constforvar == $file)
 								{
 									print img_picto($langs->trans("Activated"), 'switch_on');
@@ -465,7 +465,7 @@ foreach ($myTmpObjects as $myTmpObjectKey => $myTmpObjectArray) {
 
 										// Default
 										print '<td class="center">';
-										$constforvar = 'MAILTEMPLATES_'.strtoupper($myTmpObjectKey).'_ADDON';
+										$constforvar = 'DOLIMAIL_'.strtoupper($myTmpObjectKey).'_ADDON';
 										if ($conf->global->$constforvar == $name)
 										{
 											print img_picto($langs->trans("Default"), 'on');

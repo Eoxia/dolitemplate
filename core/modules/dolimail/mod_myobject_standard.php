@@ -18,11 +18,11 @@
  */
 
 /**
- *  \file       htdocs/core/modules/mailtemplates/mod_myobject_standard.php
- *  \ingroup    mailtemplates
+ *  \file       htdocs/core/modules/dolimail/mod_myobject_standard.php
+ *  \ingroup    dolimail
  *  \brief      File of class to manage MyObject numbering rules standard
  */
-dol_include_once('/mailtemplates/core/modules/mailtemplates/modules_myobject.php');
+dol_include_once('/dolimail/core/modules/dolimail/modules_myobject.php');
 
 
 /**
@@ -87,7 +87,7 @@ class mod_myobject_standard extends ModeleNumRefMyObject
 
 		$posindice = strlen($this->prefix) + 6;
 		$sql = "SELECT MAX(CAST(SUBSTRING(ref FROM ".$posindice.") AS SIGNED)) as max";
-		$sql .= " FROM ".MAIN_DB_PREFIX."mailtemplates_myobject";
+		$sql .= " FROM ".MAIN_DB_PREFIX."dolimail_myobject";
 		$sql .= " WHERE ref LIKE '".$db->escape($this->prefix)."____-%'";
 		if ($object->ismultientitymanaged == 1) {
 			$sql .= " AND entity = ".$conf->entity;
@@ -125,7 +125,7 @@ class mod_myobject_standard extends ModeleNumRefMyObject
 		// first we get the max value
 		$posindice = strlen($this->prefix) + 6;
 		$sql = "SELECT MAX(CAST(SUBSTRING(ref FROM ".$posindice.") AS SIGNED)) as max";
-		$sql .= " FROM ".MAIN_DB_PREFIX."mailtemplates_myobject";
+		$sql .= " FROM ".MAIN_DB_PREFIX."dolimail_myobject";
 		$sql .= " WHERE ref LIKE '".$db->escape($this->prefix)."____-%'";
 		if ($object->ismultientitymanaged == 1) {
 			$sql .= " AND entity = ".$conf->entity;

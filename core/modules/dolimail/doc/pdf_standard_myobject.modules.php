@@ -26,12 +26,12 @@
  */
 
 /**
- *  \file       mailtemplates/core/modules/mailtemplates/doc/pdf_standard.modules.php
- *  \ingroup    mailtemplates
+ *  \file       dolimail/core/modules/dolimail/doc/pdf_standard.modules.php
+ *  \ingroup    dolimail
  *  \brief      File of class to generate document from standard template
  */
 
-dol_include_once('/mailtemplates/core/modules/mailtemplates/modules_myobject.php');
+dol_include_once('/dolimail/core/modules/dolimail/modules_myobject.php');
 require_once DOL_DOCUMENT_ROOT.'/product/class/product.class.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/company.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
@@ -147,7 +147,7 @@ class pdf_standard_myobject extends ModelePDFMyObject
 
 		$this->db = $db;
 		$this->name = "standard";
-		$this->description = $langs->trans('PDFStandardDescription');
+		$this->description = $langs->trans('DocumentModelStandardPDF');
 		$this->update_main_doc_field = 1; // Save the name of generated file as the main doc when generating a doc with this template
 
 		// Dimension page
@@ -291,18 +291,18 @@ class pdf_standard_myobject extends ModelePDFMyObject
 
 	    //if (count($realpatharray) == 0) $this->posxpicture=$this->posxtva;
 
-	    if ($conf->mailtemplates->dir_output.'/myobject')
+	    if ($conf->dolimail->dir_output.'/myobject')
 	    {
 	        $object->fetch_thirdparty();
 
 	        // Definition of $dir and $file
 	        if ($object->specimen)
 	        {
-	        	$dir = $conf->mailtemplates->dir_output.'/myobject';
+	        	$dir = $conf->dolimail->dir_output.'/myobject';
 	            $file = $dir."/SPECIMEN.pdf";
 	        } else {
 	            $objectref = dol_sanitizeFileName($object->ref);
-	            $dir = $conf->mailtemplates->dir_output.'/myobject/'.$objectref;
+	            $dir = $conf->dolimail->dir_output.'/myobject/'.$objectref;
 	            $file = $dir."/".$objectref.".pdf";
 	        }
 	        if (!file_exists($dir))

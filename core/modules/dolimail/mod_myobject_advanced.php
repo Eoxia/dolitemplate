@@ -21,12 +21,12 @@
  */
 
 /**
- * \file       htdocs/core/modules/mailtemplates/mod_myobject_advanced.php
- * \ingroup    mailtemplates
+ * \file       htdocs/core/modules/dolimail/mod_myobject_advanced.php
+ * \ingroup    dolimail
  * \brief      File containing class for advanced numbering model of MyObject
  */
 
-dol_include_once('/mailtemplates/core/modules/mailtemplates/modules_myobject.php');
+dol_include_once('/dolimail/core/modules/dolimail/modules_myobject.php');
 
 
 /**
@@ -68,7 +68,7 @@ class mod_myobject_advanced extends ModeleNumRefMyObject
 		$texte .= '<form action="'.$_SERVER["PHP_SELF"].'" method="POST">';
 		$texte .= '<input type="hidden" name="token" value="'.newToken().'">';
 		$texte .= '<input type="hidden" name="action" value="updateMask">';
-		$texte .= '<input type="hidden" name="maskconstBom" value="MAILTEMPLATES_MYOBJECT_ADVANCED_MASK">';
+		$texte .= '<input type="hidden" name="maskconstBom" value="DOLIMAIL_MYOBJECT_ADVANCED_MASK">';
 		$texte .= '<table class="nobordernopadding" width="100%">';
 
 		$tooltip = $langs->trans("GenericMaskCodes", $langs->transnoentities("MyObject"), $langs->transnoentities("MyObject"));
@@ -79,7 +79,7 @@ class mod_myobject_advanced extends ModeleNumRefMyObject
 
 		// Parametrage du prefix
 		$texte .= '<tr><td>'.$langs->trans("Mask").':</td>';
-		$texte .= '<td class="right">'.$form->textwithpicto('<input type="text" class="flat" size="24" name="maskMyObject" value="'.$conf->global->MAILTEMPLATES_MYOBJECT_ADVANCED_MASK.'">', $tooltip, 1, 1).'</td>';
+		$texte .= '<td class="right">'.$form->textwithpicto('<input type="text" class="flat" size="24" name="maskMyObject" value="'.$conf->global->DOLIMAIL_MYOBJECT_ADVANCED_MASK.'">', $tooltip, 1, 1).'</td>';
 
 		$texte .= '<td class="left" rowspan="2">&nbsp; <input type="submit" class="button" value="'.$langs->trans("Modify").'" name="Button"></td>';
 
@@ -133,7 +133,7 @@ class mod_myobject_advanced extends ModeleNumRefMyObject
 		require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
 
 		// We get cursor rule
-		$mask = $conf->global->MAILTEMPLATES_MYOBJECT_ADVANCED_MASK;
+		$mask = $conf->global->DOLIMAIL_MYOBJECT_ADVANCED_MASK;
 
 		if (!$mask)
 		{
@@ -143,7 +143,7 @@ class mod_myobject_advanced extends ModeleNumRefMyObject
 
 		$date = $object->date;
 
-		$numFinal = get_next_value($db, $mask, 'mailtemplates_myobject', 'ref', '', null, $date);
+		$numFinal = get_next_value($db, $mask, 'dolimail_myobject', 'ref', '', null, $date);
 
 		return  $numFinal;
 	}

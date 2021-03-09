@@ -19,9 +19,9 @@
  */
 
 /**
- *	\file       mailtemplates/mailtemplatesindex.php
- *	\ingroup    mailtemplates
- *	\brief      Home page of mailtemplates top menu
+ *	\file       dolimail/dolimailindex.php
+ *	\ingroup    dolimail
+ *	\brief      Home page of dolimail top menu
  */
 
 // Load Dolibarr environment
@@ -42,13 +42,13 @@ if (!$res) die("Include of main fails");
 require_once DOL_DOCUMENT_ROOT.'/core/class/html.formfile.class.php';
 
 // Load translation files required by the page
-$langs->loadLangs(array("mailtemplates@mailtemplates"));
+$langs->loadLangs(array("dolimail@dolimail"));
 
 $action = GETPOST('action', 'alpha');
 
 
 // Security check
-//if (! $user->rights->mailtemplates->myobject->read) accessforbidden();
+//if (! $user->rights->dolimail->myobject->read) accessforbidden();
 $socid = GETPOST('socid', 'int');
 if (isset($user->socid) && $user->socid > 0)
 {
@@ -74,16 +74,16 @@ $now = dol_now();
 $form = new Form($db);
 $formfile = new FormFile($db);
 
-llxHeader("", $langs->trans("MailtemplatesArea"));
+llxHeader("", $langs->trans("DolimailArea"));
 
-print load_fiche_titre($langs->trans("MailtemplatesArea"), '', 'mailtemplates.png@mailtemplates');
+print load_fiche_titre($langs->trans("DolimailArea"), '', 'dolimail.png@dolimail');
 
 print '<div class="fichecenter"><div class="fichethirdleft">';
 
 
 /* BEGIN MODULEBUILDER DRAFT MYOBJECT
 // Draft MyObject
-if (! empty($conf->mailtemplates->enabled) && $user->rights->mailtemplates->read)
+if (! empty($conf->dolimail->enabled) && $user->rights->dolimail->read)
 {
 	$langs->load("orders");
 
@@ -169,7 +169,7 @@ $max = 3;
 
 /* BEGIN MODULEBUILDER LASTMODIFIED MYOBJECT
 // Last modified myobject
-if (! empty($conf->mailtemplates->enabled) && $user->rights->mailtemplates->read)
+if (! empty($conf->dolimail->enabled) && $user->rights->dolimail->read)
 {
 	$sql = "SELECT s.rowid, s.nom as name, s.client, s.datec, s.tms, s.canvas";
 	$sql.= ", s.code_client";

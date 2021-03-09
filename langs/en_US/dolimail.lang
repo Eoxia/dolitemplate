@@ -1,4 +1,4 @@
-# Copyright (C) 2020 SuperAdmin
+# Copyright (C) 2021 SuperAdmin
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,29 +17,29 @@
 # Generic
 #
 
-# Module label 'ModuleMailtemplatesName'
-ModuleMailtemplatesName = Mailtemplates
-# Module description 'ModuleMailtemplatesDesc'
-ModuleMailtemplatesDesc = Mailtemplates description
+# Module label 'ModuleDolimailName'
+ModuleDolimailName = Dolimail
+# Module description 'ModuleDolimailDesc'
+ModuleDolimailDesc = Dolimail description
 
 #
 # Admin page
 #
-MailtemplatesSetup = Mailtemplates setup
+DolimailSetup = Dolimail setup
 Settings = Settings
-MailtemplatesSetupPage = Mailtemplates setup page
-MAILTEMPLATES_MYPARAM1 = My param 1
-MAILTEMPLATES_MYPARAM1Tooltip = My param 1 tooltip
-MAILTEMPLATES_MYPARAM2=My param 2
-MAILTEMPLATES_MYPARAM2Tooltip=My param 2 tooltip
+DolimailSetupPage = Dolimail setup page
+DOLIMAIL_MYPARAM1 = My param 1
+DOLIMAIL_MYPARAM1Tooltip = My param 1 tooltip
+DOLIMAIL_MYPARAM2=My param 2
+DOLIMAIL_MYPARAM2Tooltip=My param 2 tooltip
 
 
 #
 # About page
 #
 About = About
-MailtemplatesAbout = About Mailtemplates
-MailtemplatesAboutPage = Mailtemplates about page
+DolimailAbout = About Dolimail
+DolimailAboutPage = Dolimail about page
 
 #
 # Sample page

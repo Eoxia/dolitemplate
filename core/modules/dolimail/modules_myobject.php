@@ -23,8 +23,8 @@
  */
 
 /**
- *  \file			htdocs/core/modules/mailtemplates/modules_myobject.php
- *  \ingroup		mailtemplates
+ *  \file			htdocs/core/modules/dolimail/modules_myobject.php
+ *  \ingroup		dolimail
  *  \brief			File that contains parent class for myobjects document models and parent class for myobjects numbering models
  */
 
@@ -91,7 +91,7 @@ abstract class ModeleNumRefMyObject
 	public function info()
 	{
 		global $langs;
-		$langs->load("mailtemplates@mailtemplates");
+		$langs->load("dolimail@dolimail");
 		return $langs->trans("NoDescription");
 	}
 
@@ -103,7 +103,7 @@ abstract class ModeleNumRefMyObject
 	public function getExample()
 	{
 		global $langs;
-		$langs->load("mailtemplates@mailtemplates");
+		$langs->load("dolimail@dolimail");
 		return $langs->trans("NoExample");
 	}
 
