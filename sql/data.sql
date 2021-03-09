@@ -1,3 +1,5 @@
+
+/* @todo à ranger, completer avec le type de commande fournisseur ou client */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,joinfiles,content,content_lines)
 VALUES (1,null,'order_send','',0,null,null,'Envoi_commande',1,1,1,'Accusé de réception de votre commande : __REF__',1,
 concat('Bonjour,'
@@ -13,6 +15,7 @@ concat('Bonjour,'
 '__MYCOMPANY_FULLADDRESS__', 0xd0a,
 '__MYCOMPANY_EMAIL__')
 ,null);
+
 
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,joinfiles,content,content_lines)
 
