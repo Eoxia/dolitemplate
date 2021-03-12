@@ -12,9 +12,9 @@ Dans le module Commerce
   - PR_Relance-proposition-2
   - PR_Cloture-proposition
 - Commandes
-  -CO_Envoi-commandes
-  -CO_Remerciement-commandes
-  -CO_Facturation-commandes
+  - CO_Envoi-commandes
+  - CO_Remerciement-commandes
+  - CO_Facturation-commandes
 - Propositions commerciales fournisseurs
 - Commandes fournisseurs
 - Contrats/Abonnement
