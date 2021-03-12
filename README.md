@@ -1,4 +1,4 @@
-# Dolimail pour [DOLIBARR ERP CRM](https://www.dolibarr.org)
+# Dolitemplate pour [DOLIBARR ERP CRM](https://www.dolibarr.org)
 
 ## Fonctionnalités
 
@@ -10,8 +10,11 @@ Dans le module Commerce
   - PR_Envoi-proposition
   - PR_Relance-proposition
   - PR_Relance-proposition-2
-  - PR_Cloture-Proposition
+  - PR_Cloture-proposition
 - Commandes
+  -CO_Envoi-commandes
+  -CO_Remerciement-commandes
+  -CO_Facturation-commandes
 - Propositions commerciales fournisseurs
 - Commandes fournisseurs
 - Contrats/Abonnement
@@ -20,6 +23,11 @@ Dans le module Commerce
 Dans le module Facturation/Paiement
 
 - Facture
+  - FA_Envoi-facture
+  - FA_Relance-facture
+  - FA_Relance-facture-2
+  - FA_Relance-avant-contentieux
+  - FA_Relance-information-contentieux
 - Factures fournisseur
 - Commandes facturables
 - Salaires
