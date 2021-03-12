@@ -4,6 +4,9 @@
 
 Module Dolibarr ajoutant des templates de mail incluant le maximum de variables de substitution afin d'adapter les contenus des mails pour chaque module :
 
+Dans le module Projets
+- 
+
 Dans le module Commerce
 
 - Propositions commerciales
@@ -32,6 +35,12 @@ Dans le module Facturation/Paiement
 - Commandes facturables
 - Salaires
 - Paiements divers
+
+
+Dans le module Ticket
+- TS_Ouverture-ticket
+- TS_Envoi-mise-a-jour-ticket
+- TS_Cloture-ticket
 
 ## Installation
 
