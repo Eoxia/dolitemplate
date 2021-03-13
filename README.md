@@ -4,8 +4,20 @@
 
 Module Dolibarr ajoutant des templates de mail incluant le maximum de variables de substitution afin d'adapter les contenus des mails pour chaque module :
 
+Dans le module Produits et Services
+
+- Produits
+- Services
+- Entrepôts
+- Expéditions
+- Réceptions
+  - RCP_Envoi-reception-fournisseur
+- Equipement
+
 Dans le module Projets
-- 
+
+- PJ_Envoi-création-projet
+- PJ_Envoi-bilan-projet
 
 Dans le module Commerce
 
@@ -26,8 +38,6 @@ Dans le module Commerce
 - Commandes fournisseurs
   - PO_Envoi-commande-fournisseur
   - PO_Relance-commande-fournisseur
- - Reception fournisseur
-  - RCP_Envoi-reception-fournisseur
 - Factures fournisseurs
   - SI_Envoi-facture-fournisseur
   - SI_Relance-facture-fournisseur
@@ -49,6 +59,7 @@ Dans le module Facturation/Paiement
 
 
 Dans le module Ticket
+
 - TS_Ouverture-ticket
 - TS_Envoi-mise-a-jour-ticket
 - TS_Cloture-ticket
