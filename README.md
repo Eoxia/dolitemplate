@@ -16,10 +16,21 @@ Dans le module Commerce
   - PR_Cloture-proposition
 - Commandes
   - CO_Envoi-commandes
-  - CO_Remerciement-commandes
+  - CO_Accusé-reception-commandes
   - CO_Facturation-commandes
 - Propositions commerciales fournisseurs
+  - RQ_Envoi-demande-prix
+  - RQ_Relance-demande-prix
+  - RQ_Accepter-demande-prix
+  - RQ_Cloture-demande-prix
 - Commandes fournisseurs
+  - PO_Envoi-commande-fournisseur
+  - PO_Relance-commande-fournisseur
+ - Reception fournisseur
+  - RCP_Envoi-reception-fournisseur
+- Factures fournisseurs
+  - SI_Envoi-facture-fournisseur
+  - SI_Relance-facture-fournisseur
 - Contrats/Abonnement
 - Interventions
 
