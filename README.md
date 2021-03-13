@@ -10,7 +10,7 @@ Dans le module Projets
 Dans le module Commerce
 
 - Propositions commerciales
-  - PR_Envoi-proposition #9
+  - PR_Envoi-proposition [Issue 9](https://github.com/Eoxia/dolitemplate/issues/9)
   - PR_Relance-proposition
   - PR_Relance-proposition-2
   - PR_Cloture-proposition
