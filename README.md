@@ -24,7 +24,7 @@ Dans le module Commerce
 - Propositions commerciales
   - PR_Envoi-proposition [Issue 9](https://github.com/Eoxia/dolitemplate/issues/9)
   - PR_Relance-proposition [Issue 10](https://github.com/Eoxia/dolitemplate/issues/10)
-  - PR_Relance-proposition-2 [Issue 12] (https://github.com/Eoxia/dolitemplate/issues/12)
+  - PR_Relance-proposition-2 [Issue 12](https://github.com/Eoxia/dolitemplate/issues/12)
   - PR_Cloture-proposition
 - Commandes
   - CO_Envoi-commandes
