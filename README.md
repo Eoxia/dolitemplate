@@ -29,7 +29,7 @@ Dans le module Commerce
 - Commandes
   - CO_Envoi-commandes
   - CO_Accusé-reception-commandes
-  - CO_Facturation-commandes
+  - CO_Facturation-commandes [Issue 16](https://github.com/Eoxia/dolitemplate/issues/16)
 - Propositions commerciales fournisseurs
   - RQ_Envoi-demande-prix
   - RQ_Relance-demande-prix
