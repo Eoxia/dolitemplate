@@ -27,6 +27,8 @@ Dans le module Commerce
   - PR_Relance-proposition-2 [Issue 12](https://github.com/Eoxia/dolitemplate/issues/12)
   - PR_Cloture-proposition [Issue 20](https://github.com/Eoxia/dolitemplate/issues/20)
 - Commandes
+  - CO_Envoi-commandes  [Issue 17](https://github.com/Eoxia/dolitemplate/issues/17)
+  - CO_Accusé-reception-commandes
   - CO_Envoi-commandes
   - CO_Accusé-reception-commandes [Issue 19](https://github.com/Eoxia/dolitemplate/issues/19)
   - CO_Facturation-commandes
