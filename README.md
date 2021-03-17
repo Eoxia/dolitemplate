@@ -28,6 +28,8 @@ Dans le module Commerce
   - PR_Cloture-proposition [Issue 20](https://github.com/Eoxia/dolitemplate/issues/20)
 - Commandes
   - CO_Envoi-commandes
+  - CO_Accusé-reception-commandes [Issue 19]https://github.com/Eoxia/dolitemplate/issues/19
+  - CO_Facturation-commandes
   - CO_Accusé-reception-commandes
   - CO_Facturation-commandes [Issue 16](https://github.com/Eoxia/dolitemplate/issues/16)
 - Propositions commerciales fournisseurs
