@@ -29,7 +29,7 @@ Dans le module Commerce
 - Commandes
   - CO_Envoi-commandes  [Issue 17](https://github.com/Eoxia/dolitemplate/issues/17)
   - CO_Accusé-reception-commandes
-  - CO_Envoi-commandes
+  - CO_Envoi-commandes [Issue 25](https://github.com/Eoxia/dolitemplate/issues/25)
   - CO_Accusé-reception-commandes [Issue 19](https://github.com/Eoxia/dolitemplate/issues/19)
   - CO_Facturation-commandes
   - CO_Accusé-reception-commandes
@@ -72,7 +72,7 @@ Dans le module Ticket
 
 # Méthode 1 :
 
-Depuis le menu "Déployer/Installer un module externe" de Dolibarr : 
+Depuis le menu "Déployer/Installer un module externe" de Dolibarr :
 
 - Glisser l'archive ZIP 'module_dolimail-1.2.0' et cliquer sur "SEND"
 - Activer le module dans la liste des Modules/Applications installés
@@ -81,7 +81,7 @@ Depuis le menu "Déployer/Installer un module externe" de Dolibarr :
 # Méthode 2 :
 
 - Dans le dossier "dolibarr/htdocs/custom" copier la ligne suivante :
-``` 
+```
 git clone https://github.com/Eoxia/dolimail.git
 ```
 - Retrouver vos modèles de mail dans 'Emails' -> 'Modèles de courriers'
