@@ -4,21 +4,21 @@
 
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,joinfiles,content,content_lines)
 VALUES (1,null,'propal_send','',0,null,null,'Envoi_proposition',1,1,1,'Nos propositions numéro __REF__ société : __MYCOMPANY_NAME__',1,
-concat('Bonjour,'
-, 0xd0a,0xd0a,
-'Suite à notre conversation, je me permets de vous envoyer ci-joint notre proposition : __REF__ concernant votre projet : __PROJECT_NAME__ .', 0xd0a,
-'Si cela vous convient, vous pouvez utiliser le lien pour valider __EXTRAFIELD_SIGNATURE_LINK__'
-, 0xd0a,0xd0a,
-'Je reste à votre disposition pour plus de renseignements.', 0xd0a,
-'Bien cordialement,'
-, 0xd0a,0xd0a,
-'__USER_FULLNAME__', 0xd0a,
-'__USER_EMAIL__'
-, 0xd0a,0xd0a,
-'__MYCOMPANY_NAME__', 0xd0a,
-'__MYCOMPANY_FULLADDRESS__', 0xd0a,
-'__MYCOMPANY_EMAIL__')
-,null);
+concat(Bonjour,<br />
+<br />
+Suite &agrave; notre conversation, je me permets de vous envoyer ci-joint notre proposition : __REF__ concernant votre projet : __PROJECT_NAME__.<br />
+Si cela vous convient, vous pouvez utiliser le lien pour valider :<br />
+__EXTRAFIELD_SIGNATURE_LINK__<br />
+<br />
+Je reste &agrave; votre disposition pour plus de renseignements.<br />
+Bien cordialement,<br />
+<br />
+__USER_FULLNAME__<br />
+__USER_EMAIL__<br />
+<br />
+__MYCOMPANY_NAME__<br />
+__MYCOMPANY_FULLADDRESS__<br />
+__MYCOMPANY_EMAIL__);
 
 
 /* @todo à ranger, completer avec le type de commande fournisseur ou client */
