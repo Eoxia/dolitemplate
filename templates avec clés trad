@@ -39,7 +39,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-Clôture proposition : _PROJECT_NAME_ (refus)
+EndProposal : _PROJECT_NAME_ (refus)
 
 Contenu :
 
@@ -95,4 +95,127 @@ __MYCOMPANY_NAME__
 __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
+Sujet :
+CommercialAsk
+
+Contenu :
+
+Bonjour,
+
+ContactFrom  _MYCOMPANY_NAME_ .
+OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
+Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant _REF_ .
+Pouvez-vous nous communiquer les tarifs pour la/les référence(s) ci-dessus.
+N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+Relance demande de prix
+
+Contenu :
+
+Hello,
+
+Par la présente, je me permets de vous recontacter au nom de la société _MYCOMPANY_NAME_ .
+Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].
+Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant REF.
+Pouvez-vous nous communiquer les tarifs pour la/les référence(s) ci-dessus.
+N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet :
+Demande de prix accepté
+
+Contenu :
+
+Hello,
+Suite à l’analyse de votre demande, veuillez trouver ci-joint notre proposition de devis qui, si vous l’acceptez, par apposition de votre signature, vaudra bon de commande.
+Merci de nous le renvoyer signé [par courriel ou par la poste]
+Pour visualiser votre devis cliquer ici :  _DIRECTDOWNLOAD_URL_PROPOSAL_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet :
+Clôturation de la demande de prix.
+
+Contenu :
+
+Hello,
+
+Nous accusons réception de votre correspondance du _DAY_MONTH_YEAR_  répondant à notre demande de devis afin de (Raison de la demande du devis). Nous vous remercions sincèrement vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.
+Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos compétents/services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+Envoi commande fournisseur
+
+Contenu :
+
+Hello,
+
+Par la présente, nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
+
+> Désignation : [décrivez la nature du bien ou du service]
+> Quantité : _AMOUNT_
+> Prix unitaire :
+> Prix total TTC :
+
+Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+Relance commande fournisseur
+
+Contenu :
+
+Hello,
+
+Je me permets de vous recontacter pour vous relancer sur une demande de commande.
+Nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
+
+> Désignation : [décrivez la nature du bien ou du service]
+> Quantité : AMOUNT
+> Prix unitaire :
+> Prix total TTC :
+
+Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
 
