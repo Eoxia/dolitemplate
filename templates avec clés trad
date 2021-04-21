@@ -1,14 +1,75 @@
 Sujet :
-Relance de proposition : PROJECT_NAME.
+ProposalRelaunch : PROJECT_NAME.
 
 Contenu :
 
-HELLO,
+Hello ,
 
-Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
-Êtes-vous disponible pour un rapide appel téléphonique le _DAY_TEXT_  - _ DAY_ ?
-Ou puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
-Merci de votre réponse.
+ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
+AvailableForPhoneCall On  _DAY_TEXT_  _ DAY_ ?
+WhereCanIContact ?
+ThanksForAnswer.
+Sincerely,
+
+Service administratif
+_MYCOMPANY_NAME_
+_MYCOMPANY_FULLADDRESS_
+_MYCOMPANY_EMAIL_
+
+
+Sujet :
+Proposition commerciale : _ PROJECT_NAME_ .
+
+Contenu :
+
+Bonjour,
+
+Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
+La présente offre de service annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants :
+- [lister les grandes sections de la proposition].
+Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au _DAY_MONTH_YEAR_ et qu'elle ne tient pas compte d'une éventuelle remise.
+Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.
+Avant toute acceptation, nous restons évidemment à votre disposition pour toute information complémentaire concernant cette proposition.
+
+Bien cordialement,
+
+Service administratif
+_MYCOMPANY_NAME_
+_MYCOMPANY_FULLADDRESS_
+_MYCOMPANY_EMAIL_
+
+
+Sujet :
+Clôture proposition : _PROJECT_NAME_ (refus)
+
+Contenu :
+
+Bonjour,
+
+Je vous remercie de l’intérêt que vous portez à notre société, j’apprécie le temps et les efforts que vous avez réalisés en nous proposant cette prestation.
+Je regrette toutefois que nous ne puissions accepter votre proposition. Nous sommes actuellement sous contrat jusqu’au _DAY_MONTH_YEAR_ .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.
+
+Bien cordialement,
+
+Service administratif
+_MYCOMPANY_NAME_
+_MYCOMPANY_FULLADDRESS_
+_MYCOMPANY_EMAIL_
+
+
+Sujet :
+Envoie de la commande
+
+Contenu :
+
+Bonjour,
+
+A la date du _DAY_MONTH_YEAR_ , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+Votre commande a bien été prise en compte.
+Elle sera acheminée par voie postale à l’adresse suivante :
+[Nom Prénom - Adresse - Code postal Ville]
+Votre colis devrait vous parvenir sous un délai de DAY.
+
 Bien cordialement,
 
 Service administratif
