@@ -18,25 +18,24 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-Proposition commerciale : _ PROJECT_NAME_ .
+CommercialProposal : _ PROJECT_NAME_ .
 
 Contenu :
 
-Bonjour,
+Hello,
 
-Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
-La présente offre de service annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants :
+HereIsProposal [nature de la proposition commerciale].
+ThisOfferCancelOther
 - [lister les grandes sections de la proposition].
-Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au _DAY_MONTH_YEAR_ et qu'elle ne tient pas compte d'une éventuelle remise.
-Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.
-Avant toute acceptation, nous restons évidemment à votre disposition pour toute information complémentaire concernant cette proposition.
+ProposalValidUntil _DAY_MONTH_YEAR_ .
+PleaseSignDate
 
-Bien cordialement,
+Sincerely,
 
-Service administratif
-_MYCOMPANY_NAME_
-_MYCOMPANY_FULLADDRESS_
-_MYCOMPANY_EMAIL_
+AdministrativeService
+___MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
 
 
 Sujet :
@@ -44,17 +43,17 @@ Clôture proposition : _PROJECT_NAME_ (refus)
 
 Contenu :
 
-Bonjour,
+Hello,
 
 Je vous remercie de l’intérêt que vous portez à notre société, j’apprécie le temps et les efforts que vous avez réalisés en nous proposant cette prestation.
 Je regrette toutefois que nous ne puissions accepter votre proposition. Nous sommes actuellement sous contrat jusqu’au _DAY_MONTH_YEAR_ .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.
 
-Bien cordialement,
+Sincerely,
 
-Service administratif
-_MYCOMPANY_NAME_
-_MYCOMPANY_FULLADDRESS_
-_MYCOMPANY_EMAIL_
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
 
 
 Sujet :
