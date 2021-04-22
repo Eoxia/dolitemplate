@@ -283,8 +283,8 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet :
-Envoi facture fournisseur : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+Envoi facture fournisseur :  _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -303,8 +303,8 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet :
-Relance facture fournisseur : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+Relance facture fournisseur :  _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -322,8 +322,8 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet:
-Envoi facture : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+Envoi facture : _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -342,8 +342,8 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet:
-Relance facture : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+Relance facture :  _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -361,8 +361,8 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet:
-2ème relance facture : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+2ème relance facture :  _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -379,8 +379,8 @@ _MYCOMPANY_FULLADDRESS_
 _MYCOMPANY_EMAIL_
 
 Sujet:
-Relance facture avant contentieux : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+Relance facture avant contentieux :  _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -399,8 +399,8 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet:
-Relance information contentieux : PROJECT_NAME- REF_CLIENT
-Votre commande : DIRECTDOWNLOAD_URL_INVOICE
+Relance information contentieux :  _PROJECT_NAME_  _REF_CLIENT_
+Votre commande : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
