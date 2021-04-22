@@ -412,10 +412,11 @@ Contenu :
 
 Hello,
 
-SaveNewTicket. 
+OpenDate: _DAY_MONTH_YEAR_
 TicketDictType: (question commerciale...)
 TicketDictCategory: 
 TicketDictSeverity : (normal..)
+StatusInProgress
 Message: _NOTE_PUBLIC_
 
 Sincerely,
@@ -426,12 +427,18 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-
+TicketUpdated
 
 Contenu :
 
 Hello,
 
+OpenDate: _DAY_MONTH_YEAR_
+TicketDictType: (question commerciale...)
+TicketDictCategory: 
+TicketDictSeverity : (normal..)
+StatusUpdated
+Message: _NOTE_PUBLIC_
 
 Sincerely,
 
@@ -439,3 +446,27 @@ AdministrativeService
 __MYCOMPANY_NAME__
 __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
+
+
+Sujet:
+TicketClosed
+
+Contenu :
+
+Hello,
+
+TicketOpenOn: _DAY_MONTH_YEAR_
+TicketCloseOn: _DAY_MONTH_YEAR_
+TicketDictType: (question commerciale...)
+TicketDictCategory: 
+TicketDictSeverity : (normal..)
+StatusClosed
+Message: _NOTE_PUBLIC_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
