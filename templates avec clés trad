@@ -403,3 +403,39 @@ AdministrativeService
 __MYCOMPANY_NAME__
 __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
+
+
+Sujet:
+NewTicket
+
+Contenu :
+
+Hello,
+
+SaveNewTicket. 
+TicketDictType: (question commerciale...)
+TicketDictCategory: 
+TicketDictSeverity : (normal..)
+Message: _NOTE_PUBLIC_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet:
+
+
+Contenu :
+
+Hello,
+
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
