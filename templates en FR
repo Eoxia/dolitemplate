@@ -414,3 +414,44 @@ _MYCOMPANY_NAME_
 _MYCOMPANY_FULLADDRESS_
 _MYCOMPANY_EMAIL_
 
+
+Sujet:
+Nouveau ticket
+
+Contenu :
+
+Bonjour,
+
+Nous souhaiterions enregistrer un nouveau ticket. 
+Type de la demande: (question commerciale...)
+Catégorie: 
+Sévérité : (normal..)
+Message: _NOTE_PUBLIC_
+
+Bien cordialement,
+
+Service administratif
+_MYCOMPANY_NAME_
+_MYCOMPANY_FULLADDRESS_
+_MYCOMPANY_EMAIL_
+
+
+Sujet:
+Mise à jour du ticket
+
+Contenu :
+
+Bonjour,
+
+Nous souhaiterions mettre à jour le ticket. 
+Type de la demande: (question commerciale...)
+Catégorie: 
+Sévérité : (normal..)
+Message: _NOTE_PUBLIC_
+
+Bien cordialement,
+
+Service administratif
+_MYCOMPANY_NAME_
+_MYCOMPANY_FULLADDRESS_
+_MYCOMPANY_EMAIL_
