@@ -307,8 +307,25 @@ _MYCOMPANY_NAME_
 _MYCOMPANY_FULLADDRESS_
 _MYCOMPANY_EMAIL_
 
+Sujet:
+2ème relance facture : PROJECT_NAME- REF_CLIENT
+Votre commande : DIRECTDOWNLOAD_URL_INVOICE
 
+Contenu :
 
+Bonjour,
+
+Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° [] en date du DAY-MONTH-YEAR pour un montant de [Montant de la facture] euros, alors même que cette facture arrivait à échéance le DAY-MONTH-YEAR .
+Nous vous demandons de bien vouloir procéder à son règlement le plus rapidement possible. Vous trouverez en pièce jointe de ce courrier une copie de la facture. Veuillez ne pas tenir compte de cette lettre si votre règlement nous a été adressé avant la réception de courrier.
+
+Bien cordialement,
+
+Service administratif
+_MYCOMPANY_NAME_
+_MYCOMPANY_FULLADDRESS_
+_MYCOMPANY_EMAIL_
+
+Sujet:
 Relance facture avant contentieux : PROJECT_NAME- REF_CLIENT
 Votre commande : DIRECTDOWNLOAD_URL_INVOICE
 
