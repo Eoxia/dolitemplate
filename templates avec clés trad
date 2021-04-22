@@ -73,7 +73,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-CommercialProposal : _ PROJECT_NAME_ .
+CommercialProposal : _PROJECT_NAME_ .
 
 Contenu :
 
@@ -278,8 +278,8 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ContactDefault_invoice_supplier: PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+ContactDefault_invoice_supplier:  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -297,8 +297,8 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-RelaunchSupplierBilling: PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+RelaunchSupplierBilling:  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -315,8 +315,8 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-Bill : PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+Bill :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -333,8 +333,8 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-RelaunchBilling : PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+RelaunchBilling :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -351,8 +351,8 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-SecondRelaunchBilling : PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+SecondRelaunchBilling :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -369,8 +369,8 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-RelaunchBeforeContentious : PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+RelaunchBeforeContentious :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
@@ -389,8 +389,8 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet:
-Ralance information contentieux : PROJECT_NAME- REF_CLIENT
-Order : DIRECTDOWNLOAD_URL_INVOICE
+Relance information contentieux : _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
 
 Contenu :
 
