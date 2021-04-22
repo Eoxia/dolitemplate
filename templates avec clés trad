@@ -1,10 +1,16 @@
 Sujet :
-Récapitulation création du projet:
+ProjectRecap
 
 Contenu :
 
 Hello,
 
+BeginningProjectRecap:
+- CustomerRef: _REF_CLIENT_
+- ProjectName : _PROJECT_NAME_ 
+- DateStart:_DAY_MONTH_YEAR_
+- DateEnd : _DAY_MONTH_YEAR_
+- CustomerRequest: 
 
 Sincerely,
 
@@ -15,12 +21,11 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-Bilan du projet: PROJECT_NAME.
+Bilan du projet: _PROJECT_NAME_ .
 
 Contenu :
 
 Hello,
-
 Sincerely,
 
 AdministrativeService
@@ -30,7 +35,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ProposalRelaunch : PROJECT_NAME.
+ProposalRelaunch : _PROJECT_NAME_.
 
 Contenu :
 
@@ -49,7 +54,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-SecondProposalRelaunch : PROJECT_NAME.
+SecondProposalRelaunch : _PROJECT_NAME_.
 
 Contenu :
 
