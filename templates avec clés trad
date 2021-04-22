@@ -10,7 +10,7 @@ BeginningProjectRecap:
 - ProjectName : _PROJECT_NAME_ 
 - DateStart:_DAY_MONTH_YEAR_
 - DateEnd : _DAY_MONTH_YEAR_
-- CustomerRequest: 
+- CustomerRequest: (écrire la demande)
 
 Sincerely,
 
@@ -21,11 +21,20 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-Bilan du projet: _PROJECT_NAME_ .
+ProjectSummary: _PROJECT_NAME_ .
 
 Contenu :
 
 Hello,
+
+CustomerRequest: (écrire la demande)
+- DateStart:_DAY_MONTH_YEAR_
+- DateEnd : _DAY_MONTH_YEAR_
+- AchievedGoals:
+- Differencials: 
+- Observations: 
+- Conclusion:
+
 Sincerely,
 
 AdministrativeService
