@@ -131,7 +131,7 @@ A la date du _DAY_MONTH_YEAR_ , vous avez passé commande de [nom du produit, la
 Votre commande a bien été prise en compte.
 Elle sera acheminée par voie postale à l’adresse suivante :
 [Nom Prénom - Adresse - Code postal Ville]
-Votre colis devrait vous parvenir sous un délai de DAY.
+Votre colis devrait vous parvenir sous un délai de _DAY_.
 
 Bien cordialement,
 
@@ -149,7 +149,7 @@ Contenu :
 
 Bonjour,
 
-Suite à [nom de la prestation] effectué(e) le DAY-MONTH-YEAR et correspondant au n° [], nous vous adressons votre facture ci-joint : _DIRECTDOWNLOAD_URL_INVOICE_
+Suite à [nom de la prestation] effectué(e) le _DAY_MONTH_YEAR_ et correspondant au n° [], nous vous adressons votre facture ci-joint : _DIRECTDOWNLOAD_URL_INVOICE_
 Il est possible de régler ce montant par [chèque, virement ou espèces.] ou de payer en ligne ici : _ONLINE_PAYMENT_URL_
 
 Bien cordialement,
@@ -297,8 +297,8 @@ Contenu :
 
 Bonjour,
 
-Suite à [nom de la prestation] effectué(e) le DAY-MONTH-YEAR et correspondant au REF, nous vous adressons votre facture ci-joint : DIRECTDOWNLOAD_URL_INVOICE
-Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : EXTRAFIELD_SIGNATURE_LINK
+Suite à [nom de la prestation] effectué(e) le _DAY_MONTH_YEAR_ et correspondant au _REF_, nous vous adressons votre facture ci-joint : _DIRECTDOWNLOAD_URL_INVOICE_
+Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : _EXTRAFIELD_SIGNATURE_LINK_
 
 
 Bien cordialement,
@@ -336,8 +336,8 @@ Contenu :
 
 Bonjour,
 
-Suite à [nom de la prestation] effectué(e) le DAY-MONTH-YEAR et correspondant au DIRECTDOWNLOAD_URL_INVOICE
-Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : EXTRAFIELD_SIGNATURE_LINK
+Suite à [nom de la prestation] effectué(e) le _DAY_MONTH_YEAR_ et correspondant au _DIRECTDOWNLOAD_URL_INVOICE_
+Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : _EXTRAFIELD_SIGNATURE_LINK_
 
 
 Bien cordialement,
@@ -356,7 +356,7 @@ Contenu :
 
 Bonjour,
 
-Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° [] en date du DAY-MONTH-YEAR pour un montant de [Montant de la facture] euros, alors même que cette facture arrivait à échéance le DAY-MONTH-YEAR .
+Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° [] en date du _DAY_MONTH_YEAR_ pour un montant de [Montant de la facture] euros, alors même que cette facture arrivait à échéance le DAY-MONTH-YEAR .
 Nous vous demandons de bien vouloir procéder à son règlement le plus rapidement possible. Vous trouverez en pièce jointe de ce courrier une copie de la facture. Veuillez ne pas tenir compte de cette lettre si votre règlement nous a été adressé avant la réception de courrier.
 
 Bien cordialement,
@@ -375,7 +375,7 @@ Contenu :
 
 Bonjour,
 
-Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° [] en date du DAY-MONTH-YEAR pour un montant de [Montant de la facture] euros, alors même que cette facture arrivait à échéance le DAY-MONTH-YEAR .
+Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° [] en date du _DAY_MONTH_YEAR_ pour un montant de [Montant de la facture] euros, alors même que cette facture arrivait à échéance le DAY-MONTH-YEAR .
 Nous vous demandons de bien vouloir procéder à son règlement le plus rapidement possible. Vous trouverez en pièce jointe de ce courrier une copie de la facture. Veuillez ne pas tenir compte de cette lettre si votre règlement nous a été adressé avant la réception de courrier.
 
 Bien cordialement,
