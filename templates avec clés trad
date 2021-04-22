@@ -149,7 +149,7 @@ Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn DAY-MONTH-YEAR And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
+FurtherTo [nom de la prestation] PerformedOn _DAY_MONTH_YEAR_ And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
 YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
 
 Sincerely,
@@ -294,7 +294,7 @@ Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn DAY-MONTH-YEAR And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
+FurtherTo [nom de la prestation] PerformedOn _DAY_MONTH_YEAR_ And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
 YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
 
 Sincerely,
@@ -313,7 +313,7 @@ Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom DAY-MONTH-YEAR AnAmountOf [X] CurrencyEUR, YetToPay.
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom _DAY_MONTH_YEAR_ AnAmountOf [X] CurrencyEUR, YetToPay.
 IfOversightPleasePayShortly
 
 Sincerely,
@@ -367,7 +367,7 @@ Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom DAY-MONTH-YEAR AnAmountOf [X] CurrencyEUR, YetToPay.
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom _DAY_MONTH_YEAR_ AnAmountOf [X] CurrencyEUR, YetToPay.
 IfOversightPleasePayShortly
 
 Sincerely,
