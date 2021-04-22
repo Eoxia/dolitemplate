@@ -45,8 +45,8 @@ Contenu :
 
 Bonjour,
 
-Je vous remercie de l’intérêt que vous portez à notre société, j’apprécie le temps et les efforts que vous avez réalisés en nous proposant cette prestation.
-Je regrette toutefois que nous ne puissions accepter votre proposition. Nous sommes actuellement sous contrat jusqu’au _DAY_MONTH_YEAR_ .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.
+Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition. 
+Nous sommes actuellement sous contrat jusqu’au _DAY_MONTH_YEAR_ .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.
 
 Bien cordialement,
 
@@ -142,7 +142,7 @@ _MYCOMPANY_EMAIL_
 
 
 Sujet :
-Demande de prix accepté
+Demande de prix acceptée
 
 Contenu :
 
@@ -167,8 +167,9 @@ Contenu :
 
 Bonjour,
 
-Nous accusons réception de votre correspondance du _DAY_MONTH_YEAR_  répondant à notre demande de devis afin de (Raison de la demande du devis). Nous vous remercions sincèrement vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.
-Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos compétents/services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.
+Nous accusons réception de votre correspondance du _DAY_MONTH_YEAR_ . 
+Nous vous remercions sincèrement de vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.
+Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.
 
 Bien cordialement,
 
@@ -211,7 +212,7 @@ Contenu :
 
 Bonjour,
 
-Je me permets de vous recontacter pour vous relancer sur une demande de commande.
+Je me permets de vous recontacter au nom de la société _MYCOMPANY_NAME_ pour vous relancer sur une demande de commande.
 Nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
 
 > Désignation : [décrivez la nature du bien ou du service]
