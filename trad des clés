@@ -3,6 +3,11 @@ CustomerRef= réference client
 ProjectName=nom du projet 
 CustomerRequest= demande du client
 BeginningProjectRecap= Pour récapituler ce début de projet
+ProjectSummary: Bilan du projet
+AchievedGoals= Résultats atteints
+Differencials= Ecarts
+Observations= Observations
+Conclusion= Conclusion
 ProposalRelaunch= Relance de proposition
 SecondProposalRelaunch= 2ème relance de proposition
 ImComingbackToYou= Je reviens vers vous
