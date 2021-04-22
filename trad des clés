@@ -1,9 +1,9 @@
 ProjectRecap= Récapitulation création du projet
 CustomerRef= réference client
-ProjectName=nom du projet 
+ProjectName= nom du projet 
 CustomerRequest= demande du client
 BeginningProjectRecap= Pour récapituler ce début de projet
-ProjectSummary: Bilan du projet
+ProjectSummary= Bilan du projet
 AchievedGoals= Résultats atteints
 Differencials= Ecarts
 Observations= Observations
