@@ -1,0 +1,481 @@
+Sujet :
+ProjectRecap
+
+Contenu :
+
+Hello,
+
+BeginningProjectRecap:
+- CustomerRef: _REF_CLIENT_
+- ProjectName : _PROJECT_NAME_ 
+- DateStart:_DAY_MONTH_YEAR_
+- DateEnd : _DAY_MONTH_YEAR_
+- CustomerRequest: (écrire la demande)
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+ProjectSummary: _PROJECT_NAME_ 
+
+Contenu :
+
+Hello,
+
+CustomerRequest: (écrire la demande)
+- DateStart:_DAY_MONTH_YEAR_
+- DateEnd : _DAY_MONTH_YEAR_
+- AchievedGoals:
+- Differencials: 
+- Observations: 
+- Conclusion:
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+ProposalRelaunch : _PROJECT_NAME_.
+
+Contenu :
+
+Hello ,
+
+ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
+AvailableForPhoneCall On  _DAY_TEXT_  _ DAY_ ?
+WhereCanIContact ?
+ThanksForAnswer.
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+SecondProposalRelaunch : _PROJECT_NAME_.
+
+Contenu:
+
+Hello ,
+
+ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
+AvailableForPhoneCall On  _DAY_TEXT_  _ DAY_ ?
+WhereCanIContact ?
+ThanksForAnswer.
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+CommercialProposal : _PROJECT_NAME_ .
+
+Contenu :
+
+Hello,
+
+HereIsProposal [nature de la proposition commerciale].
+ThisOfferCancelOther
+- [lister les grandes sections de la proposition].
+ProposalValidUntil _DAY_MONTH_YEAR_ .
+PleaseSignDate
+
+Sincerely,
+
+AdministrativeService
+___MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+EndProposal : _PROJECT_NAME_ (refus)
+
+Contenu :
+
+Hello,
+
+ThankYouForInterest, PropalDenied.
+UnderContractUntil _DAY_MONTH_YEAR_ . PossibilityAfterContract
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+ShippingOfOrder
+
+Contenu :
+
+Hello,
+
+Date _DAY_MONTH_YEAR_ , YourOrder [nom du produit, la quantité demandée, les références, couleurs…] WeThankYou.
+OrderRegistred.
+SendByPostTo
+[Nom Prénom - Adresse - Code postal Ville]
+DeliveredIn _DAY_.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+OrderBilling :  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+FurtherTo [nom de la prestation] PerformedOn _DAY_MONTH_YEAR_ And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
+YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet :
+CommercialAsk
+
+Contenu :
+
+Bonjour,
+
+ContactFrom  _MYCOMPANY_NAME_ .
+OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
+MoreInformations _REF_ .
+NeedPricesFor
+ContactIfNeedMoreInfo
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+RelaunchCommercialAsk
+
+Contenu :
+
+Hello,
+
+ReContactFrom _MYCOMPANY_NAME_ .
+OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
+MoreInformations _REF_ .
+NeedPricesFor
+ContactIfNeedMoreInfo
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+CommercialAskAccepted
+
+Contenu :
+
+Hello,
+QuotationOffer
+PleaseReturnSigned [par courriel ou par la poste]
+ClickHereToSeeQuotation :  _DIRECTDOWNLOAD_URL_PROPOSAL_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet :
+EndOfCommercialAsk.
+
+Contenu :
+
+Hello,
+
+MailFromReceived _DAY_MONTH_YEAR_  répondant à notre demande de devis afin de (Raison de la demande du devis).
+QuotationOfferDenied. CostsAreOverBudget
+WeMightComeBackInFuture
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+SupplierOrder
+
+Contenu :
+
+Hello,
+
+HereIsOrderRequest (l'article / la prestation suivant(e)) :
+
+> Designation : [décrivez la nature du bien ou du service]
+> Quantity : _AMOUNT_
+> UnitPrice :
+> TotalPriceTTC :
+
+HereIsCheque.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+SupplierOrderRelaunch
+
+Contenu :
+
+Hello,
+
+RecontactFrom ToRelaunchOrderRequest _MYCOMPANY_NAME_ 
+HereIsOrderRequest (l'article / la prestation suivant(e)) :
+
+> Designation : [décrivez la nature du bien ou du service]
+> Quantity : _AMOUNT_
+> UnitPrice :
+> TotalPriceTTC :
+
+HereIsCheque.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+ContactDefault_invoice_supplier:  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+FurtherTo [nom de la prestation] PerformedOn _DAY_MONTH_YEAR_ And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
+YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+RelaunchSupplierBilling:  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom _DAY_MONTH_YEAR_ AnAmountOf [X] CurrencyEUR, YetToPay.
+IfOversightPleasePayShortly
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet:
+Bill :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+FurtherTo [nom de la prestation] PerformedOn DAY-MONTH-YEAR And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
+YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet:
+RelaunchBilling :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom DAY-MONTH-YEAR AnAmountOf [X] CurrencyEUR, YetToPay.
+IfOversightPleasePayShortly
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet:
+SecondRelaunchBilling :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom _DAY_MONTH_YEAR_ AnAmountOf [X] CurrencyEUR, YetToPay.
+IfOversightPleasePayShortly
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet:
+RelaunchBeforeContentious :  _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+DespiteManyRelaunch, OurBillNumber [] AnAmountOf [] YetToPay.
+ToEndContentious[nb] Day.
+InDefault HaveToInitiateProceedings
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet:
+Relance information contentieux : _PROJECT_NAME_  _REF_CLIENT_
+Order : _DIRECTDOWNLOAD_URL_INVOICE_
+
+Contenu :
+
+Hello,
+
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet:
+NewTicket
+
+Contenu :
+
+Hello,
+
+OpenDate: _DAY_MONTH_YEAR_
+TicketDictType: (question commerciale...)
+TicketDictCategory: 
+TicketDictSeverity : (normal..)
+StatusInProgress
+Message: _NOTE_PUBLIC_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+Sujet:
+TicketUpdated
+
+Contenu :
+
+Hello,
+
+OpenDate: _DAY_MONTH_YEAR_
+TicketDictType: (question commerciale...)
+TicketDictCategory: 
+TicketDictSeverity : (normal..)
+StatusUpdated
+Message: _NOTE_PUBLIC_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet:
+TicketClosed
+
+Contenu :
+
+Hello,
+
+TicketOpenOn: _DAY_MONTH_YEAR_
+TicketCloseOn: _DAY_MONTH_YEAR_
+TicketDictType: (question commerciale...)
+TicketDictCategory: 
+TicketDictSeverity : (normal..)
+StatusClosed
+Message: _NOTE_PUBLIC_
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
