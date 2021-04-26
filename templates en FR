@@ -1,4 +1,26 @@
 Sujet :
+Accusé de reception de la commande __REF__
+
+Contenu :
+
+Bonjour,
+
+A la date du __DATE_YMD__ , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+Votre commande a bien été prise en compte.
+Elle sera acheminée par voie postale à l’adresse suivante :
+[Nom Prénom - Adresse - Code postal Ville]
+Votre colis devrait vous parvenir sous un délai de __DAY__.
+
+Bien cordialement,
+
+Service administratif
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+
+Sujet :
 Récapitulation création du projet:
 
 Contenu :
@@ -412,6 +434,8 @@ Contenu :
 
 Bonjour,
 
+Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour.
+Le délai accordé étant dépassé, nous sommes désormais dans l'obligation de démarrer un contentieux, nous allons donc poursuivre ce recouvrement par voie judiciaire. 
 
 Bien cordialement,
 
