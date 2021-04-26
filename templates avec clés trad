@@ -7,7 +7,7 @@ Hello,
 
 BeginningProjectRecap:
 - CustomerRef: __REF_CLIENT__
-- ProjectName : __PROJECT_NAME_ _
+- ProjectName : __PROJECT_NAME__
 - DateStart:__DATE_YMD__
 - DateEnd : __DATE_YMD__
 - CustomerRequest: (écrire la demande)
