@@ -398,13 +398,15 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet:
-Relance information contentieux : __PROJECT_NAME__  __REF_CLIENT__
+RelaunchContentious: __PROJECT_NAME__  __REF_CLIENT__
 Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
+DespiteManyRelaunch, OurBillNumber [] AnAmountOf [] YetToPay.
+DeadlineExpired StartContentious LegalProceedingsLaunched
 
 Sincerely,
 
