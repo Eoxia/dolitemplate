@@ -1,4 +1,26 @@
 Sujet :
+DeliveryReceipt
+
+Contenu :
+
+Hello,
+
+Date __DATE_YMD__, YourOrder [nom du produit, la quantité demandée, les références, couleurs…] WeThankYou.
+OrderRegistred.
+SendByPostTo
+[Nom Prénom - Adresse - Code postal Ville]
+DeliveredIn __DAY__.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+
+Sujet :
 ProjectRecap
 
 Contenu :
