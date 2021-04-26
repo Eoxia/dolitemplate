@@ -415,7 +415,7 @@ Contenu :
 Bonjour,
 
 Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour.
-Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre du dans un délai de [nb] jours.
+Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre dû dans un délai de [nb] jours.
 A défaut nous nous verrons dans l’obligation de poursuivre ce recouvrement par voie judiciaire.
 
 Bien cordialement,
@@ -477,7 +477,7 @@ Bonjour,
 Date d'ouverture: __DATE_YMD__
 Type de la demande: [question commerciale...]
 Catégorie: 
-Sévérité : [normal..]
+Sévérité : [normal...]
 Statut: mis à jour
 Message: __NOTE_PUBLIC__
 
@@ -490,7 +490,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet:
-Cloture du ticket
+Clôture du ticket
 
 Contenu :
 
