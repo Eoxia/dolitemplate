@@ -9,7 +9,7 @@ Date __DATE_YMD__, YourOrder [nom du produit, la quantité demandée, les réfé
 OrderRegistred.
 SendByPostTo
 [Nom Prénom - Adresse - Code postal Ville]
-DeliveredIn __DAY__.
+DeliveredIn __AMOUNT__ day.
 
 Sincerely,
 
@@ -32,7 +32,7 @@ BeginningProjectRecap:
 - ProjectName : __PROJECT_NAME__
 - DateStart:__DATE_YMD__
 - DateEnd : __DATE_YMD__
-- CustomerRequest: (écrire la demande)
+- CustomerRequest: [écrire la demande]
 
 Sincerely,
 
@@ -49,7 +49,7 @@ Contenu :
 
 Hello,
 
-CustomerRequest: (écrire la demande)
+CustomerRequest: [écrire la demande]
 - DateStart:__DATE_YMD__
 - DateEnd : __DATE_YMD__
 - AchievedGoals:
@@ -153,7 +153,7 @@ Date __DATE_YMD__, YourOrder [nom du produit, la quantité demandée, les réfé
 OrderRegistred.
 SendByPostTo
 [Nom Prénom - Adresse - Code postal Ville]
-DeliveredIn __DAY__.
+DeliveredIn __AMOUNT__ day.
 
 Sincerely,
 
@@ -291,7 +291,7 @@ Contenu :
 Hello,
 
 RecontactFrom ToRelaunchOrderRequest __MYCOMPANY_NAME__
-HereIsOrderRequest (l'article / la prestation suivant(e)) :
+HereIsOrderRequest [l'article / la prestation suivant(e)] :
 
 > Designation : [décrivez la nature du bien ou du service]
 > Quantity : __AMOUNT__
@@ -446,9 +446,9 @@ Contenu :
 Hello,
 
 OpenDate: __DATE_YMD__
-TicketDictType: (question commerciale...)
+TicketDictType: [question commerciale...]
 TicketDictCategory: 
-TicketDictSeverity : (normal..)
+TicketDictSeverity : [normal..]
 StatusInProgress
 Message: __NOTE_PUBLIC__
 
@@ -467,9 +467,9 @@ Contenu :
 Hello,
 
 OpenDate: __DATE_YMD__
-TicketDictType: (question commerciale...)
+TicketDictType: [question commerciale...]
 TicketDictCategory: 
-TicketDictSeverity : (normal..)
+TicketDictSeverity : [normal..]
 StatusUpdated
 Message: __NOTE_PUBLIC__
 
@@ -490,9 +490,9 @@ Hello,
 
 TicketOpenOn: __DATE_YMD__
 TicketCloseOn: __DATE_YMD__
-TicketDictType: (question commerciale...)
+TicketDictType: [question commerciale...]
 TicketDictCategory: 
-TicketDictSeverity : (normal..)
+TicketDictSeverity : [normal..]
 StatusClosed
 Message: __NOTE_PUBLIC__
 
