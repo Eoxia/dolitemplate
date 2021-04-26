@@ -298,8 +298,7 @@ Contenu :
 Bonjour,
 
 Suite à [nom de la prestation] effectué(e) le __DATE_YMD__ et correspondant au __REF__, nous vous adressons votre facture ci-joint : __DIRECTDOWNLOAD_URL_INVOICE__
-Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : __EXTRAFIELD_SIGNATURE_LINK__
-
+Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : __ONLINE_PAYMENT_URL__
 
 Bien cordialement,
 
@@ -337,7 +336,7 @@ Contenu :
 Bonjour,
 
 Suite à [nom de la prestation] effectué(e) le __DATE_YMD__ et correspondant au __DIRECTDOWNLOAD_URL_INVOICE__
-Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : __EXTRAFIELD_SIGNATURE_LINK__
+Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : __ONLINE_PAYMENT_URL__
 
 
 Bien cordialement,
