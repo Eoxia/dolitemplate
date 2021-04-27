@@ -25,12 +25,12 @@ Contenu :
 
 Hello,
 
-BeginningProjectRecap:
-- CustomerRef: __REF_CLIENT__
-- ProjectName : __PROJECT_NAME__
-- DateStart:__DATE_YMD__
-- DateEnd : __DATE_YMD__
-- CustomerRequest: [écrire la demande]
+InfosBeginningProjectRecap:
+__REF_CLIENT__
+__PROJECT_NAME__
+__DATE_YMD__
+__DATE_YMD__
+[écrire la demande]
 
 Sincerely,
 
@@ -47,13 +47,9 @@ Contenu :
 
 Hello,
 
-CustomerRequest: [écrire la demande]
-- DateStart:__DATE_YMD__
-- DateEnd : __DATE_YMD__
-- AchievedGoals:
-- Differencials: 
-- Observations: 
-- Conclusion:
+HereIsCustomerRequest: [écrire la demande]
+__DATE_YMD__
+__DATE_YMD__
 
 Sincerely,
 
@@ -70,10 +66,9 @@ Contenu :
 
 Hello ,
 
-ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
-AvailableForPhoneCall On  __DAY_TEXT__  __DAY__ ?
-WhereCanIContact ?
-ThanksForAnswer.
+NeedToContactYou
+ __DAY_TEXT__  __DAY__ ?
+
 Sincerely,
 
 AdministrativeService
@@ -89,10 +84,9 @@ Contenu:
 
 Hello ,
 
-ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
-AvailableForPhoneCall On  __DAY_TEXT__  __DAY__ ?
-WhereCanIContact ?
-ThanksForAnswer.
+ReNeedToContactYou
+ __DAY_TEXT__  __DAY__ ?
+
 Sincerely,
 
 AdministrativeService
@@ -108,11 +102,9 @@ Contenu :
 
 Hello,
 
-HereIsProposal [nature de la proposition commerciale].
-ThisOfferCancelOther
-- [lister les grandes sections de la proposition].
-ProposalValidUntil __DATE_YMD__ .
-PleaseSignDate
+HereIsCommercialProposal 
+ __DATE_YMD__ .
+
 
 Sincerely,
 
@@ -129,8 +121,8 @@ Contenu :
 
 Hello,
 
-ThankYouForInterest, ProposalDenied.
-UnderContractUntil __DATE_YMD__ . PossibilityAfterContract
+NotAvailableProposalDenied.
+__DATE_YMD__ 
 
 Sincerely,
 
@@ -147,11 +139,9 @@ Contenu :
 
 Hello,
 
-Date __DATE_YMD__, YourOrder [nom du produit, la quantité demandée, les références, couleurs…] WeThankYou.
-OrderRegistred.
-SendByPostTo
-[Nom Prénom - Adresse - Code postal Ville]
-DeliveredIn __AMOUNT__ day.
+HereIsYourOrder 
+__DATE_YMD__ 
+__AMOUNT__ 
 
 Sincerely,
 
@@ -169,8 +159,10 @@ Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn __DAY_MONTH_YEAR__ And CorrespondingTo NumberingShort [numéro], HereIsBill : __DIRECTDOWNLOAD_URL_INVOICE__
-YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : __ONLINE_PAYMENT_URL__
+HereIsOrderBill 
+__DAY_MONTH_YEAR__ 
+__DIRECTDOWNLOAD_URL_INVOICE__
+__ONLINE_PAYMENT_URL__
 
 Sincerely,
 
@@ -186,11 +178,9 @@ Contenu :
 
 Bonjour,
 
-ContactFrom  __MYCOMPANY_NAME__ .
-OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
-MoreInformations __REF__ .
-NeedPricesFor
-ContactIfNeedMoreInfo
+HereIsCommercialAsk
+__MYCOMPANY_NAME__ .
+__REF__ .
 
 Sincerely,
 
@@ -207,11 +197,9 @@ Contenu :
 
 Hello,
 
-ReContactFrom __MYCOMPANY_NAME__ .
-OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
-MoreInformations __REF__ .
-NeedPricesFor
-ContactIfNeedMoreInfo
+HereIsCommercialAsk
+__MYCOMPANY_NAME__ .
+__REF__ .
 
 Sincerely,
 
@@ -227,9 +215,9 @@ CommercialAskAccepted
 Contenu :
 
 Hello,
-QuotationOffer
-PleaseReturnSigned [par courriel ou par la poste]
-ClickHereToSeeQuotation :  __DIRECTDOWNLOAD_URL_PROPOSAL__
+
+hereIsQuotationOffer
+__DIRECTDOWNLOAD_URL_PROPOSAL__
 
 Sincerely,
 
@@ -245,9 +233,8 @@ Contenu :
 
 Hello,
 
-MailFromReceived __DATE_YMD__ répondant à notre demande de devis afin de (Raison de la demande du devis).
-QuotationOfferDenied. CostsAreOverBudget
-WeMightComeBackInFuture
+DeniedCostsAreOverBudget
+__DATE_YMD__
 
 Sincerely,
 
@@ -264,14 +251,8 @@ Contenu :
 
 Hello,
 
-HereIsOrderRequest (l'article / la prestation suivant(e)) :
-
-> Designation : [décrivez la nature du bien ou du service]
-> Quantity : __AMOUNT__
-> UnitPrice :
-> TotalPriceTTC :
-
-HereIsCheque.
+HereIsOrderRequestDetails
+__AMOUNT__
 
 Sincerely,
 
@@ -288,15 +269,9 @@ Contenu :
 
 Hello,
 
-RecontactFrom ToRelaunchOrderRequest __MYCOMPANY_NAME__
-HereIsOrderRequest [l'article / la prestation suivant(e)] :
-
-> Designation : [décrivez la nature du bien ou du service]
-> Quantity : __AMOUNT__
-> UnitPrice :
-> TotalPriceTTC :
-
-HereIsCheque.
+RelaunchHereIsOrderRequestDetails
+__MYCOMPANY_NAME__
+__AMOUNT__
 
 Sincerely,
 
@@ -314,8 +289,10 @@ Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn __DATE_YMD__ And CorrespondingTo NumberingShort [numéro], HereIsBill : __DIRECTDOWNLOAD_URL_INVOICE__
-YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : __ONLINE_PAYMENT_URL__
+HereIsOrderBill 
+__DAY_MONTH_YEAR__ 
+__DIRECTDOWNLOAD_URL_INVOICE__
+__ONLINE_PAYMENT_URL__
 
 Sincerely,
 
@@ -333,8 +310,8 @@ Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom __DATE_YMD__ AnAmountOf [X] CurrencyEUR, YetToPay.
-IfOversightPleasePayShortly
+BillNotPaid
+ __DATE_YMD__ 
 
 Sincerely,
 
@@ -351,8 +328,10 @@ Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn __DATE_YMD__ And CorrespondingTo NumberingShort [numéro], HereIsBill : __DIRECTDOWNLOAD_URL_INVOICE__
-YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : __ONLINE_PAYMENT_URL__
+HereIsOrderBill 
+__DAY_MONTH_YEAR__ 
+__DIRECTDOWNLOAD_URL_INVOICE__
+__ONLINE_PAYMENT_URL__
 
 Sincerely,
 
@@ -369,8 +348,8 @@ Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom __DATE_YMD__ AnAmountOf [X] CurrencyEUR, YetToPay.
-IfOversightPleasePayShortly
+BillNotPaid
+ __DATE_YMD__ 
 
 Sincerely,
 
@@ -387,8 +366,8 @@ Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom __DATE_YMD__ AnAmountOf [X] CurrencyEUR, YetToPay.
-IfOversightPleasePayShortly
+BillNotPaid
+ __DATE_YMD__
 
 Sincerely,
 
@@ -405,9 +384,7 @@ Contenu :
 
 Hello,
 
-DespiteManyRelaunch, OurBillNumber [] AnAmountOf [] YetToPay.
-ToEndContentious[nb] Day.
-InDefault HaveToInitiateProceedings
+BillNotPaidContentious
 
 Sincerely,
 
@@ -425,8 +402,7 @@ Contenu :
 
 Hello,
 
-DespiteManyRelaunch, OurBillNumber [] AnAmountOf [] YetToPay.
-DeadlineExpired StartContentious LegalProceedingsLaunched
+LegalProceedingsIsLaunched
 
 Sincerely,
 
@@ -443,12 +419,9 @@ Contenu :
 
 Hello,
 
-OpenDate: __DATE_YMD__
-TicketDictType: [question commerciale...]
-TicketDictCategory: 
-TicketDictSeverity : [normal..]
-StatusInProgress
-Message: __NOTE_PUBLIC__
+NewTicketInfos
+__DATE_YMD__
+__NOTE_PUBLIC__
 
 Sincerely,
 
@@ -464,12 +437,9 @@ Contenu :
 
 Hello,
 
-OpenDate: __DATE_YMD__
-TicketDictType: [question commerciale...]
-TicketDictCategory: 
-TicketDictSeverity : [normal..]
-StatusUpdated
-Message: __NOTE_PUBLIC__
+TicketUpdatesInfos
+__DATE_YMD__
+__NOTE_PUBLIC__
 
 Sincerely,
 
@@ -486,13 +456,10 @@ Contenu :
 
 Hello,
 
-TicketOpenOn: __DATE_YMD__
-TicketCloseOn: __DATE_YMD__
-TicketDictType: [question commerciale...]
-TicketDictCategory: 
-TicketDictSeverity : [normal..]
-StatusClosed
-Message: __NOTE_PUBLIC__
+TicketCloseInfos
+__DATE_YMD__
+__DATE_YMD__
+__NOTE_PUBLIC__
 
 Sincerely,
 
