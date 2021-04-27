@@ -125,3 +125,56 @@ concat('Bonjour,'
 '__MYCOMPANY_FULLADDRESS__', 0xd0a,
 '__MYCOMPANY_EMAIL__')
 ,null);
+
+/* Module Produits et Services*/ 
+/* RCP_Envoi-reception-fournisseur*/
+
+
+/* Module projets*/ 
+/* PJ_Envoi-création-projet*/
+/* PJ_Envoi-bilan-projet*/
+
+
+/* Module commerce*/ 
+/*proposition commerciale*/
+/*PR_Envoi-proposition */
+/*PR_Relance-proposition */
+/*PR_Relance-proposition-2 */
+/*PR_Cloture-proposition */
+
+/*Commandes*/
+/*CO_Envoi-commandes */
+/*CO_Accusé-reception-commandes */
+/*CO_Envoi-commandes */
+/*CO_Accusé-reception-commandes */
+/*CO_Facturation-commandes */
+/*CO_Accusé-reception-commandes*/
+/*CO_Facturation-commandes */
+
+/*Propositions commerciales fournisseurs*/
+/*RQ_Envoi-demande-prix*/
+/*RQ_Relance-demande-prix*/
+/*RQ_Accepter-demande-prix*/
+/*RQ_Cloture-demande-prix*/
+
+/*Commandes fournisseurs*/
+/*PO_Envoi-commande-fournisseur*/
+/*PO_Relance-commande-fournisseur*/
+/*Factures fournisseurs*/
+/*SI_Envoi-facture-fournisseur*/
+/*SI_Relance-facture-fournisseur*/
+
+
+/*Dans le module Facturation/Paiement*/
+/*Facture*/
+/*FA_Envoi-facture*/
+/*FA_Relance-facture*/
+/*FA_Relance-facture-2*/
+/*FA_Relance-avant-contentieux*/
+/*FA_Relance-information-contentieux*/
+
+
+/*Dans le module Ticket*/
+/*TS_Ouverture-ticket*/
+/*TS_Envoi-mise-a-jour-ticket*/
+/*TS_Cloture-ticket*/
