@@ -1,4 +1,5 @@
 /* Modules/applications : Propositions Commerciales  */
+/* Modules/applications : Propositions Commerciales  */
 /* Mail : PR_Envoi-proposition  */
 /* https://github.com/Eoxia/dolitemplate/issues/9 */
 
@@ -126,16 +127,19 @@ concat('Bonjour,'
 '__MYCOMPANY_EMAIL__')
 ,null);
 
-/* Module Produits et Services*/ 
+
+/* Module Produits et Services*/
 /* RCP_Envoi-reception-fournisseur*/
+INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
+ VALUES (0,0,0,'',0,null,null,'(DeliveryReceipt)'       ,70,1,1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(DeliveryReceipt)__','__Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br>\n<br>__DATE_YMD__<br>\n<br>__AMOUNT__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__,__MYCOMPANY_FULLADDRESS__,__MYCOMPANY_EMAIL__',null, 0);
 
 
-/* Module projets*/ 
+/* Module projets*/
 /* PJ_Envoi-création-projet*/
 /* PJ_Envoi-bilan-projet*/
 
 
-/* Module commerce*/ 
+/* Module commerce*/
 /*proposition commerciale*/
 /*PR_Envoi-proposition */
 /*PR_Relance-proposition */
