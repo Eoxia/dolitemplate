@@ -164,6 +164,26 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
+Accusé reception de la commande: __PROJECT_NAME__
+
+Contenu :
+
+Bonjour,
+
+Nous vous remercions pour votre commande concernant le projet n°__PROJECT_REF__  __PROJECT_NAME__.
+Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.
+Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: __EXTRAFIELD_SIGNATURE_LINK__.
+Votre signature vaudra alors une réception ferme et définitive de la commande.
+
+Bien cordialement,
+
+Service administratif
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
 Facturation de la commande :  __REF_CLIENT__
 Commande : __DIRECTDOWNLOAD_URL_INVOICE__
 
