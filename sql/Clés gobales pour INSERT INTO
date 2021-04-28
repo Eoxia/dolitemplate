@@ -19,7 +19,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ProjectRecap
+ProjectRecap: __PROJECT_NAME__.
 
 Contenu :
 
@@ -152,7 +152,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-DeliveryReceipt
+DeliveryReceipt: __PROJECT_NAME__.
 
 Contenu :
 
@@ -173,7 +173,6 @@ __MYCOMPANY_EMAIL__
 
 Sujet :
 OrderBilling :  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
@@ -302,8 +301,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ContactDefault_invoice_supplier:  __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
+ContactDefault_invoice_supplier: __REF_CLIENT__
 
 Contenu :
 
@@ -323,8 +321,8 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-RelaunchSupplierBilling:  __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
+RelaunchSupplierBilling: __REF_CLIENT__
+
 
 Contenu :
 
@@ -342,7 +340,6 @@ __MYCOMPANY_EMAIL__
 
 Sujet:
 Bill :  __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
@@ -362,7 +359,6 @@ __MYCOMPANY_EMAIL__
 
 Sujet:
 RelaunchBilling :  __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
@@ -380,7 +376,6 @@ __MYCOMPANY_EMAIL__
 
 Sujet:
 SecondRelaunchBilling :  __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
@@ -398,7 +393,6 @@ __MYCOMPANY_EMAIL__
 
 Sujet:
 RelaunchBeforeContentious :  __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
@@ -416,7 +410,6 @@ __MYCOMPANY_EMAIL__
 
 Sujet:
 RelaunchContentious: __PROJECT_NAME__  __REF_CLIENT__
-Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
