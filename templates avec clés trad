@@ -247,7 +247,7 @@ Contenu :
 
 Hello,
 
-MailFromReceived __DATE_YMD__ répondant à notre demande de devis afin de (Raison de la demande du devis).
+MailFromReceived __DATE_YMD__ QuotationAsk (Raison de la demande du devis).
 QuotationOfferDenied. CostsAreOverBudget
 WeMightComeBackInFuture
 
