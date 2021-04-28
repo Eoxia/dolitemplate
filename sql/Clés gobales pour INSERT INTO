@@ -290,7 +290,7 @@ Contenu :
 Hello,
 
 HereIsOrderBill 
-__DAY_MONTH_YEAR__ 
+__DATE_YMD__ 
 __DIRECTDOWNLOAD_URL_INVOICE__
 __ONLINE_PAYMENT_URL__
 
@@ -329,7 +329,7 @@ Contenu :
 Hello,
 
 HereIsOrderBill 
-__DAY_MONTH_YEAR__ 
+__DATE_YMD__ 
 __DIRECTDOWNLOAD_URL_INVOICE__
 __ONLINE_PAYMENT_URL__
 
