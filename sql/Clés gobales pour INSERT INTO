@@ -1,5 +1,5 @@
 Sujet :
-DeliveryReceipt
+DeliveryReceiptSupplier
 
 Contenu :
 
@@ -142,6 +142,26 @@ Hello,
 HereIsYourOrder 
 __DATE_YMD__ 
 __AMOUNT__ 
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+Sujet :
+DeliveryReceipt
+
+Contenu :
+
+Hello,
+
+YourOrderIsRegistred
+__PROJECT_REF__ __PROJECT_NAME__
+__REF__
+__EXTRAFIELD_SIGNATURE_LINK__
 
 Sincerely,
 
