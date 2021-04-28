@@ -1,4 +1,26 @@
 Sujet :
+DeliveryReceipt
+
+Contenu :
+
+Hello,
+
+Date __DATE_YMD__, YourOrder [nom du produit, la quantité demandée, les références, couleurs…] WeThankYou.
+OrderRegistred.
+SendByPostTo
+[Nom Prénom - Adresse - Code postal Ville]
+DeliveredIn __AMOUNT__ day.
+
+Sincerely,
+
+AdministrativeService
+__MYCOMPANY_NAME__
+__MYCOMPANY_FULLADDRESS__
+__MYCOMPANY_EMAIL__
+
+
+
+Sujet :
 ProjectRecap
 
 Contenu :
@@ -6,11 +28,11 @@ Contenu :
 Hello,
 
 BeginningProjectRecap:
-- CustomerRef: _REF_CLIENT_
-- ProjectName : _PROJECT_NAME_ 
-- DateStart:_DAY_MONTH_YEAR_
-- DateEnd : _DAY_MONTH_YEAR_
-- CustomerRequest: (écrire la demande)
+- CustomerRef: __REF_CLIENT__
+- ProjectName : __PROJECT_NAME__
+- DateStart:__DATE_YMD__
+- DateEnd : __DATE_YMD__
+- CustomerRequest: [écrire la demande]
 
 Sincerely,
 
@@ -21,15 +43,15 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ProjectSummary: _PROJECT_NAME_ 
+ProjectSummary: __PROJECT_NAME__
 
 Contenu :
 
 Hello,
 
-CustomerRequest: (écrire la demande)
-- DateStart:_DAY_MONTH_YEAR_
-- DateEnd : _DAY_MONTH_YEAR_
+CustomerRequest: [écrire la demande]
+- DateStart:__DATE_YMD__
+- DateEnd : __DATE_YMD__
 - AchievedGoals:
 - Differencials: 
 - Observations: 
@@ -44,14 +66,14 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ProposalRelaunch : _PROJECT_NAME_.
+ProposalRelaunch :
 
 Contenu :
 
 Hello ,
 
 ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
-AvailableForPhoneCall On  _DAY_TEXT_  _ DAY_ ?
+AvailableForPhoneCall On  __DAY_TEXT__  __DAY__ ?
 WhereCanIContact ?
 ThanksForAnswer.
 Sincerely,
@@ -63,14 +85,14 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-SecondProposalRelaunch : _PROJECT_NAME_.
+SecondProposalRelaunch :
 
 Contenu:
 
 Hello ,
 
 ImComingBackToYou ToKnowIf YouCheckedMyPreviousMail.
-AvailableForPhoneCall On  _DAY_TEXT_  _ DAY_ ?
+AvailableForPhoneCall On  __DAY_TEXT__  __DAY__ ?
 WhereCanIContact ?
 ThanksForAnswer.
 Sincerely,
@@ -82,7 +104,7 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-CommercialProposal : _PROJECT_NAME_ .
+CommercialProposal : __PROJECT_NAME__ .
 
 Contenu :
 
@@ -91,7 +113,7 @@ Hello,
 HereIsProposal [nature de la proposition commerciale].
 ThisOfferCancelOther
 - [lister les grandes sections de la proposition].
-ProposalValidUntil _DAY_MONTH_YEAR_ .
+ProposalValidUntil __DATE_YMD__ .
 PleaseSignDate
 
 Sincerely,
@@ -103,14 +125,14 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-EndProposal : _PROJECT_NAME_ (refus)
+EndProposal :(refus)
 
 Contenu :
 
 Hello,
 
-ThankYouForInterest, PropalDenied.
-UnderContractUntil _DAY_MONTH_YEAR_ . PossibilityAfterContract
+ThankYouForInterest, ProposalDenied.
+UnderContractUntil __DATE_YMD__ . PossibilityAfterContract
 
 Sincerely,
 
@@ -127,11 +149,11 @@ Contenu :
 
 Hello,
 
-Date _DAY_MONTH_YEAR_ , YourOrder [nom du produit, la quantité demandée, les références, couleurs…] WeThankYou.
+Date __DATE_YMD__, YourOrder [nom du produit, la quantité demandée, les références, couleurs…] WeThankYou.
 OrderRegistred.
 SendByPostTo
 [Nom Prénom - Adresse - Code postal Ville]
-DeliveredIn _DAY_.
+DeliveredIn __AMOUNT__ day.
 
 Sincerely,
 
@@ -142,15 +164,15 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-OrderBilling :  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+OrderBilling :  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn _DAY_MONTH_YEAR_ And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
-YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
+FurtherTo [nom de la prestation] PerformedOn __DAY_MONTH_YEAR__ And CorrespondingTo NumberingShort [numéro], HereIsBill : __DIRECTDOWNLOAD_URL_INVOICE__
+YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : __ONLINE_PAYMENT_URL__
 
 Sincerely,
 
@@ -166,9 +188,9 @@ Contenu :
 
 Bonjour,
 
-ContactFrom  _MYCOMPANY_NAME_ .
+ContactFrom  __MYCOMPANY_NAME__ .
 OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
-MoreInformations _REF_ .
+MoreInformations __REF__ .
 NeedPricesFor
 ContactIfNeedMoreInfo
 
@@ -187,9 +209,9 @@ Contenu :
 
 Hello,
 
-ReContactFrom _MYCOMPANY_NAME_ .
+ReContactFrom __MYCOMPANY_NAME__ .
 OurCompanyIsSpecialised [Indiquez précisément l'objet social de l'entreprise].
-MoreInformations _REF_ .
+MoreInformations __REF__ .
 NeedPricesFor
 ContactIfNeedMoreInfo
 
@@ -209,7 +231,7 @@ Contenu :
 Hello,
 QuotationOffer
 PleaseReturnSigned [par courriel ou par la poste]
-ClickHereToSeeQuotation :  _DIRECTDOWNLOAD_URL_PROPOSAL_
+ClickHereToSeeQuotation :  __DIRECTDOWNLOAD_URL_PROPOSAL__
 
 Sincerely,
 
@@ -225,7 +247,7 @@ Contenu :
 
 Hello,
 
-MailFromReceived _DAY_MONTH_YEAR_  répondant à notre demande de devis afin de (Raison de la demande du devis).
+MailFromReceived __DATE_YMD__ QuotationAsk (Raison de la demande du devis).
 QuotationOfferDenied. CostsAreOverBudget
 WeMightComeBackInFuture
 
@@ -247,7 +269,7 @@ Hello,
 HereIsOrderRequest (l'article / la prestation suivant(e)) :
 
 > Designation : [décrivez la nature du bien ou du service]
-> Quantity : _AMOUNT_
+> Quantity : __AMOUNT__
 > UnitPrice :
 > TotalPriceTTC :
 
@@ -268,11 +290,11 @@ Contenu :
 
 Hello,
 
-RecontactFrom ToRelaunchOrderRequest _MYCOMPANY_NAME_ 
-HereIsOrderRequest (l'article / la prestation suivant(e)) :
+RecontactFrom ToRelaunchOrderRequest __MYCOMPANY_NAME__
+HereIsOrderRequest [l'article / la prestation suivant(e)] :
 
 > Designation : [décrivez la nature du bien ou du service]
-> Quantity : _AMOUNT_
+> Quantity : __AMOUNT__
 > UnitPrice :
 > TotalPriceTTC :
 
@@ -287,15 +309,15 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-ContactDefault_invoice_supplier:  _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+ContactDefault_invoice_supplier:  __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn _DAY_MONTH_YEAR_ And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
-YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
+FurtherTo [nom de la prestation] PerformedOn __DATE_YMD__ And CorrespondingTo NumberingShort [numéro], HereIsBill : __DIRECTDOWNLOAD_URL_INVOICE__
+YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : __ONLINE_PAYMENT_URL__
 
 Sincerely,
 
@@ -306,14 +328,14 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet :
-RelaunchSupplierBilling:  _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+RelaunchSupplierBilling:  __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom _DAY_MONTH_YEAR_ AnAmountOf [X] CurrencyEUR, YetToPay.
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom __DATE_YMD__ AnAmountOf [X] CurrencyEUR, YetToPay.
 IfOversightPleasePayShortly
 
 Sincerely,
@@ -324,15 +346,15 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-Bill :  _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+Bill :  __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
-FurtherTo [nom de la prestation] PerformedOn DAY-MONTH-YEAR And CorrespondingTo NumberingShort [numéro], HereIsBill : _DIRECTDOWNLOAD_URL_INVOICE_
-YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : _ONLINE_PAYMENT_URL_
+FurtherTo [nom de la prestation] PerformedOn __DATE_YMD__ And CorrespondingTo NumberingShort [numéro], HereIsBill : __DIRECTDOWNLOAD_URL_INVOICE__
+YoucanPayBy [chèque, virement ou espèces.] PayOnlineHere : __ONLINE_PAYMENT_URL__
 
 Sincerely,
 
@@ -342,14 +364,14 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-RelaunchBilling :  _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+RelaunchBilling :  __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom DAY-MONTH-YEAR AnAmountOf [X] CurrencyEUR, YetToPay.
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom __DATE_YMD__ AnAmountOf [X] CurrencyEUR, YetToPay.
 IfOversightPleasePayShortly
 
 Sincerely,
@@ -360,14 +382,14 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-SecondRelaunchBilling :  _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+SecondRelaunchBilling :  __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
-UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom _DAY_MONTH_YEAR_ AnAmountOf [X] CurrencyEUR, YetToPay.
+UnlessWeAreMistaken, OurBillNumber [numéro] Datingfrom __DATE_YMD__ AnAmountOf [X] CurrencyEUR, YetToPay.
 IfOversightPleasePayShortly
 
 Sincerely,
@@ -378,8 +400,8 @@ __MYCOMPANY_FULLADDRESS__
 __MYCOMPANY_EMAIL__
 
 Sujet:
-RelaunchBeforeContentious :  _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+RelaunchBeforeContentious :  __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
@@ -398,13 +420,15 @@ __MYCOMPANY_EMAIL__
 
 
 Sujet:
-Relance information contentieux : _PROJECT_NAME_  _REF_CLIENT_
-Order : _DIRECTDOWNLOAD_URL_INVOICE_
+RelaunchContentious: __PROJECT_NAME__  __REF_CLIENT__
+Order : __DIRECTDOWNLOAD_URL_INVOICE__
 
 Contenu :
 
 Hello,
 
+DespiteManyRelaunch, OurBillNumber [] AnAmountOf [] YetToPay.
+DeadlineExpired StartContentious LegalProceedingsLaunched
 
 Sincerely,
 
@@ -421,12 +445,12 @@ Contenu :
 
 Hello,
 
-OpenDate: _DAY_MONTH_YEAR_
-TicketDictType: (question commerciale...)
+OpenDate: __DATE_YMD__
+TicketDictType: [question commerciale...]
 TicketDictCategory: 
-TicketDictSeverity : (normal..)
+TicketDictSeverity : [normal..]
 StatusInProgress
-Message: _NOTE_PUBLIC_
+Message: __NOTE_PUBLIC__
 
 Sincerely,
 
@@ -442,12 +466,12 @@ Contenu :
 
 Hello,
 
-OpenDate: _DAY_MONTH_YEAR_
-TicketDictType: (question commerciale...)
+OpenDate: __DATE_YMD__
+TicketDictType: [question commerciale...]
 TicketDictCategory: 
-TicketDictSeverity : (normal..)
+TicketDictSeverity : [normal..]
 StatusUpdated
-Message: _NOTE_PUBLIC_
+Message: __NOTE_PUBLIC__
 
 Sincerely,
 
@@ -464,13 +488,13 @@ Contenu :
 
 Hello,
 
-TicketOpenOn: _DAY_MONTH_YEAR_
-TicketCloseOn: _DAY_MONTH_YEAR_
-TicketDictType: (question commerciale...)
+TicketOpenOn: __DATE_YMD__
+TicketCloseOn: __DATE_YMD__
+TicketDictType: [question commerciale...]
 TicketDictCategory: 
-TicketDictSeverity : (normal..)
+TicketDictSeverity : [normal..]
 StatusClosed
-Message: _NOTE_PUBLIC_
+Message: __NOTE_PUBLIC__
 
 Sincerely,
 
