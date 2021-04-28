@@ -1,6 +1,7 @@
 Hello = Bonjour
 Sincerely = Sincèrement
-DeliveryReceipt = Accusé de reception
+DeliveryReceiptSupplier = Accusé de reception fournisseur
+DeliveryReceipt = Accusé reception de la commande  
 ProjectRecap = Récapitulation création du projet
 CustomerRef = Réference client
 ProjectName = Nom du projet 
