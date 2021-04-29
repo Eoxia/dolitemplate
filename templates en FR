@@ -8,7 +8,7 @@ Bonjour,
 A la date du __DATE_YMD__ , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
 Votre commande a bien été prise en compte.
 Elle sera acheminée par voie postale à l’adresse suivante :
-__THIRDPARTY_NAME__<br>\n<br>__THIRDPARTY_ADRESS__<br>\n<br>__THIRDPARTY_ZIP__<br>\n<br>__THIRDPARTY_TOWN__
+__THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__
 Votre colis devrait vous parvenir sous un délai de __AMOUNT__ jour(s).
 
 Bien cordialement,
