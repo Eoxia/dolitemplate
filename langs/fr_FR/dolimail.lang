@@ -46,3 +46,173 @@ MyPageName = Nom de ma page
 #
 MyWidget = Mon widget
 MyWidgetDescription = Description de mon widget
+
+#
+#Traductions des sujets
+#
+DeliveryReceiptSupplier = Accusé de reception fournisseur
+DeliveryReceipt = Accusé reception de la commande  
+ProjectRecap = Récapitulation création du projet
+ProjectSummary = Bilan du projet
+CommercialProposal = Proposition  commerciale
+ProposalRelaunch = Relance de proposition
+SecondProposalRelaunch = 2ème relance de proposition
+EndProposal = Clôture proposition
+ShippingOfOrder = Envoie de la commande
+OrderBilling = Facturation de la commande
+CommercialAsk = Demande de prix 
+RelaunchCommercialAsk = Relance demande de prix
+CommercialAskAccepted = Demande de prix acceptée
+EndOfCommercialAsk = Clôturation de la demande de prix
+SupplierOrder = Envoi commande fournisseur
+SupplierOrderRelaunch = Relance commande fournisseur
+ContactDefault_invoice_supplier = Facture fournisseur
+RelaunchSupplierBilling = Relance facture fournisseur 
+Bill = Facture
+RelaunchBilling = Relance facture
+SecondRelaunchBilling = 2ème relance facture
+RelaunchBeforeContentious = Relance facture avant contentieux
+RelaunchContentious = Relance information contentieux
+NewTicket = Nouveau ticket
+TicketUpdated = Mise à jour du ticket
+TicketClosed = Clôture du ticket
+
+
+#
+#Autres traductions 
+#
+Hello = Bonjour
+Sincerely = Sincèrement
+AdministrativeService = Service administratif
+
+#
+#Traductions des contents
+#
+HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+Votre commande a bien été prise en compte.
+Elle sera acheminée par voie postale à l’adresse suivante :
+(__THIRDPARTY_NAME__) (__THIRDPARTY_ADRESS__) (__THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)
+Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour(s).
+
+InfosBeginningProjectRecap = Pour récapituler ce début de projet :
+- réference client: (__REF_CLIENT__)
+- nom du projet : (__PROJECT_NAME__)
+- date de début : (__DATE_YMD__)
+- date de fin : (__DATE_YMD__)
+- demande du client : 
+
+HereIsCustomerRequest = Demande du client: [écrire la demande]
+-Date de début :(__DATE_YMD__)
+-Date de fin :(__DATE_YMD__)
+-Résultats atteints: 
+-Ecarts: 
+-Observations: 
+-Conclusion:
+
+NeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
+Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ?
+Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
+Merci de votre réponse.
+
+ReNeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
+Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ?
+Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
+Merci de votre réponse.
+
+HereIsCommercialProposal = Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
+La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants :
+- [lister les grandes sections de la proposition].
+Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au (__DATE_YMD__).
+Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.
+
+NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition. 
+Nous sommes actuellement sous contrat jusqu’au (__DATE_YMD__) .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.
+
+HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+Votre commande a bien été prise en compte.
+Elle sera acheminée par voie postale à l’adresse suivante :
+[Nom Prénom - Adresse - Code postal Ville]
+Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour.
+
+YourOrderIsRegistred = Nous vous remercions pour votre commande concernant le projet n° (__PROJECT_REF__)  (__PROJECT_NAME__).
+Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.
+Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: (__EXTRAFIELD_SIGNATURE_LINK__).
+Votre signature vaudra alors une réception ferme et définitive de la commande.
+
+HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au n° [], nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
+Il est possible de régler ce montant par [chèque, virement ou espèces.] ou de payer en ligne ici : (__ONLINE_PAYMENT_URL__)
+
+HereIsCommercialAsk = Par la présente, je me permets de vous contacter au nom de la société (__MYCOMPANY_NAME__) .
+Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].
+Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant (__REF__) .
+Pouvez-vous nous communiquer les tarifs pour la/les référence(s) ci-dessus.
+N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.
+
+RelaunchHereIsCommercialAsk = Par la présente, je me permets de vous recontacter au nom de la société (__MYCOMPANY_NAME__) .
+Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].
+Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant (__REF__).
+Pouvez-vous nous communiquer les tarifs pour la/les référence(s) ci-dessus.
+N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.
+
+HereIsQuotationOffer = Suite à l’analyse de votre demande, veuillez trouver ci-joint notre proposition de devis qui, si vous l’acceptez, par apposition de votre signature, vaudra bon de commande.
+Merci de nous le renvoyer signé [par courriel ou par la poste]
+Pour visualiser votre devis cliquer ici : (__DIRECTDOWNLOAD_URL_PROPOSAL__)
+
+DeniedCostsAreOverBudget = Nous accusons réception de votre correspondance du (__DATE_YMD__) . 
+Nous vous remercions sincèrement de vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.
+Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.
+
+HereIsOrderRequestDetails = Par la présente, nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
+> Désignation : [décrivez la nature du bien ou du service]
+> Quantité : (__AMOUNT__)
+> Prix unitaire :
+> Prix total TTC :
+Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.
+
+RelaunchHereIsOrderRequestDetails = Je me permets de vous recontacter au nom de la société (__MYCOMPANY_NAME__) pour vous relancer sur une demande de commande.
+Nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
+> Désignation : [décrivez la nature du bien ou du service]
+> Quantité : (__AMOUNT__)
+> Prix unitaire :
+> Prix total TTC :
+Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.
+
+HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au (__REF__), nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
+Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : (__ONLINE_PAYMENT_URL__)
+
+BillNotPaid = Sauf erreur de notre part, notre facture N°[numéro] en date du (__DATE_YMD__) d'un montant de [X] euros, n'a toujours pas été réglée à ce jour.
+Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.
+
+BillNotPaidSupplier = Sauf erreur de notre part, notre facture N°[numéro] en date du (__DATE_YMD__) d'un montant de [X] euros, n'a toujours pas été réglée à ce jour.
+Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.
+
+BillNotPaidContentious = Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour.
+Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre dû dans un délai de [nb] jours.
+A défaut nous nous verrons dans l’obligation de poursuivre ce recouvrement par voie judiciaire.
+ 
+LegalProceedingsIsLaunched = Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour.
+Le délai accordé étant dépassé, nous sommes désormais dans l'obligation de démarrer un contentieux, nous allons donc poursuivre ce recouvrement par voie judiciaire. 
+
+NewTicketInfos = Date d'ouverture: (__DATE_YMD__)
+Type de la demande: [question commerciale...]
+Catégorie: 
+Sévérité : [normal..]
+Statut: en cours 
+Message: (__NOTE_PUBLIC__)
+
+TicketUpdatesInfos = Date d'ouverture: (__DATE_YMD__)
+Type de la demande: [question commerciale...]
+Catégorie: 
+Sévérité : [normal...]
+Statut: mis à jour
+Message: (__NOTE_PUBLIC__)
+ 
+TicketCloseInfos = Date d'ouverture: (__DATE_YMD__)
+Date de cloture: (__DATE_YMD__)
+Type de la demande: [question commerciale...]
+Catégorie: 
+Sévérité : [normal..]
+Statut: clos
+Message: (__NOTE_PUBLIC__)
+
+
