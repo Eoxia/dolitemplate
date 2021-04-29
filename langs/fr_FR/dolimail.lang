@@ -99,7 +99,7 @@ InfosBeginningProjectRecap = Pour récapituler ce début de projet :
 \n<br> - nom du projet : (__PROJECT_NAME__)<br>
 \n<br> - date de début : (__DATE_YMD__)<br>
 \n<br> - date de fin : (__DATE_YMD__)<br>
-\n<br> - demande du client : 
+\n<br> - demande du client : <br>
 
 HereIsCustomerRequest = Demande du client: [écrire la demande]
 \n<br> -Date de début :(__DATE_YMD__)<br>
