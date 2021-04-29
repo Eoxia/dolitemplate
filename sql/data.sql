@@ -3,7 +3,7 @@
 /* Module Produits et Services*/
 /* RCP_Envoi-reception-fournisseur*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'order','order_supplier_send','',0,null,null,'(SendingEmailOnDeliveryReceipt)'       ,70,'$conf->order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(DeliveryReceiptSupplier)__','__(Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br>\n<br>__DATE_YMD__<br>\n<br>__AMOUNT__<br>\n<br>__THIRDPARTY_NAME__<br>\n<br>__THIRDPARTY_ADRESS__<br>\n<br>__THIRDPARTY_ZIP__<br>\n<br>__THIRDPARTY_TOWN__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'order','order_supplier_send','',0,null,null,'(SendingEmailOnDeliveryReceiptSupplier)'       ,70,'$conf->order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(DeliveryReceiptSupplier)__','__(Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br>\n<br>__DATE_YMD__<br>\n<br>__AMOUNT__<br>\n<br>__THIRDPARTY_NAME__<br>\n<br>__THIRDPARTY_ADRESS__<br>\n<br>__THIRDPARTY_ZIP__<br>\n<br>__THIRDPARTY_TOWN__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 /* Module projets*/
 /* PJ_Envoi-création-projet*/
