@@ -66,7 +66,7 @@ VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnRel
 
 /*RQ_Accepter-demande-prix*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCommercialAskAccepted)'       ,200,'$conf->proposal->enabled',1,1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(CommercialAskAccepted)__','__(Hello)__ ,<br><br>\n\n__(HereIsQuotationOffer)__<br>\n<br>__DIRECTDOWNLOAD_UR_INVOICE__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCommercialAskAccepted)'       ,200,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(CommercialAskAccepted)__','__(Hello)__ ,<br><br>\n\n__(HereIsQuotationOffer)__<br>\n<br>__DIRECTDOWNLOAD_UR_INVOICE__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*RQ_Cloture-demande-prix*/
