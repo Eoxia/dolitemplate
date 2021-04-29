@@ -169,7 +169,7 @@ VALUES (0,'propal','propal_send','',0,null,null,'(SendingEmailOnEndProposal)'   
 /*Commandes*/
 /*CO_Envoi-commandes */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'shipping','shipping_send','',0,null,null,'(SendingEmailOnShippingOfOrder)'       ,150,'$conf->shipping->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ShippingOfOrder)__','__(Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br>\n<br>__DATE_YMD__<br>\n<br>__AMOUNT__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'shipping','shipping_send','',0,null,null,'(SendingEmailOnShippingOfOrder)'       ,150,'$conf->shipping->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ShippingOfOrder)__','__(Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br>\n<br>__DATE_YMD__<br>\n<br>__AMOUNT__<br>\n<br>__THIRDPARTY_NAME__<br>\n<br>__THIRDPARTY_ADRESS__<br>\n<br>__THIRDPARTY_ZIP__<br>\n<br>__THIRDPARTY_TOWN__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*CO_Accusé-reception-commandes */
@@ -222,7 +222,7 @@ VALUES (0,'invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnConta
 
 /*SI_Relance-facture-fournisseur*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnRelaunchSupplierBilling)'       ,250,'$conf->invoice->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchSupplierBilling)__ __REF_CLIENT__','__(Hello)__ ,<br><br>\n\n__(BillNotPaid)__<br>\n<br>__DATE_YMD__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnRelaunchSupplierBilling)'       ,250,'$conf->invoice->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchSupplierBilling)__ __REF_CLIENT__','__(Hello)__ ,<br><br>\n\n__(BillNotPaidSupplier)__<br>\n<br>__DATE_YMD__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 
