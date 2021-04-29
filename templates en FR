@@ -50,6 +50,8 @@ Contenu :
 Bonjour,
 
 Demande du client: [écrire la demande]
+- date de début :__DATE_YMD__
+- date de fin : __DATE_YMD__
 Résultats atteints: 
 Ecarts: 
 Observations: 
