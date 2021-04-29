@@ -190,7 +190,7 @@ VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCom
 
 /*RQ_Relance-demande-prix*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnRelaunchCommercialAsk)'       ,190,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchCommercialAsk)__','__(Hello)__ ,<br><br>\n\n__(HereIsCommercialAsk)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__REF__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnRelaunchCommercialAsk)'       ,190,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchCommercialAsk)__','__(Hello)__ ,<br><br>\n\n__(RelaunchHereIsCommercialAsk)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__REF__<br>\n__(Sincerely)__<br>\n\n__(AdministrativeService)__<br>\n<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*RQ_Accepter-demande-prix*/
