@@ -95,38 +95,38 @@ Elle sera acheminée par voie postale à l’adresse suivante :
 Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour(s).
 
 InfosBeginningProjectRecap = Pour récapituler ce début de projet :
-- réference client: (__REF_CLIENT__)
-- nom du projet : (__PROJECT_NAME__)
-- date de début : (__DATE_YMD__)
-- date de fin : (__DATE_YMD__)
-- demande du client : 
+\n<br> - réference client: (__REF_CLIENT__)<br>
+\n<br> - nom du projet : (__PROJECT_NAME__)<br>
+\n<br> - date de début : (__DATE_YMD__)<br>
+\n<br> - date de fin : (__DATE_YMD__)<br>
+\n<br> - demande du client : 
 
 HereIsCustomerRequest = Demande du client: [écrire la demande]
--Date de début :(__DATE_YMD__)
--Date de fin :(__DATE_YMD__)
--Résultats atteints: 
--Ecarts: 
--Observations: 
--Conclusion:
+\n<br> -Date de début :(__DATE_YMD__)<br>
+\n<br> -Date de fin :(__DATE_YMD__)<br>
+\n<br> -Résultats atteints: <br>
+\n<br> -Ecarts: <br>
+\n<br> -Observations: <br>
+\n<br> -Conclusion: <br>
 
 NeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
-Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ?
+\n<br> Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ? <br>
 Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
-Merci de votre réponse.
+\n<br>Merci de votre réponse. <br>
 
 ReNeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
-Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ?
+\n<br> Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ? <br>
 Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
-Merci de votre réponse.
+\n<br> Merci de votre réponse. <br>
 
 HereIsCommercialProposal = Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
-La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants :
-- [lister les grandes sections de la proposition].
-Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au (__DATE_YMD__).
-Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.
+\n<br>La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants : <br>
+\n<br> -[lister les grandes sections de la proposition].<br>
+\n<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au (__DATE_YMD__).<br>
+\n<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
 
 NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition. 
-Nous sommes actuellement sous contrat jusqu’au (__DATE_YMD__) .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.
+\n<br>Nous sommes actuellement sous contrat jusqu’au (__DATE_YMD__) .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.<br>
 
 HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
 Votre commande a bien été prise en compte.
@@ -214,5 +214,11 @@ Catégorie:
 Sévérité : [normal..]
 Statut: clos
 Message: (__NOTE_PUBLIC__)
+
+\n<br>__MYCOMPANY_NAME__<br>
+
+<br>\n<br>__MYCOMPANY_NAME__
+<br>\n<br>__MYCOMPANY_FULLADDRESS__
+<br>\n<br>__MYCOMPANY_EMAIL__<br>
 
 
