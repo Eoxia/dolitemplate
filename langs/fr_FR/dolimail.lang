@@ -46,3 +46,176 @@ MyPageName = Nom de ma page
 #
 MyWidget = Mon widget
 MyWidgetDescription = Description de mon widget
+
+#
+#Traductions des sujets
+#
+DeliveryReceiptSupplier = Accusé de reception fournisseur
+DeliveryReceipt = Accusé reception de la commande  
+ProjectRecap = Récapitulation création du projet
+ProjectSummary = Bilan du projet
+CommercialProposal = Proposition  commerciale
+ProposalRelaunch = Relance de proposition
+SecondProposalRelaunch = 2ème relance de proposition
+EndProposal = Clôture proposition
+ShippingOfOrder = Envoie de la commande
+OrderBilling = Facturation de la commande
+CommercialAsk = Demande de prix 
+RelaunchCommercialAsk = Relance demande de prix
+CommercialAskAccepted = Demande de prix acceptée
+EndOfCommercialAsk = Clôturation de la demande de prix
+SupplierOrder = Envoi commande fournisseur
+SupplierOrderRelaunch = Relance commande fournisseur
+ContactDefault_invoice_supplier = Facture fournisseur
+RelaunchSupplierBilling = Relance facture fournisseur 
+Bill = Facture
+RelaunchBilling = Relance facture
+SecondRelaunchBilling = 2ème relance facture
+RelaunchBeforeContentious = Relance facture avant contentieux
+RelaunchContentious = Relance information contentieux
+NewTicket = Nouveau ticket
+TicketUpdated = Mise à jour du ticket
+TicketClosed = Clôture du ticket
+
+
+#
+#Autres traductions 
+#
+Hello = Bonjour
+Sincerely = Sincèrement
+AdministrativeService = Service administratif
+
+#
+#Traductions des contents
+#
+HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+\n<br>Votre commande a bien été prise en compte.<br>
+\n<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>
+\n<br>(__THIRDPARTY_NAME__) (__THIRDPARTY_ADRESS__) (__THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)<br>
+\n<br>Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour(s).<br>
+
+InfosBeginningProjectRecap = Pour récapituler ce début de projet :
+\n<br> - réference client: (__REF_CLIENT__)<br>
+\n<br> - nom du projet : (__PROJECT_NAME__)<br>
+\n<br> - date de début : (__DATE_YMD__)<br>
+\n<br> - date de fin : (__DATE_YMD__)<br>
+\n<br> - demande du client : <br>
+
+HereIsCustomerRequest = Demande du client: [écrire la demande]
+\n<br> -Date de début :(__DATE_YMD__)<br>
+\n<br> -Date de fin :(__DATE_YMD__)<br>
+\n<br> -Résultats atteints: <br>
+\n<br> -Ecarts: <br>
+\n<br> -Observations: <br>
+\n<br> -Conclusion: <br>
+
+NeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
+\n<br> Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ? <br>
+Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
+\n<br>Merci de votre réponse. <br>
+
+ReNeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail.
+\n<br> Êtes-vous disponible pour un rapide appel téléphonique le (__DAY_TEXT__)  (__DAY__) ? <br>
+Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
+\n<br> Merci de votre réponse. <br>
+
+HereIsCommercialProposal = Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
+\n<br>La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants : <br>
+\n<br> -[lister les grandes sections de la proposition].<br>
+\n<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au (__DATE_YMD__).<br>
+\n<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
+
+NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition. 
+\n<br>Nous sommes actuellement sous contrat jusqu’au (__DATE_YMD__) .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.<br>
+
+HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+\n<br>Votre commande a bien été prise en compte.<br>
+\n<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>
+\n<br>(__THIRDPARTY_NAME__) (__THIRDPARTY_ADRESS__) (__THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)<br>
+\n<br>Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour.<br>
+
+YourOrderIsRegistred = Nous vous remercions pour votre commande concernant le projet n° (__PROJECT_REF__)  (__PROJECT_NAME__).
+\n<br>Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.<br>
+\n<br>Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: (__EXTRAFIELD_SIGNATURE_LINK__).<br>
+\n<br>Votre signature vaudra alors une réception ferme et définitive de la commande.<br>
+
+HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au n° [], nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
+\n<br>Il est possible de régler ce montant par [chèque, virement ou espèces.] ou de payer en ligne ici : (__ONLINE_PAYMENT_URL__) <br>
+
+HereIsCommercialAsk = Par la présente, je me permets de vous contacter au nom de la société (__MYCOMPANY_NAME__) .
+\n<br>Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].<br>
+\n<br>Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant (__REF__) .<br>
+\n<br>Pouvez-vous nous communiquer les tarifs pour la/les référence(s) ci-dessus.<br>
+\n<br>N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.<br>
+
+RelaunchHereIsCommercialAsk = Par la présente, je me permets de vous recontacter au nom de la société (__MYCOMPANY_NAME__) .
+\n<br>Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].<br>
+\n<br>Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant (__REF__).<br>
+\n<br>Pouvez-vous nous communiquer les tarifs pour la/les référence(s) ci-dessus.<br>
+\n<br>N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.<br>
+
+HereIsQuotationOffer = Suite à l’analyse de votre demande, veuillez trouver ci-joint notre proposition de devis qui, si vous l’acceptez, par apposition de votre signature, vaudra bon de commande.
+\n<br>Merci de nous le renvoyer signé [par courriel ou par la poste]<br>
+\n<br>Pour visualiser votre devis cliquer ici : (__DIRECTDOWNLOAD_URL_PROPOSAL__)<br>
+
+DeniedCostsAreOverBudget = Nous accusons réception de votre correspondance du (__DATE_YMD__) . 
+\n<br>Nous vous remercions sincèrement de vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.<br>
+\n<br>Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.<br>
+
+HereIsOrderRequestDetails = Par la présente, nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
+\n<br> -Désignation : [décrivez la nature du bien ou du service]<br>
+\n<br> -Quantité : (__AMOUNT__)<br>
+\n<br> -Prix unitaire : <br>
+\n<br> -Prix total TTC : <br>
+\n<br> -Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.<br>
+
+RelaunchHereIsOrderRequestDetails = Je me permets de vous recontacter au nom de la société (__MYCOMPANY_NAME__) pour vous relancer sur une demande de commande.
+Nous vous confirmons vouloir commander l'article / la prestation suivant(e) : 
+\n<br> -Désignation : [décrivez la nature du bien ou du service]<br>
+\n<br> -Quantité : (__AMOUNT__)<br>
+\n<br> -Prix unitaire : <br>
+\n<br> -Prix total TTC : <br>
+\n<br>Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.<br>
+
+HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au (__REF__), nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
+\n<br>Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : (__ONLINE_PAYMENT_URL__)<br>
+
+BillNotPaid = Sauf erreur de notre part, notre facture N°[numéro] en date du (__DATE_YMD__) d'un montant de [X] euros, n'a toujours pas été réglée à ce jour.
+\n<br>Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.<br>
+
+BillNotPaidSupplier = Sauf erreur de notre part, notre facture N°[numéro] en date du (__DATE_YMD__) d'un montant de [X] euros, n'a toujours pas été réglée à ce jour.
+\n<br>Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.<br>
+
+BillNotPaidContentious = Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour.
+\n<br>Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre dû dans un délai de [nb] jours. A défaut nous nous verrons dans l’obligation de poursuivre ce recouvrement par voie judiciaire.<br>
+ 
+LegalProceedingsIsLaunched = Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour. 
+\n<br>Le délai accordé étant dépassé, nous sommes désormais dans l'obligation de démarrer un contentieux, nous allons donc poursuivre ce recouvrement par voie judiciaire.<br>
+
+NewTicketInfos = Date d'ouverture: (__DATE_YMD__)
+\n<br>Type de la demande: [question commerciale...]<br>
+\n<br>Catégorie: <br>
+\n<br>Sévérité : [normal..]<br>
+\n<br>Statut: en cours <br>
+\n<br>Message: (__NOTE_PUBLIC__)<br>
+
+TicketUpdatesInfos = Date d'ouverture: (__DATE_YMD__)
+\n<br>Type de la demande: [question commerciale...]<br>
+\n<br>atégorie: <br>
+\n<br>Sévérité : [normal...]<br>
+\n<br>Statut: mis à jour <br>
+\n<br>Message: (__NOTE_PUBLIC__)<br>
+ 
+TicketCloseInfos = Date d'ouverture: (__DATE_YMD__)
+\n<br>Date de cloture: (__DATE_YMD__)<br>
+\n<br>Type de la demande: [question commerciale...]<br>
+\n<br>Catégorie: <br>
+\n<br>Sévérité : [normal..]<br>
+\n<br>Statut: clos <br>
+\n<br>Message: (__NOTE_PUBLIC__)<br>
+
+
+
+
+
+

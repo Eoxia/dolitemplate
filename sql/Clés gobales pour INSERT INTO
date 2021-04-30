@@ -8,6 +8,7 @@ Hello,
 HereIsYourOrder
 __DATE_YMD__, 
 __AMOUNT__ 
+__THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__
 
 Sincerely,
 
@@ -328,7 +329,7 @@ Contenu :
 
 Hello,
 
-BillNotPaid
+BillNotPaidSupplier
  __DATE_YMD__ 
 
 Sincerely,
