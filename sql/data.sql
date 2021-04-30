@@ -1,5 +1,3 @@
--------------------------------
-
 /* Module Produits et Services*/
 /* RCP_Envoi-reception-fournisseur*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
