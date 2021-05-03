@@ -19,11 +19,11 @@
  */
 
 /**
- * 	\defgroup   dolimail     Module Dolimail
+ * 	\defgroup   dolitemplate     Module Dolimail
  *  \brief      Dolimail module descriptor.
  *
- *  \file       htdocs/dolimail/core/modules/modDolimail.class.php
- *  \ingroup    dolimail
+ *  \file       htdocs/dolitemplate/core/modules/modDolimail.class.php
+ *  \ingroup    dolitemplate
  *  \brief      Description and activation file for module Dolimail
  */
 include_once DOL_DOCUMENT_ROOT.'/core/modules/DolibarrModules.class.php';
@@ -47,7 +47,7 @@ class modDolimail extends DolibarrModules
 		// Use here a free id (See in Home -> System information -> Dolibarr for list of used modules id).
 		$this->numero = 500000; // TODO Go on page https://wiki.dolibarr.org/index.php/List_of_modules_id to reserve an id number for your module
 		// Key text used to identify module (for permissions, menus, etc...)
-		$this->rights_class = 'dolimail';
+		$this->rights_class = 'dolitemplate';
 		// Family can be 'base' (core modules),'crm','financial','hr','projects','products','ecm','technic' (transverse modules),'interface' (link with external tools),'other','...'
 		// It is used to group modules by family in module setup page
 		$this->family = "other";
@@ -94,11 +94,11 @@ class modDolimail extends DolibarrModules
 			'theme' => 0,
 			// Set this to relative path of css file if module has its own css file
 			'css' => array(
-				//    '/dolimail/css/dolimail.css.php',
+				//    '/dolitemplate/css/dolitemplate.css.php',
 			),
 			// Set this to relative path of js file if module must load a js on all pages
 			'js' => array(
-				//   '/dolimail/js/dolimail.js.php',
+				//   '/dolitemplate/js/dolitemplate.js.php',
 			),
 			// Set here all hooks context managed by module. To find available hook context, make a "grep -r '>initHooks(' *" on source code. You can also set hook context to 'all'
 			'hooks' => array(
@@ -112,10 +112,10 @@ class modDolimail extends DolibarrModules
 			'moduleforexternal' => 0,
 		);
 		// Data directories to create when module is enabled.
-		// Example: this->dirs = array("/dolimail/temp","/dolimail/subdir");
-		$this->dirs = array("/dolimail/temp");
-		// Config pages. Put here list of php page, stored into dolimail/admin directory, to use to setup module.
-		$this->config_page_url = array("setup.php@dolimail");
+		// Example: this->dirs = array("/dolitemplate/temp","/dolitemplate/subdir");
+		$this->dirs = array("/dolitemplate/temp");
+		// Config pages. Put here list of php page, stored into dolitemplate/admin directory, to use to setup module.
+		$this->config_page_url = array("setup.php@dolitemplate");
 		// Dependencies
 		// A condition to hide module
 		$this->hidden = false;
@@ -123,7 +123,7 @@ class modDolimail extends DolibarrModules
 		$this->depends = array();
 		$this->requiredby = array(); // List of module class names as string to disable if this one is disabled. Example: array('modModuleToDisable1', ...)
 		$this->conflictwith = array(); // List of module class names as string this module is in conflict with. Example: array('modModuleToDisable1', ...)
-		$this->langfiles = array("dolimail@dolimail");
+		$this->langfiles = array("dolitemplate@dolitemplate");
 		$this->phpmin = array(5, 5); // Minimum version of PHP required by module
 		$this->need_dolibarr_version = array(11, -3); // Minimum version of Dolibarr required by module
 		$this->warnings_activation = array(); // Warning to show when we activate module. array('always'='text') or array('FR'='textfr','ES'='textes'...)
@@ -144,16 +144,16 @@ class modDolimail extends DolibarrModules
 			'fr_FR:ParentCompany'=>'Maison mère ou revendeur'
 		)*/
 
-		if (!isset($conf->dolimail) || !isset($conf->dolimail->enabled)) {
-			$conf->dolimail = new stdClass();
-			$conf->dolimail->enabled = 0;
+		if (!isset($conf->dolitemplate) || !isset($conf->dolitemplate->enabled)) {
+			$conf->dolitemplate = new stdClass();
+			$conf->dolitemplate->enabled = 0;
 		}
 
 		// Array to add new pages in new tabs
 		$this->tabs = array();
 		// Example:
-		// $this->tabs[] = array('data'=>'objecttype:+tabname1:Title1:mylangfile@dolimail:$user->rights->dolimail->read:/dolimail/mynewtab1.php?id=__ID__');  					// To add a new tab identified by code tabname1
-		// $this->tabs[] = array('data'=>'objecttype:+tabname2:SUBSTITUTION_Title2:mylangfile@dolimail:$user->rights->othermodule->read:/dolimail/mynewtab2.php?id=__ID__',  	// To add another new tab identified by code tabname2. Label will be result of calling all substitution functions on 'Title2' key.
+		// $this->tabs[] = array('data'=>'objecttype:+tabname1:Title1:mylangfile@dolitemplate:$user->rights->dolitemplate->read:/dolitemplate/mynewtab1.php?id=__ID__');  					// To add a new tab identified by code tabname1
+		// $this->tabs[] = array('data'=>'objecttype:+tabname2:SUBSTITUTION_Title2:mylangfile@dolitemplate:$user->rights->othermodule->read:/dolitemplate/mynewtab2.php?id=__ID__',  	// To add another new tab identified by code tabname2. Label will be result of calling all substitution functions on 'Title2' key.
 		// $this->tabs[] = array('data'=>'objecttype:-tabname:NU:conditiontoremove');                                                     										// To remove an existing tab identified by code tabname
 		//
 		// Where objecttype can be
@@ -181,7 +181,7 @@ class modDolimail extends DolibarrModules
 		$this->dictionaries = array();
 		/* Example:
 		$this->dictionaries=array(
-			'langs'=>'dolimail@dolimail',
+			'langs'=>'dolitemplate@dolitemplate',
 			// List of tables we want to see into dictonnary editor
 			'tabname'=>array(MAIN_DB_PREFIX."table1", MAIN_DB_PREFIX."table2", MAIN_DB_PREFIX."table3"),
 			// Label of tables
@@ -199,15 +199,15 @@ class modDolimail extends DolibarrModules
 			// Name of columns with primary key (try to always name it 'rowid')
 			'tabrowid'=>array("rowid", "rowid", "rowid"),
 			// Condition to show each dictionary
-			'tabcond'=>array($conf->dolimail->enabled, $conf->dolimail->enabled, $conf->dolimail->enabled)
+			'tabcond'=>array($conf->dolitemplate->enabled, $conf->dolitemplate->enabled, $conf->dolitemplate->enabled)
 		);
 		*/
 
 		// Boxes/Widgets
-		// Add here list of php file(s) stored in dolimail/core/boxes that contains a class to show a widget.
+		// Add here list of php file(s) stored in dolitemplate/core/boxes that contains a class to show a widget.
 		$this->boxes = array(
 			//  0 => array(
-			//      'file' => 'dolimailwidget1.php@dolimail',
+			//      'file' => 'dolitemplatewidget1.php@dolitemplate',
 			//      'note' => 'Widget provided by Dolimail',
 			//      'enabledbydefaulton' => 'Home',
 			//  ),
@@ -220,7 +220,7 @@ class modDolimail extends DolibarrModules
 			//  0 => array(
 			//      'label' => 'MyJob label',
 			//      'jobtype' => 'method',
-			//      'class' => '/dolimail/class/myobject.class.php',
+			//      'class' => '/dolitemplate/class/myobject.class.php',
 			//      'objectname' => 'MyObject',
 			//      'method' => 'doScheduledJob',
 			//      'parameters' => '',
@@ -228,13 +228,13 @@ class modDolimail extends DolibarrModules
 			//      'frequency' => 2,
 			//      'unitfrequency' => 3600,
 			//      'status' => 0,
-			//      'test' => '$conf->dolimail->enabled',
+			//      'test' => '$conf->dolitemplate->enabled',
 			//      'priority' => 50,
 			//  ),
 		);
 		// Example: $this->cronjobs=array(
-		//    0=>array('label'=>'My label', 'jobtype'=>'method', 'class'=>'/dir/class/file.class.php', 'objectname'=>'MyClass', 'method'=>'myMethod', 'parameters'=>'param1, param2', 'comment'=>'Comment', 'frequency'=>2, 'unitfrequency'=>3600, 'status'=>0, 'test'=>'$conf->dolimail->enabled', 'priority'=>50),
-		//    1=>array('label'=>'My label', 'jobtype'=>'command', 'command'=>'', 'parameters'=>'param1, param2', 'comment'=>'Comment', 'frequency'=>1, 'unitfrequency'=>3600*24, 'status'=>0, 'test'=>'$conf->dolimail->enabled', 'priority'=>50)
+		//    0=>array('label'=>'My label', 'jobtype'=>'method', 'class'=>'/dir/class/file.class.php', 'objectname'=>'MyClass', 'method'=>'myMethod', 'parameters'=>'param1, param2', 'comment'=>'Comment', 'frequency'=>2, 'unitfrequency'=>3600, 'status'=>0, 'test'=>'$conf->dolitemplate->enabled', 'priority'=>50),
+		//    1=>array('label'=>'My label', 'jobtype'=>'command', 'command'=>'', 'parameters'=>'param1, param2', 'comment'=>'Comment', 'frequency'=>1, 'unitfrequency'=>3600*24, 'status'=>0, 'test'=>'$conf->dolitemplate->enabled', 'priority'=>50)
 		// );
 
 		// Permissions provided by this module
@@ -244,18 +244,18 @@ class modDolimail extends DolibarrModules
 		/* BEGIN MODULEBUILDER PERMISSIONS */
 		$this->rights[$r][0] = $this->numero + $r; // Permission id (must not be already used)
 		$this->rights[$r][1] = 'Read objects of Dolimail'; // Permission label
-		$this->rights[$r][4] = 'myobject'; // In php code, permission will be checked by test if ($user->rights->dolimail->level1->level2)
-		$this->rights[$r][5] = 'read'; // In php code, permission will be checked by test if ($user->rights->dolimail->level1->level2)
+		$this->rights[$r][4] = 'myobject'; // In php code, permission will be checked by test if ($user->rights->dolitemplate->level1->level2)
+		$this->rights[$r][5] = 'read'; // In php code, permission will be checked by test if ($user->rights->dolitemplate->level1->level2)
 		$r++;
 		$this->rights[$r][0] = $this->numero + $r; // Permission id (must not be already used)
 		$this->rights[$r][1] = 'Create/Update objects of Dolimail'; // Permission label
-		$this->rights[$r][4] = 'myobject'; // In php code, permission will be checked by test if ($user->rights->dolimail->level1->level2)
-		$this->rights[$r][5] = 'write'; // In php code, permission will be checked by test if ($user->rights->dolimail->level1->level2)
+		$this->rights[$r][4] = 'myobject'; // In php code, permission will be checked by test if ($user->rights->dolitemplate->level1->level2)
+		$this->rights[$r][5] = 'write'; // In php code, permission will be checked by test if ($user->rights->dolitemplate->level1->level2)
 		$r++;
 		$this->rights[$r][0] = $this->numero + $r; // Permission id (must not be already used)
 		$this->rights[$r][1] = 'Delete objects of Dolimail'; // Permission label
-		$this->rights[$r][4] = 'myobject'; // In php code, permission will be checked by test if ($user->rights->dolimail->level1->level2)
-		$this->rights[$r][5] = 'delete'; // In php code, permission will be checked by test if ($user->rights->dolimail->level1->level2)
+		$this->rights[$r][4] = 'myobject'; // In php code, permission will be checked by test if ($user->rights->dolitemplate->level1->level2)
+		$this->rights[$r][5] = 'delete'; // In php code, permission will be checked by test if ($user->rights->dolitemplate->level1->level2)
 		$r++;
 		/* END MODULEBUILDER PERMISSIONS */
 
@@ -268,57 +268,57 @@ class modDolimail extends DolibarrModules
 			'fk_menu'=>'', // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
 			'type'=>'top', // This is a Top menu entry
 			'titre'=>'ModuleDolimailName',
-			'mainmenu'=>'dolimail',
+			'mainmenu'=>'dolitemplate',
 			'leftmenu'=>'',
-			'url'=>'/dolimail/dolimailindex.php',
-			'langs'=>'dolimail@dolimail', // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
+			'url'=>'/dolitemplate/dolitemplateindex.php',
+			'langs'=>'dolitemplate@dolitemplate', // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
 			'position'=>1000 + $r,
-			'enabled'=>'$conf->dolimail->enabled', // Define condition to show or hide menu entry. Use '$conf->dolimail->enabled' if entry must be visible if module is enabled.
-			'perms'=>'1', // Use 'perms'=>'$user->rights->dolimail->myobject->read' if you want your menu with a permission rules
+			'enabled'=>'$conf->dolitemplate->enabled', // Define condition to show or hide menu entry. Use '$conf->dolitemplate->enabled' if entry must be visible if module is enabled.
+			'perms'=>'1', // Use 'perms'=>'$user->rights->dolitemplate->myobject->read' if you want your menu with a permission rules
 			'target'=>'',
 			'user'=>2, // 0=Menu for internal users, 1=external users, 2=both
 		);
 		/* END MODULEBUILDER TOPMENU */
 		/* BEGIN MODULEBUILDER LEFTMENU MYOBJECT
 		$this->menu[$r++]=array(
-			'fk_menu'=>'fk_mainmenu=dolimail',      // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
+			'fk_menu'=>'fk_mainmenu=dolitemplate',      // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
 			'type'=>'left',                          // This is a Top menu entry
 			'titre'=>'MyObject',
-			'mainmenu'=>'dolimail',
+			'mainmenu'=>'dolitemplate',
 			'leftmenu'=>'myobject',
-			'url'=>'/dolimail/dolimailindex.php',
-			'langs'=>'dolimail@dolimail',	        // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
+			'url'=>'/dolitemplate/dolitemplateindex.php',
+			'langs'=>'dolitemplate@dolitemplate',	        // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
 			'position'=>1000+$r,
-			'enabled'=>'$conf->dolimail->enabled',  // Define condition to show or hide menu entry. Use '$conf->dolimail->enabled' if entry must be visible if module is enabled.
-			'perms'=>'$user->rights->dolimail->myobject->read',			                // Use 'perms'=>'$user->rights->dolimail->level1->level2' if you want your menu with a permission rules
+			'enabled'=>'$conf->dolitemplate->enabled',  // Define condition to show or hide menu entry. Use '$conf->dolitemplate->enabled' if entry must be visible if module is enabled.
+			'perms'=>'$user->rights->dolitemplate->myobject->read',			                // Use 'perms'=>'$user->rights->dolitemplate->level1->level2' if you want your menu with a permission rules
 			'target'=>'',
 			'user'=>2,				                // 0=Menu for internal users, 1=external users, 2=both
 		);
 		$this->menu[$r++]=array(
-			'fk_menu'=>'fk_mainmenu=dolimail,fk_leftmenu=myobject',	    // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
+			'fk_menu'=>'fk_mainmenu=dolitemplate,fk_leftmenu=myobject',	    // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
 			'type'=>'left',			                // This is a Left menu entry
 			'titre'=>'List MyObject',
-			'mainmenu'=>'dolimail',
-			'leftmenu'=>'dolimail_myobject_list',
-			'url'=>'/dolimail/myobject_list.php',
-			'langs'=>'dolimail@dolimail',	        // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
+			'mainmenu'=>'dolitemplate',
+			'leftmenu'=>'dolitemplate_myobject_list',
+			'url'=>'/dolitemplate/myobject_list.php',
+			'langs'=>'dolitemplate@dolitemplate',	        // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
 			'position'=>1000+$r,
-			'enabled'=>'$conf->dolimail->enabled',  // Define condition to show or hide menu entry. Use '$conf->dolimail->enabled' if entry must be visible if module is enabled. Use '$leftmenu==\'system\'' to show if leftmenu system is selected.
-			'perms'=>'$user->rights->dolimail->myobject->read',			                // Use 'perms'=>'$user->rights->dolimail->level1->level2' if you want your menu with a permission rules
+			'enabled'=>'$conf->dolitemplate->enabled',  // Define condition to show or hide menu entry. Use '$conf->dolitemplate->enabled' if entry must be visible if module is enabled. Use '$leftmenu==\'system\'' to show if leftmenu system is selected.
+			'perms'=>'$user->rights->dolitemplate->myobject->read',			                // Use 'perms'=>'$user->rights->dolitemplate->level1->level2' if you want your menu with a permission rules
 			'target'=>'',
 			'user'=>2,				                // 0=Menu for internal users, 1=external users, 2=both
 		);
 		$this->menu[$r++]=array(
-			'fk_menu'=>'fk_mainmenu=dolimail,fk_leftmenu=myobject',	    // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
+			'fk_menu'=>'fk_mainmenu=dolitemplate,fk_leftmenu=myobject',	    // '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
 			'type'=>'left',			                // This is a Left menu entry
 			'titre'=>'New MyObject',
-			'mainmenu'=>'dolimail',
-			'leftmenu'=>'dolimail_myobject_new',
-			'url'=>'/dolimail/myobject_card.php?action=create',
-			'langs'=>'dolimail@dolimail',	        // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
+			'mainmenu'=>'dolitemplate',
+			'leftmenu'=>'dolitemplate_myobject_new',
+			'url'=>'/dolitemplate/myobject_card.php?action=create',
+			'langs'=>'dolitemplate@dolitemplate',	        // Lang file to use (without .lang) by module. File must be in langs/code_CODE/ directory.
 			'position'=>1000+$r,
-			'enabled'=>'$conf->dolimail->enabled',  // Define condition to show or hide menu entry. Use '$conf->dolimail->enabled' if entry must be visible if module is enabled. Use '$leftmenu==\'system\'' to show if leftmenu system is selected.
-			'perms'=>'$user->rights->dolimail->myobject->write',			                // Use 'perms'=>'$user->rights->dolimail->level1->level2' if you want your menu with a permission rules
+			'enabled'=>'$conf->dolitemplate->enabled',  // Define condition to show or hide menu entry. Use '$conf->dolitemplate->enabled' if entry must be visible if module is enabled. Use '$leftmenu==\'system\'' to show if leftmenu system is selected.
+			'perms'=>'$user->rights->dolitemplate->myobject->write',			                // Use 'perms'=>'$user->rights->dolitemplate->level1->level2' if you want your menu with a permission rules
 			'target'=>'',
 			'user'=>2,				                // 0=Menu for internal users, 1=external users, 2=both
 		);
@@ -328,20 +328,20 @@ class modDolimail extends DolibarrModules
 		$r = 1;
 		/* BEGIN MODULEBUILDER EXPORT MYOBJECT */
 		/*
-		$langs->load("dolimail@dolimail");
+		$langs->load("dolitemplate@dolitemplate");
 		$this->export_code[$r]=$this->rights_class.'_'.$r;
 		$this->export_label[$r]='MyObjectLines';	// Translation key (used only if key ExportDataset_xxx_z not found)
-		$this->export_icon[$r]='myobject@dolimail';
+		$this->export_icon[$r]='myobject@dolitemplate';
 		// Define $this->export_fields_array, $this->export_TypeFields_array and $this->export_entities_array
-		$keyforclass = 'MyObject'; $keyforclassfile='/dolimail/class/myobject.class.php'; $keyforelement='myobject@dolimail';
+		$keyforclass = 'MyObject'; $keyforclassfile='/dolitemplate/class/myobject.class.php'; $keyforelement='myobject@dolitemplate';
 		include DOL_DOCUMENT_ROOT.'/core/commonfieldsinexport.inc.php';
 		//$this->export_fields_array[$r]['t.fieldtoadd']='FieldToAdd'; $this->export_TypeFields_array[$r]['t.fieldtoadd']='Text';
 		//unset($this->export_fields_array[$r]['t.fieldtoremove']);
-		//$keyforclass = 'MyObjectLine'; $keyforclassfile='/dolimail/class/myobject.class.php'; $keyforelement='myobjectline@dolimail'; $keyforalias='tl';
+		//$keyforclass = 'MyObjectLine'; $keyforclassfile='/dolitemplate/class/myobject.class.php'; $keyforelement='myobjectline@dolitemplate'; $keyforalias='tl';
 		//include DOL_DOCUMENT_ROOT.'/core/commonfieldsinexport.inc.php';
-		$keyforselect='myobject'; $keyforaliasextra='extra'; $keyforelement='myobject@dolimail';
+		$keyforselect='myobject'; $keyforaliasextra='extra'; $keyforelement='myobject@dolitemplate';
 		include DOL_DOCUMENT_ROOT.'/core/extrafieldsinexport.inc.php';
-		//$keyforselect='myobjectline'; $keyforaliasextra='extraline'; $keyforelement='myobjectline@dolimail';
+		//$keyforselect='myobjectline'; $keyforaliasextra='extraline'; $keyforelement='myobjectline@dolitemplate';
 		//include DOL_DOCUMENT_ROOT.'/core/extrafieldsinexport.inc.php';
 		//$this->export_dependencies_array[$r] = array('myobjectline'=>array('tl.rowid','tl.ref')); // To force to activate one or several fields if we select some fields that need same (like to select a unique key if we ask a field of a child to avoid the DISTINCT to discard them, or for computed field than need several other fields)
 		//$this->export_special_array[$r] = array('t.field'=>'...');
@@ -359,13 +359,13 @@ class modDolimail extends DolibarrModules
 		$r = 1;
 		/* BEGIN MODULEBUILDER IMPORT MYOBJECT */
 		/*
-		 $langs->load("dolimail@dolimail");
+		 $langs->load("dolitemplate@dolitemplate");
 		 $this->export_code[$r]=$this->rights_class.'_'.$r;
 		 $this->export_label[$r]='MyObjectLines';	// Translation key (used only if key ExportDataset_xxx_z not found)
-		 $this->export_icon[$r]='myobject@dolimail';
-		 $keyforclass = 'MyObject'; $keyforclassfile='/dolimail/class/myobject.class.php'; $keyforelement='myobject@dolimail';
+		 $this->export_icon[$r]='myobject@dolitemplate';
+		 $keyforclass = 'MyObject'; $keyforclassfile='/dolitemplate/class/myobject.class.php'; $keyforelement='myobject@dolitemplate';
 		 include DOL_DOCUMENT_ROOT.'/core/commonfieldsinexport.inc.php';
-		 $keyforselect='myobject'; $keyforaliasextra='extra'; $keyforelement='myobject@dolimail';
+		 $keyforselect='myobject'; $keyforaliasextra='extra'; $keyforelement='myobject@dolitemplate';
 		 include DOL_DOCUMENT_ROOT.'/core/extrafieldsinexport.inc.php';
 		 //$this->export_dependencies_array[$r]=array('mysubobject'=>'ts.rowid', 't.myfield'=>array('t.myfield2','t.myfield3')); // To force to activate one or several fields if we select some fields that need same (like to select a unique key if we ask a field of a child to avoid the DISTINCT to discard them, or for computed field than need several other fields)
 		 $this->export_sql_start[$r]='SELECT DISTINCT ';
@@ -388,17 +388,17 @@ class modDolimail extends DolibarrModules
 	{
 		global $conf, $langs;
 
-		$result = $this->_load_tables('/dolimail/sql/');
+		$result = $this->_load_tables('/dolitemplate/sql/');
 		if ($result < 0) return -1; // Do not activate module if error 'not allowed' returned when loading module SQL queries (the _load_table run sql with run_sql with the error allowed parameter set to 'default')
 
 		// Create extrafields during init
 		//include_once DOL_DOCUMENT_ROOT.'/core/class/extrafields.class.php';
 		//$extrafields = new ExtraFields($this->db);
-		//$result1=$extrafields->addExtraField('dolimail_myattr1', "New Attr 1 label", 'boolean', 1,  3, 'thirdparty',   0, 0, '', '', 1, '', 0, 0, '', '', 'dolimail@dolimail', '$conf->dolimail->enabled');
-		//$result2=$extrafields->addExtraField('dolimail_myattr2', "New Attr 2 label", 'varchar', 1, 10, 'project',      0, 0, '', '', 1, '', 0, 0, '', '', 'dolimail@dolimail', '$conf->dolimail->enabled');
-		//$result3=$extrafields->addExtraField('dolimail_myattr3', "New Attr 3 label", 'varchar', 1, 10, 'bank_account', 0, 0, '', '', 1, '', 0, 0, '', '', 'dolimail@dolimail', '$conf->dolimail->enabled');
-		//$result4=$extrafields->addExtraField('dolimail_myattr4', "New Attr 4 label", 'select',  1,  3, 'thirdparty',   0, 1, '', array('options'=>array('code1'=>'Val1','code2'=>'Val2','code3'=>'Val3')), 1,'', 0, 0, '', '', 'dolimail@dolimail', '$conf->dolimail->enabled');
-		//$result5=$extrafields->addExtraField('dolimail_myattr5', "New Attr 5 label", 'text',    1, 10, 'user',         0, 0, '', '', 1, '', 0, 0, '', '', 'dolimail@dolimail', '$conf->dolimail->enabled');
+		//$result1=$extrafields->addExtraField('dolitemplate_myattr1', "New Attr 1 label", 'boolean', 1,  3, 'thirdparty',   0, 0, '', '', 1, '', 0, 0, '', '', 'dolitemplate@dolitemplate', '$conf->dolitemplate->enabled');
+		//$result2=$extrafields->addExtraField('dolitemplate_myattr2', "New Attr 2 label", 'varchar', 1, 10, 'project',      0, 0, '', '', 1, '', 0, 0, '', '', 'dolitemplate@dolitemplate', '$conf->dolitemplate->enabled');
+		//$result3=$extrafields->addExtraField('dolitemplate_myattr3', "New Attr 3 label", 'varchar', 1, 10, 'bank_account', 0, 0, '', '', 1, '', 0, 0, '', '', 'dolitemplate@dolitemplate', '$conf->dolitemplate->enabled');
+		//$result4=$extrafields->addExtraField('dolitemplate_myattr4', "New Attr 4 label", 'select',  1,  3, 'thirdparty',   0, 1, '', array('options'=>array('code1'=>'Val1','code2'=>'Val2','code3'=>'Val3')), 1,'', 0, 0, '', '', 'dolitemplate@dolitemplate', '$conf->dolitemplate->enabled');
+		//$result5=$extrafields->addExtraField('dolitemplate_myattr5', "New Attr 5 label", 'text',    1, 10, 'user',         0, 0, '', '', 1, '', 0, 0, '', '', 'dolitemplate@dolitemplate', '$conf->dolitemplate->enabled');
 
 		// Permissions
 		$this->remove($options);
@@ -406,15 +406,15 @@ class modDolimail extends DolibarrModules
 		$sql = array();
 
 		// Document templates
-		$moduledir = 'dolimail';
+		$moduledir = 'dolitemplate';
 		$myTmpObjects = array();
 		$myTmpObjects['MyObject']=array('includerefgeneration'=>0, 'includedocgeneration'=>0);
 
 		foreach ($myTmpObjects as $myTmpObjectKey => $myTmpObjectArray) {
 			if ($myTmpObjectKey == 'MyObject') continue;
 			if ($myTmpObjectArray['includerefgeneration']) {
-				$src=DOL_DOCUMENT_ROOT.'/install/doctemplates/dolimail/template_myobjects.odt';
-				$dirodt=DOL_DATA_ROOT.'/doctemplates/dolimail';
+				$src=DOL_DOCUMENT_ROOT.'/install/doctemplates/dolitemplate/template_myobjects.odt';
+				$dirodt=DOL_DATA_ROOT.'/doctemplates/dolitemplate';
 				$dest=$dirodt.'/template_myobjects.odt';
 
 				if (file_exists($src) && ! file_exists($dest))
