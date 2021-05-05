@@ -219,7 +219,34 @@ TicketCloseInfos = Date d'ouverture: (__DATE_YMD__)
 \n<br>Message: (__NOTE_PUBLIC__)<br>
 
 
-
-
+#
+#Trad des labels 
+#
+SendingEmailOnDeliveryReceiptSupplier = Mail envoi-reception fournisseurs
+SendingEmailOnProjectRecap = Mail création de projet
+SendingEmailOnProjectSummary = Mail bilan de projet
+SendingEmailOnCommercialProposal = Mail de proposition commerciale
+SendingEmailOnProposalRelaunch = Mail de relance de proposition
+SendingEmailOnSecondProposalRelaunch = Mail de 2ème relande de proposition
+SendingEmailOnEndProposal = Mail de clôture de proposition
+SendingEmailOnShippingOfOrder = Mail envoi de commandes
+SendingEmailOnDeliveryReceipt = Mail accusé de reception commandes
+SendingEmailOnOrderBilling = Mail facturation commandes
+SendingEmailOnCommercialAsk = Mail envoi de demande de prix
+SendingEmailOnRelaunchCommercialAsk = Mail relance demande de prix
+SendingEmailOnCommercialAskAccepted = Mail demande de prix acceptée
+SendingEmailOnEndOfCommercialAsk = Mail clôture demande de prix 
+SendingEmailOnSupplierOrder = Mail envoi commande fournisseur
+SendingEmailOnSupplierOrderRelaunch = Mail relance commande fournisseur
+SendingEmailOnContactDefault_invoice_supplier = Mail envoi facture fournisseur
+SendingEmailOnRelaunchSupplierBilling = Mail relance facture fournisseur
+SendingEmailOnBill = Mail envoi facture
+SendingEmailOnRelaunchBilling = Mail relance de facture
+SendingEmailOnSecondRelaunchBilling = Mail 2ème relance de facture
+SendingEmailOnRelaunchBeforeContentious = Mail relance avant contentieux 
+SendingEmailOnRelaunchContentious = Mail relance infos contentieux
+SendingEmailOnNewTicket = Mail ouverture de ticket
+SendingEmailOnTicketUpdated = Mail mise à jour de ticket
+SendingEmailOnTicketClosed = Mail fin de ticket
 
 
