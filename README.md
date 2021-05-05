@@ -11,13 +11,13 @@ Dans le module Produits et Services
 - Entrepôts
 - Expéditions
 - Réceptions
-  - RCP_Envoi-reception-fournisseur
+  - RCP_Envoi-reception-fournisseur [Issue 31](https://github.com/Eoxia/dolitemplate/issues/31)
 - Equipement
 
 Dans le module Projets
 
-- PJ_Envoi-création-projet
-- PJ_Envoi-bilan-projet
+- PJ_Envoi-création-projet [Issue 32](https://github.com/Eoxia/dolitemplate/issues/32)
+- PJ_Envoi-bilan-projet [Issue 33](https://github.com/Eoxia/dolitemplate/issues/33)
 
 Dans le module Commerce
 
@@ -35,27 +35,27 @@ Dans le module Commerce
   - CO_Accusé-reception-commandes
   - CO_Facturation-commandes [Issue 16](https://github.com/Eoxia/dolitemplate/issues/16)
 - Propositions commerciales fournisseurs
-  - RQ_Envoi-demande-prix
-  - RQ_Relance-demande-prix
-  - RQ_Accepter-demande-prix
-  - RQ_Cloture-demande-prix
+  - RQ_Envoi-demande-prix [Issue 34](https://github.com/Eoxia/dolitemplate/issues/34)
+  - RQ_Relance-demande-prix [Issue 35](https://github.com/Eoxia/dolitemplate/issues/35)
+  - RQ_Accepter-demande-prix [Issue 36](https://github.com/Eoxia/dolitemplate/issues/36)
+  - RQ_Cloture-demande-prix [Issue 37](https://github.com/Eoxia/dolitemplate/issues/37)
 - Commandes fournisseurs
-  - PO_Envoi-commande-fournisseur
-  - PO_Relance-commande-fournisseur
+  - PO_Envoi-commande-fournisseur [Issue 38](https://github.com/Eoxia/dolitemplate/issues/38)
+  - PO_Relance-commande-fournisseur [Issue 39](https://github.com/Eoxia/dolitemplate/issues/39)
 - Factures fournisseurs
-  - SI_Envoi-facture-fournisseur
-  - SI_Relance-facture-fournisseur
+  - SI_Envoi-facture-fournisseur [Issue 40](https://github.com/Eoxia/dolitemplate/issues/40)
+  - SI_Relance-facture-fournisseur [Issue 41](https://github.com/Eoxia/dolitemplate/issues/41)
 - Contrats/Abonnement
 - Interventions
 
 Dans le module Facturation/Paiement
 
 - Facture
-  - FA_Envoi-facture
-  - FA_Relance-facture
-  - FA_Relance-facture-2
-  - FA_Relance-avant-contentieux
-  - FA_Relance-information-contentieux
+  - FA_Envoi-facture [Issue 42](https://github.com/Eoxia/dolitemplate/issues/42)
+  - FA_Relance-facture [Issue 43](https://github.com/Eoxia/dolitemplate/issues/43)
+  - FA_Relance-facture-2 [Issue 44](https://github.com/Eoxia/dolitemplate/issues/44)
+  - FA_Relance-avant-contentieux [Issue 45](https://github.com/Eoxia/dolitemplate/issues/45)
+  - FA_Relance-information-contentieux [Issue 46](https://github.com/Eoxia/dolitemplate/issues/46)
 - Factures fournisseur
 - Commandes facturables
 - Salaires
@@ -64,9 +64,9 @@ Dans le module Facturation/Paiement
 
 Dans le module Ticket
 
-- TS_Ouverture-ticket
-- TS_Envoi-mise-a-jour-ticket
-- TS_Cloture-ticket
+- TS_Ouverture-ticket [Issue 47](https://github.com/Eoxia/dolitemplate/issues/47)
+- TS_Envoi-mise-a-jour-ticket [Issue 48](https://github.com/Eoxia/dolitemplate/issues/48)
+- TS_Cloture-ticket [Issue 49](https://github.com/Eoxia/dolitemplate/issues/49)
 
 ## Installation
 
