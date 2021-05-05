@@ -88,11 +88,12 @@ AdministrativeService = Service administratif
 #
 #Traductions des contents
 #
-HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
+HereIsYourOrderSupplier = A la date du (__DATE_YMD__) , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
 \n<br>Votre commande a bien été prise en compte.<br>
 \n<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>
 \n<br>(__THIRDPARTY_NAME__) (__THIRDPARTY_ADRESS__) (__THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)<br>
 \n<br>Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour(s).<br>
+\n<br>Pour suivre votre commande cliquez ici: (__SHIPPINGTRACKNUMURL__) <br>
 
 InfosBeginningProjectRecap = Pour récapituler ce début de projet :
 \n<br> - réference client: (__REF_CLIENT__)<br>
@@ -119,7 +120,7 @@ ReNeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre c
 Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ?
 \n<br> Merci de votre réponse. <br>
 
-HereIsCommercialProposal = Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
+HereIsCommercialProposal = Je vous prie de trouver ci-joint (__DIRECTDOWNLOAD_URL_PROPOSAL__) notre proposition commerciale concernant [nature de la proposition commerciale].
 \n<br>La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants : <br>
 \n<br> -[lister les grandes sections de la proposition].<br>
 \n<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au (__DATE_YMD__).<br>
@@ -133,13 +134,14 @@ HereIsYourOrder = A la date du (__DATE_YMD__) , vous avez passé commande de [no
 \n<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>
 \n<br>(__THIRDPARTY_NAME__) (__THIRDPARTY_ADRESS__) (__THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)<br>
 \n<br>Votre colis devrait vous parvenir sous un délai de (__AMOUNT__) jour.<br>
+\n<br>Pour suivre votre commande cliquez ici: (__SHIPPINGTRACKNUMURL__)<br>
 
 YourOrderIsRegistred = Nous vous remercions pour votre commande concernant le projet n° (__PROJECT_REF__)  (__PROJECT_NAME__).
-\n<br>Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.<br>
+\n<br>Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: (__REF__) avec votre numéro de commande.<br>
 \n<br>Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: (__EXTRAFIELD_SIGNATURE_LINK__).<br>
 \n<br>Votre signature vaudra alors une réception ferme et définitive de la commande.<br>
 
-HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au n° [], nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
+HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au n°(__REF__), nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
 \n<br>Il est possible de régler ce montant par [chèque, virement ou espèces.] ou de payer en ligne ici : (__ONLINE_PAYMENT_URL__) <br>
 
 HereIsCommercialAsk = Par la présente, je me permets de vous contacter au nom de la société (__MYCOMPANY_NAME__) .
@@ -165,32 +167,34 @@ DeniedCostsAreOverBudget = Nous accusons réception de votre correspondance du (
 HereIsOrderRequestDetails = Par la présente, nous vous confirmons vouloir commander l'article / la prestation suivant(e) :
 \n<br> -Désignation : [décrivez la nature du bien ou du service]<br>
 \n<br> -Quantité : (__AMOUNT__)<br>
-\n<br> -Prix unitaire : <br>
-\n<br> -Prix total TTC : <br>
-\n<br> -Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.<br>
+\n<br> -Prix unitaire :(__AMOUNT__) euros<br>
+\n<br> -Prix total TTC :(__AMOUNT__) euros<br>
+\n<br> -Vous trouverez joint à cette commande un chèque de (__AMOUNT__)euros, correspondant au (__AMOUNT__)% d'acompte demandé.<br>
 
 RelaunchHereIsOrderRequestDetails = Je me permets de vous recontacter au nom de la société (__MYCOMPANY_NAME__) pour vous relancer sur une demande de commande.
 Nous vous confirmons vouloir commander l'article / la prestation suivant(e) : 
 \n<br> -Désignation : [décrivez la nature du bien ou du service]<br>
 \n<br> -Quantité : (__AMOUNT__)<br>
-\n<br> -Prix unitaire : <br>
-\n<br> -Prix total TTC : <br>
-\n<br>Vous trouverez joint à cette commande un chèque de X euros, correspondant au X % d'acompte demandé.<br>
+\n<br> -Prix unitaire :(__AMOUNT__)euros<br>
+\n<br> -Prix total TTC :(__AMOUNT__)euros<br>
+\n<br>Vous trouverez joint à cette commande un chèque de (__AMOUNT__)euros, correspondant au (__AMOUNT__)% d'acompte demandé.<br>
 
 HereIsOrderBill = Suite à [nom de la prestation] effectué(e) le (__DATE_YMD__) et correspondant au (__REF__), nous vous adressons votre facture ci-joint : (__DIRECTDOWNLOAD_URL_INVOICE__)
 \n<br>Il est possible de régler ce montant par [chèque, virement ou espèces.] Ou en ligne ici : (__ONLINE_PAYMENT_URL__)<br>
 
-BillNotPaid = Sauf erreur de notre part, notre facture N°[numéro] en date du (__DATE_YMD__) d'un montant de [X] euros, n'a toujours pas été réglée à ce jour.
+BillNotPaid = Sauf erreur de notre part, notre facture N° (__REF__) en date du (__DATE_YMD__) d'un montant de (__AMOUNT__) euros, n'a toujours pas été réglée à ce jour.
 \n<br>Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.<br>
 
-BillNotPaidSupplier = Sauf erreur de notre part, notre facture N°[numéro] en date du (__DATE_YMD__) d'un montant de [X] euros, n'a toujours pas été réglée à ce jour.
+BillNotPaidSupplier = Sauf erreur de notre part, notre facture N° (__REF__) en date du (__DATE_YMD__) d'un montant de (__AMOUNT__) euros, n'a toujours pas été réglée à ce jour.
 \n<br>Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.<br>
 
-BillNotPaidContentious = Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour.
+BillNotPaidContentious = Nous constatons que malgré plusieurs relances de notre part, la facture N° (__REF__) d’un montant de (__AMOUNT__) euros, demeure toujours impayé à ce jour.
 \n<br>Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre dû dans un délai de [nb] jours. A défaut nous nous verrons dans l’obligation de poursuivre ce recouvrement par voie judiciaire.<br>
+\n<br>Voici votre facture: __DIRECTDOWNLOAD_URL_INVOICE__<br>
  
-LegalProceedingsIsLaunched = Nous constatons que malgré plusieurs relances de notre part, la facture N° [] d’un montant de [] demeure toujours impayé à ce jour. 
+LegalProceedingsIsLaunched = Nous constatons que malgré plusieurs relances de notre part, la facture N° (__REF__) d’un montant de (__AMOUNT__) demeure toujours impayé à ce jour. 
 \n<br>Le délai accordé étant dépassé, nous sommes désormais dans l'obligation de démarrer un contentieux, nous allons donc poursuivre ce recouvrement par voie judiciaire.<br>
+\n<br>Voici votre facture: __DIRECTDOWNLOAD_URL_INVOICE__<br>
 
 NewTicketInfos = Date d'ouverture: (__DATE_YMD__)
 \n<br>Type de la demande: [question commerciale...]<br>
