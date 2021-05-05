@@ -5,9 +5,7 @@ Contenu :
 
 Bonjour,
 
-A la date du __DATE_YMD__ , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions.
-Votre commande a bien été prise en compte.
-Elle sera acheminée par voie postale à l’adresse suivante :
+A la date du __DATE_YMD__ , vous avez passé commande de [nom du produit, la quantité demandée, les références, couleurs…] et nous vous en remercions. <br> Votre commande a bien été prise en compte.<br> Elle sera acheminée par voie postale à l’adresse suivante :
 __THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__
 Votre colis devrait vous parvenir sous un délai de __AMOUNT__ jour(s).
 
@@ -29,7 +27,7 @@ Bonjour,
 
 Pour récapituler ce début de projet :
 - réference client: __REF_CLIENT__
-- nom du projet : __PROJECT_NAME__ 
+- nom du projet : __PROJECT_NAME__
 - date de début :__DATE_YMD__
 - date de fin : __DATE_YMD__
 - demande du client : [écrire la demande]
@@ -112,11 +110,11 @@ Contenu :
 
 Bonjour,
 
-Je vous prie de trouver ci-joint notre proposition commerciale concernant [nature de la proposition commerciale].
-La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants :
+Je vous prie de trouver ci-joint __DIRECTDOWNLOAD_URL_PROPOSAL__ notre proposition commerciale concernant [nature de la proposition commerciale].<br>
+La présente offre annule et remplace toute proposition antérieure et elle prend en compte les éléments suivants : 
 - [lister les grandes sections de la proposition].
-Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au __DATE_YMD__.
-Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.
+Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu au __DATE_YMD__
+Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date
 
 Bien cordialement,
 
