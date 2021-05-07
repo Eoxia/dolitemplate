@@ -17,8 +17,8 @@
  */
 
 /**
- * \file    dolimail/admin/about.php
- * \ingroup dolimail
+ * \file    dolitemplate/admin/about.php
+ * \ingroup dolitemplate
  * \brief   About page of module Dolimail.
  */
 
@@ -42,7 +42,7 @@ require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
 require_once '../lib/dolimail.lib.php';
 
 // Translations
-$langs->loadLangs(array("errors", "admin", "dolimail@dolimail"));
+$langs->loadLangs(array("errors", "admin", "dolitemplate@dolitemplate"));
 
 // Access control
 if (!$user->admin) accessforbidden();
@@ -71,13 +71,13 @@ llxHeader('', $langs->trans($page_name));
 // Subheader
 $linkback = '<a href="'.($backtopage ? $backtopage : DOL_URL_ROOT.'/admin/modules.php?restore_lastsearch_values=1').'">'.$langs->trans("BackToModuleList").'</a>';
 
-print load_fiche_titre($langs->trans($page_name), $linkback, 'object_dolimail@dolimail');
+print load_fiche_titre($langs->trans($page_name), $linkback, 'object_dolimail@dolitemplate');
 
 // Configuration header
 $head = dolimailAdminPrepareHead();
-dol_fiche_head($head, 'about', '', 0, 'dolimail@dolimail');
+dol_fiche_head($head, 'about', '', 0, 'dolitemplate@dolitemplate');
 
-dol_include_once('/dolimail/core/modules/modDolimail.class.php');
+dol_include_once('/dolitemplate/core/modules/modDolitemplate.class.php');
 $tmpmodule = new modDolimail($db);
 print $tmpmodule->getDescLong();
 

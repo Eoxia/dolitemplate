@@ -17,8 +17,8 @@
  */
 
 /**
- * \file    dolimail/admin/setup.php
- * \ingroup dolimail
+ * \file    dolitemplate/admin/setup.php
+ * \ingroup dolitemplate
  * \brief   Dolimail setup page.
  */
 
@@ -44,7 +44,7 @@ require_once '../lib/dolimail.lib.php';
 //require_once "../class/myclass.class.php";
 
 // Translations
-$langs->loadLangs(array("admin", "dolimail@dolimail"));
+$langs->loadLangs(array("admin", "dolitemplate@dolitemplate"));
 
 // Access control
 if (!$user->admin) accessforbidden();
@@ -101,7 +101,7 @@ if ($action == 'updateMask')
 	$dirmodels = array_merge(array('/'), (array) $conf->modules_parts['models']);
 	foreach ($dirmodels as $reldir)
 	{
-		$file = dol_buildpath($reldir."core/modules/dolimail/doc/pdf_".$modele."_".strtolower($tmpobjectkey).".modules.php", 0);
+		$file = dol_buildpath($reldir."core/modules/dolitemplate/doc/pdf_".$modele."_".strtolower($tmpobjectkey).".modules.php", 0);
 		if (file_exists($file))
 		{
 			$filefound = 1;
@@ -189,11 +189,11 @@ llxHeader('', $langs->trans($page_name));
 // Subheader
 $linkback = '<a href="'.($backtopage ? $backtopage : DOL_URL_ROOT.'/admin/modules.php?restore_lastsearch_values=1').'">'.$langs->trans("BackToModuleList").'</a>';
 
-print load_fiche_titre($langs->trans($page_name), $linkback, 'object_dolimail@dolimail');
+print load_fiche_titre($langs->trans($page_name), $linkback, 'object_dolimail@dolitemplate');
 
 // Configuration header
 $head = dolimailAdminPrepareHead();
-dol_fiche_head($head, 'settings', '', -1, "dolimail@dolimail");
+dol_fiche_head($head, 'settings', '', -1, "dolitemplate@dolitemplate");
 
 // Setup page goes here
 echo '<span class="opacitymedium">'.$langs->trans("DolimailSetupPage").'</span><br><br>';
@@ -252,7 +252,7 @@ if ($action == 'edit')
 }
 
 
-$moduledir = 'dolimail';
+$moduledir = 'dolitemplate';
 $myTmpObjects = array();
 $myTmpObjects['MyObject']=array('includerefgeneration'=>0, 'includedocgeneration'=>0);
 

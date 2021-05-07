@@ -18,7 +18,7 @@
 
 /**
  * \file    test/phpunit/DolimailFunctionalTest.php
- * \ingroup dolimail
+ * \ingroup dolitemplate
  * \brief   Example Selenium test.
  *
  * Put detailed description here.
@@ -196,9 +196,9 @@ class DolimailFunctionalTest extends \PHPUnit_Extensions_Selenium2TestCase
 	 */
 	public function testConfigurationPage()
 	{
-		$this->url('/custom/dolimail/admin/setup.php');
+		$this->url('/custom/dolitemplate/admin/setup.php');
 		$this->authenticate();
-		return $this->assertContains('dolimail/admin/setup.php', $this->url(), 'Configuration page');
+		return $this->assertContains('dolitemplate/admin/setup.php', $this->url(), 'Configuration page');
 	}
 
 	/**
@@ -209,9 +209,9 @@ class DolimailFunctionalTest extends \PHPUnit_Extensions_Selenium2TestCase
 	 */
 	public function testAboutPage()
 	{
-		$this->url('/custom/dolimail/admin/about.php');
+		$this->url('/custom/dolitemplate/admin/about.php');
 		$this->authenticate();
-		return $this->assertContains('dolimail/admin/about.php', $this->url(), 'About page');
+		return $this->assertContains('dolitemplate/admin/about.php', $this->url(), 'About page');
 	}
 
 	/**
@@ -222,7 +222,7 @@ class DolimailFunctionalTest extends \PHPUnit_Extensions_Selenium2TestCase
 	 */
 	public function testAboutPageRendersMarkdownReadme()
 	{
-		$this->url('/custom/dolimail/admin/about.php');
+		$this->url('/custom/dolitemplate/admin/about.php');
 		$this->authenticate();
 		return $this->assertEquals(
 			'Dolibarr Module Template (aka My Module)',
