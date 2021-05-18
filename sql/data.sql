@@ -6,11 +6,11 @@ VALUES (0,'order','order_supplier_send','',0,null,null,'(SendingEmailOnDeliveryR
 /* Module projets*/
 /* PJ_Envoi-création-projet*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'project','project','',0,null,null,'(SendingEmailOnProjectRecap)'       ,80,'$conf->project->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ProjectRecap)__ __PROJECT_NAME__','__(Hello)__ ,<br><br>\n\n__(InfosBeginningProjectRecap)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'projet','project','',0,null,null,'(SendingEmailOnProjectRecap)'       ,80,'$conf->projet->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ProjectRecap)__ __PROJECT_NAME__','__(Hello)__ ,<br><br>\n\n__(InfosBeginningProjectRecap)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 /* PJ_Envoi-bilan-projet*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'project','project','',0,null,null,'(SendingEmailOnProjectSummary)'       ,90,'$conf->project->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ProjectSummary)__ __PROJECT_NAME__','__(Hello)__ ,<br><br>\n\n__(HereIsCustomerRequest)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'projet','project','',0,null,null,'(SendingEmailOnProjectSummary)'       ,90,'$conf->projet->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ProjectSummary)__ __PROJECT_NAME__','__(Hello)__ ,<br><br>\n\n__(HereIsCustomerRequest)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /* Module commerce*/
@@ -36,7 +36,7 @@ VALUES (0,'propal','propal_send','',0,null,null,'(SendingEmailOnEndProposal)'   
 /*Commandes*/
 /*CO_Envoi-commandes */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'shipping','shipping_send','',0,null,null,'(SendingEmailOnShippingOfOrder)'       ,150,'$conf->shipping->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ShippingOfOrder)__','__(Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'expedition','shipping_send','',0,null,null,'(SendingEmailOnShippingOfOrder)'       ,150,'$conf->expedition->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ShippingOfOrder)__','__(Hello)__ ,<br><br>\n\n__(HereIsYourOrder)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*CO_Accusé-reception-commandes */
@@ -52,22 +52,22 @@ VALUES (0,'order','order_supplier_send','',0,null,null,'(SendingEmailOnOrderBill
 /*Propositions commerciales fournisseurs*/
 /*RQ_Envoi-demande-prix*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCommercialAsk)'       ,180,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(CommercialAsk)__','__(Hello)__ ,<br><br>\n\n__(HereIsCommercialAsk)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'supplier_proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCommercialAsk)'       ,180,'$conf->supplier_proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(CommercialAsk)__','__(Hello)__ ,<br><br>\n\n__(HereIsCommercialAsk)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*RQ_Relance-demande-prix*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnRelaunchCommercialAsk)'       ,190,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchCommercialAsk)__','__(Hello)__ ,<br><br>\n\n__(RelaunchHereIsCommercialAsk)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'supplier_proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnRelaunchCommercialAsk)'       ,190,'$conf->supplier_proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchCommercialAsk)__','__(Hello)__ ,<br><br>\n\n__(RelaunchHereIsCommercialAsk)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*RQ_Accepter-demande-prix*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCommercialAskAccepted)'       ,200,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(CommercialAskAccepted)__','__(Hello)__ ,<br><br>\n\n__(HereIsQuotationOffer)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'supplier_proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnCommercialAskAccepted)'       ,200,'$conf->supplier_proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(CommercialAskAccepted)__','__(Hello)__ ,<br><br>\n\n__(HereIsQuotationOffer)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*RQ_Cloture-demande-prix*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnEndOfCommercialAsk)'       ,210,'$conf->proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(EndOfCommercialAsk
+VALUES (0,'supplier_proposal','supplier_proposal_send','',0,null,null,'(SendingEmailOnEndOfCommercialAsk)'       ,210,'$conf->supplier_proposal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(EndOfCommercialAsk
 )__','__(Hello)__ ,<br><br>\n\n__(DeniedCostAreOverBudget)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
@@ -97,7 +97,7 @@ VALUES (0,'invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnRelau
 /*Facture*/
 /*FA_Envoi-facture*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'facture','facture_send','',0,null,null,'(SendingEmailOnBill)'       ,260,'$conf->facture->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(Bill)__ __PROJECT_NAME__ __REF_CLIENT__','__(Hello)__ ,<br><br>\n\n__(hereIsOrderBill)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'facture','facture_send','',0,null,null,'(SendingEmailOnBill)'       ,260,'$conf->facture->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(Bill)__ __PROJECT_NAME__ __REF_CLIENT__','__(Hello)__ ,<br><br>\n\n__(HereIsOrderBill)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 
 /*FA_Relance-facture*/
@@ -106,7 +106,7 @@ VALUES (0,'facture','facture_send','',0,null,null,'(SendingEmailOnRelaunchBillin
 
 /*FA_Relance-facture-2*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'facture','facture_send','',0,null,null,'(SendingEmailOnSecondRelaunchBilling)'       ,280,'$conf->facture->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(SecondRelaunchBilling)__ __PROJECT_NAME__ __REF_CLIENT__ __DIRECTDOWNLOAD_URL_INVOICE__','__(Hello)__ ,<br><br>\n\n__(BillNotPaid)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
+VALUES (0,'facture','facture_send','',0,null,null,'(SendingEmailOnSecondRelaunchBilling)'       ,280,'$conf->facture->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(SecondRelaunchBilling)__ __PROJECT_NAME__ __REF_CLIENT__ ','__(Hello)__ ,<br><br>\n\n__(BillNotPaid)__<br><br>\n__(Sincerely)__<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__<br>',null, 0);
 
 /*FA_Relance-avant-contentieux*/
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
