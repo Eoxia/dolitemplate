@@ -27,12 +27,8 @@ Dans le module Commerce
   - PR_Relance-proposition-2 [Issue 12](https://github.com/Eoxia/dolitemplate/issues/12)
   - PR_Cloture-proposition [Issue 20](https://github.com/Eoxia/dolitemplate/issues/20)
 - Commandes
-  - CO_Envoi-commandes  [Issue 17](https://github.com/Eoxia/dolitemplate/issues/17)
-  - CO_Accusé-reception-commandes [Issue 26](https://github.com/Eoxia/dolitemplate/issues/26)
   - CO_Envoi-commandes [Issue 25](https://github.com/Eoxia/dolitemplate/issues/25)
-  - CO_Accusé-reception-commandes [Issue 19](https://github.com/Eoxia/dolitemplate/issues/19)
-  - CO_Facturation-commandes
-  - CO_Accusé-reception-commandes
+  - CO_Accusé-reception-commandes [Issue 26](https://github.com/Eoxia/dolitemplate/issues/26)
   - CO_Facturation-commandes [Issue 16](https://github.com/Eoxia/dolitemplate/issues/16)
 - Propositions commerciales fournisseurs
   - RQ_Envoi-demande-prix [Issue 34](https://github.com/Eoxia/dolitemplate/issues/34)

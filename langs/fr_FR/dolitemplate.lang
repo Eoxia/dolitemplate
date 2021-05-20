@@ -68,7 +68,7 @@ SupplierOrder = Envoi commande fournisseur
 SupplierOrderRelaunch = Relance commande fournisseur
 ContactDefault_invoice_supplier = Facture fournisseur
 RelaunchSupplierBilling = Relance facture fournisseur
-Bill = Facture
+ShippingInvoice = Envoie de la facture
 RelaunchBilling = Relance facture
 SecondRelaunchBilling = 2ème relance facture
 RelaunchBeforeContentious = Relance facture avant contentieux
@@ -102,7 +102,7 @@ HereIsCommercialProposal = Je vous prie de trouver ci-joint __DIRECTDOWNLOAD_URL
 
 NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition. Nous sommes actuellement sous contrat jusqu’au __DATE_YMD__ .  Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.<br>
 
-HereIsYourOrder = A la date du __DATE_YMD__ , vous avez passé commande de [nom du produit, la quantité demandée, les références…] et nous vous en remercions. Votre commande a bien été prise en compte.<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>__THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)<br>Votre colis devrait vous parvenir sous un délai de __AMOUNT__ jour.<br>Pour suivre votre commande cliquez ici: __SHIPPINGTRACKNUMURL__<br>
+HereIsYourOrder = A la date du __DATE_YMD__, vous avez passé commande de [nom du produit, la quantité demandée, les références…] et nous vous en remercions. Votre commande a bien été prise en compte.<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>__THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__)<br>Votre colis devrait vous parvenir sous un délai de __AMOUNT__ jour.<br>Pour suivre votre commande cliquez ici: __SHIPPINGTRACKNUMURL__<br>
 
 YourOrderIsRegistred = Nous vous remercions pour votre commande concernant le projet n° __PROJECT_REF__  __PROJECT_NAME__. Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.<br>Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: __EXTRAFIELD_SIGNATURE_LINK__.<br>Votre signature vaudra alors une réception ferme et définitive de la commande.<br>
 
