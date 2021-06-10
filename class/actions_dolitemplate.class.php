@@ -1,5 +1,5 @@
 <?php
-/* Copyright (C) 2020 Eoxia
+/* Copyright (C) 2021 EOXIA <dev@eoxia.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,7 +42,7 @@ class ActionsDolitemplate
     }
 
 	/**
-	 * Do new actions on CommonObject
+	 * Do new actions on PrintTopRightMenu
 	 *
 	 * @param   array           $parameters     Hook metadatas (context, etc...)
 	 * @param   CommonObject    $object         The object to process (third party and product object)
