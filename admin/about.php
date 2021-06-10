@@ -1,6 +1,5 @@
 <?php
-/* Copyright (C) 2004-2017 Laurent Destailleur  <eldy@users.sourceforge.net>
- * Copyright (C) 2021 SuperAdmin
+/* Copyright (C) 2021 EOXIA <dev@eoxia.com>
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +18,7 @@
 /**
  * \file    dolitemplate/admin/about.php
  * \ingroup dolitemplate
- * \brief   About page of module Dolimail.
+ * \brief   About page of module Dolitemplate.
  */
 
 // Load Dolibarr environment
@@ -39,7 +38,7 @@ if (!$res) die("Include of main fails");
 // Libraries
 require_once DOL_DOCUMENT_ROOT.'/core/lib/admin.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
-require_once '../lib/dolimail.lib.php';
+require_once '../lib/dolitemplate.lib.php';
 
 // Translations
 $langs->loadLangs(array("errors", "admin", "dolitemplate@dolitemplate"));
@@ -48,37 +47,27 @@ $langs->loadLangs(array("errors", "admin", "dolitemplate@dolitemplate"));
 if (!$user->admin) accessforbidden();
 
 // Parameters
-$action = GETPOST('action', 'alpha');
 $backtopage = GETPOST('backtopage', 'alpha');
-
-
-/*
- * Actions
- */
-
-// None
-
 
 /*
  * View
  */
 
-$form = new Form($db);
-
-$page_name = "DolimailAbout";
-llxHeader('', $langs->trans($page_name));
+$page_name = "DolitemplateAbout";
+$help_url = 'FR:Module_Dolitemplate';
+llxHeader('', $langs->trans($page_name), $help_url);
 
 // Subheader
 $linkback = '<a href="'.($backtopage ? $backtopage : DOL_URL_ROOT.'/admin/modules.php?restore_lastsearch_values=1').'">'.$langs->trans("BackToModuleList").'</a>';
 
-print load_fiche_titre($langs->trans($page_name), $linkback, 'object_dolimail@dolitemplate');
+print load_fiche_titre($langs->trans($page_name), $linkback, 'dolitemplate@dolitemplate');
 
 // Configuration header
-$head = dolimailAdminPrepareHead();
+$head = dolitemplateAdminPrepareHead();
 dol_fiche_head($head, 'about', '', 0, 'dolitemplate@dolitemplate');
 
-dol_include_once('/dolitemplate/core/modules/modDolitemplate.class.php');
-$tmpmodule = new modDolimail($db);
+require_once '../core/modules/modDolitemplate.class.php';
+$tmpmodule = new modDolitemplate($db);
 print $tmpmodule->getDescLong();
 
 // Page end
