@@ -62,8 +62,8 @@ SendingEmailOnProjectRecap = Mail création de projet
 SendingEmailOnProjectSummary = Mail bilan de projet
 
 #Contenu
-InfosBeginningProjectRecap = Pour récapituler ce début de projet :\n<br> - réference client: __REF_CLIENT__<br> - nom du projet : __PROJECT_NAME__<br> - date de début : __DATE_YMD__<br> - date de fin : __DATE_YMD__<br>
-HereIsCustomerRequest = Demande du client : [écrire la demande]<br>- Date de début :__DATE_YMD__<br>- Date de fin :__DATE_YMD__<br>- Résultats atteints : __THIRDPARTY_NOTE_PUBLIC__ <br>- Ecarts : __THIRDPARTY_NOTE_PUBLIC__ <br>- Observations :  <br>- Conclusion : <br>
+InfosBeginningProjectRecap = Pour récapituler ce début de projet :\n<br> - nom du projet : __PROJECT_TITLE__<br> - description du projet : __PROJECT_DESCRIPTION__<br> - date de début : __PROJECT_DATE_START__ <br> - date de fin : __PROJECT_DATE_END__<br>
+HereIsCustomerRequest = Demande du client : [écrire la demande] <br>- Date de début : __PROJECT_DATE_START__ <br> - Date de fin : __PROJECT_DATE_END__ <br> - Résultats atteints : <br> - Ecarts : <br> - Observations :  <br>- Conclusion : <br>
 
 
 #
@@ -83,7 +83,7 @@ SecondProposalRelaunch = 2ème relance de proposition
 EndProposal = Clôture proposition
 
 #Contenu
-HereIsCommercialProposal = Je vous prie de trouver en pièce jointe notre proposition commerciale concernant [nature de la proposition commerciale]. La présente offre annule et remplace toute proposition antérieure.<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au __DATE_YMD__.<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
+HereIsCommercialProposal = Je vous prie de trouver en pièce jointe notre proposition commerciale concernant le projet __PROJECT_NAME__. La présente offre annule et remplace toute proposition antérieure.<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au __DATE_YMD__.<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
 NeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail. Êtes-vous disponible pour un rapide appel téléphonique le __DAY_TEXT__  __DAY__ ?<br>Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ? Merci de votre réponse.<br>
 NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition.<br>Nous sommes actuellement sous contrat jusqu’au __DATE_YMD__. Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.<br>
 
@@ -104,8 +104,8 @@ DeliveryReceipt = Accusé reception de la commande
 OrderBilling = Facturation de la commande
 
 #Contenu
-HereIsYourOrder = A la date du __DATE_YMD__, vous avez passé commande de [nom du produit, la quantité demandée, les références…] et nous vous en remercions. Votre commande a bien été prise en compte.<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>__THIRDPARTY_NAME__ __THIRDPARTY_ADDRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__<br>Votre colis devrait vous parvenir sous un délai de 14 jours.<br>Pour suivre votre commande cliquez ici: __SHIPPINGTRACKNUMURL__<br>
-YourOrderIsRegistred = Nous vous remercions pour votre commande concernant le projet n° __PROJECT_REF__  __PROJECT_NAME__.<br>Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.<br>Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: __EXTRAFIELD_SIGNATURE_LINK__.<br>Votre signature vaudra alors une réception ferme et définitive de la commande.<br>
+HereIsYourOrder = Votre commande a bien été prise en compte.<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>__THIRDPARTY_NAME__ __THIRDPARTY_ADDRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__<br>Votre colis devrait vous parvenir sous un délai de 14 jours.<br>
+YourOrderIsRegistred = Nous vous remercions pour votre commande concernant le projet n° __PROJECT_REF__  __PROJECT_NAME__.<br>Nous accusons réception de celle-ci, vous trouverez en retour notre confirmation de commande: __REF__ avec votre numéro de commande.<br>Après lecture, si vous le souhaitez vous pouvez signer en ligne très simplement en cliquant sur le lien suivant: __EXTRAFIELD_SIGNATURE_LINK__.<br>Votre signature vaudra alors une acceptation ferme et définitive de la commande.<br>
 
 
 
@@ -126,10 +126,10 @@ CommercialAskAccepted = Demande de prix acceptée
 EndOfCommercialAsk = Clôturation de la demande de prix
 
 #Contenu
-HereIsCommercialAsk = Par la présente, je me permets de vous contacter au nom de la société __MYCOMPANY_NAME__.<br>Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].<br>Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant la __REF__.<br>Pouvez-vous nous communiquer les tarifs pour la/les références ci-dessus.<br>N'hésitez pas à nous contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.<br>
-RelaunchHereIsCommercialAsk = Par la présente, je me permets de vous recontacter au nom de la société __MYCOMPANY_NAME__.<br>Notre société est spécialisée dans [Indiquez précisément l'objet social de l'entreprise].<br>Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant la __REF__.<br>Pouvez-vous nous communiquer les tarifs pour la/les références ci-dessus.<br>N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.<br>
-HereIsQuotationOffer = Suite à l’analyse de votre demande, veuillez trouver ci-joint notre proposition de devis qui, si vous l’acceptez, par apposition de votre signature, vaudra bon de commande. Merci de nous le renvoyer signé par courriel ou par la poste.<br>Pour visualiser votre devis sur la pièce jointe.<br>
-DeniedCostAreOverBudget = Nous accusons réception de votre demande de prix du __DATE_YMD__.<br>Nous vous remercions sincèrement de vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.<br>Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.<br>
+HereIsCommercialAsk = Par la présente, je me permets de vous contacter au nom de la société __MYCOMPANY_NAME__.<br>Notre société est spécialisée dans __COMPANY_OBJECT__.<br>Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant la __REF__.<br>Pouvez-vous nous communiquer les tarifs pour la/les références ci-dessus.<br>N'hésitez pas à nous contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.<br>
+RelaunchHereIsCommercialAsk = Par la présente, je me permets de vous recontacter au nom de la société __MYCOMPANY_NAME__.<br>Notre société est spécialisée dans __COMPANY_OBJECT__.<br>Suite à la visite de votre site internet, la direction des achats souhaite obtenir des informations complémentaires concernant la __REF__.<br>Pouvez-vous nous communiquer les tarifs pour la/les références ci-dessus.<br>N'hésitez pas à me contacter si toutefois vous souhaitez des renseignements complémentaires concernant cette demande de tarifs.<br>
+HereIsQuotationOffer = Suite à l’analyse de votre demande, veuillez trouver ci-joint notre proposition de devis qui, si vous l’acceptez, par apposition de votre signature, vaudra bon de commande. Merci de nous le renvoyer signé par courriel ou par la poste.<br>Pour visualiser votre devis cliquez sur la pièce jointe.<br>
+DeniedCostAreOverBudget = Nous accusons réception de votre demande de prix.<br>Nous vous remercions sincèrement de vos services, toutefois, après avoir minutieusement examiné votre offre, nous sommes malheureusement dans l’obligation de la décliner. En effet, le montant des frais inhérents au projet que nous souhaitons mettre en œuvre mentionné dans votre devis dépasse largement le budget dont nous disposons.<br>Nous tenons à vous réitérer nos remerciements et à vous assurer que nous ferons appel à vos services si nous souhaitons ajuster notre projet et le réaliser ou si nous avons à l’avenir d’autres projets.<br>
 
 
 
@@ -150,7 +150,7 @@ DeliveryReceiptSupplier = Accusé de reception fournisseur
 #Contenu
 HereIsOrderRequestDetails = Par la présente, nous vous confirmons vouloir commander l'article / la prestation suivante :<br>- Désignation : [nom de la prestation]<br>-Quantité : __AMOUNT__<br>- Prix unitaire : __AMOUNT__ euros<br>- Prix total TTC : __AMOUNT__ euros<br>- Vous trouverez joint à cette commande un chèque de __AMOUNT__ euros, correspondant au __AMOUNT__ pour cent d'acompte demandé.<br>
 RelaunchHereIsOrderRequestDetails = Je me permets de vous recontacter au nom de la société __MYCOMPANY_NAME__ pour vous relancer sur une demande de commande. Nous vous confirmons vouloir commander l'article/la prestation suivante :<br>-Désignation : [nom de la prestation]<br>-Quantité : __AMOUNT__<br>-Prix unitaire : __AMOUNT__euros<br>-Prix total TTC : __AMOUNT__euros<br>Vous trouverez joint à cette commande un chèque de __AMOUNT__ euros, correspondant au __AMOUNT__ pour cent d'acompte demandé.<br>
-HereIsYourOrderSupplier = A la date du __DATE_YMD__ , vous avez passé commande de [nom du produit, la quantité demandée, les références…] et nous vous en remercions. Votre commande a bien été prise en compte.<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>__THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__<br>Votre colis devrait vous parvenir sous un délai de __AMOUNT__ jours.<br>Pour suivre votre commande cliquez ici: __SHIPPINGTRACKNUMURL__. <br>
+HereIsYourOrderSupplier = Votre commande a bien été prise en compte.<br>Elle sera acheminée par voie postale à l’adresse suivante : <br>__THIRDPARTY_NAME__ __THIRDPARTY_ADRESS__ __THIRDPARTY_ZIP__ __THIRDPARTY_TOWN__<br>Votre colis devrait vous parvenir sous un délai de 14 jours.<br>
 
 
 
@@ -166,17 +166,17 @@ SendingEmailOnRelaunchBeforeContentious = Mail relance avant contentieux
 SendingEmailOnRelaunchContentious = Mail relance infos contentieux
 
 #Sujet
-ShippingInvoice = Envoie facture
+ShippingInvoice = Envoi facture
 RelaunchBilling = Relance facture
 SecondRelaunchBilling = 2ème relance facture
 RelaunchBeforeContentious = Relance facture avant contentieux
 RelaunchContentious = Relance information contentieux
 
 #Contenu
-HereIsOrderBill = Suite à [nom de la prestation] effectuée le __DATE_YMD__ et correspondant au n°__REF__, nous vous adressons votre facture en pièce jointe. <br>Il est possible de régler ce montant par chèque, virement,espèces ou de payer en ligne ici : __ONLINE_PAYMENT_URL__ <br>
-BillNotPaid = Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° __REF__ en date du __DATE_YMD__ pour un montant de __AMOUNT_FORMATED__, alors même que cette facture arrivait à échéance le __DATE_DUE_YMD__.<br>Nous vous demandons de bien vouloir procéder à son règlement le plus rapidement possible.<br>Vous trouverez en pièce jointe de ce courrier une copie de la facture.<br>Veuillez ne pas tenir compte de cette lettre si votre règlement nous a été adressé avant la réception de courrier.<br>
-BillNotPaidRelaunch = Sauf erreur de notre part, notre facture N° __REF__ en date du __DATE_YMD__ d'un montant de __AMOUNT_FORMATED__, n'a toujours pas été réglée à ce jour.<br>Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.<br>
-BillNotPaidContentious = Nous constatons que malgré plusieurs relances de notre part, la facture N° __REF__ d’un montant de __AMOUNT_FORMATED__, demeure toujours impayé à ce jour.<br>Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre dû dans un délai de 14 jours. A défaut nous nous verrons dans l’obligation de poursuivre ce recouvrement par voie judiciaire.<br>Vous pouvez voir votre facture en pièce jointe.<br>
+HereIsOrderBill = Suite à la prestation réalisé sur le projet : __PROJECT_NAME__ effectuée le __DATE_YMD__ et correspondant au n°__REF__, nous vous adressons votre document en pièce jointe. <br> Merci d'effectuer votre règlement avant le __DATE_DUE_YMD__. <br>Il est possible de régler ce montant par chèque, virement,espèces ou de payer en ligne ici : __ONLINE_PAYMENT_URL__ <br>
+BillNotPaid = Sauf erreur de notre part, nous n’avons à ce jour pas reçu le paiement de la facture n° __REF__ en date du __DATE_YMD__ pour un montant de __AMOUNT_FORMATED__, alors même que cette facture arrivait à échéance le __DATE_DUE_YMD__.<br>Nous vous demandons de bien vouloir procéder à son règlement le plus rapidement possible.<br>Vous trouverez en pièce jointe de ce courrier une copie de la facture.<br>Veuillez ne pas tenir compte de cet email si votre règlement nous a été adressé avant la réception de courrier.<br> PS : Si vous nous avez fourni un bon de commande ou une référence client vous la trouverez ici : __REF_CLIENT__ <br>
+BillNotPaidRelaunch = Sauf erreur de notre part, notre facture N° __REF__ en date du __DATE_YMD__ d'un montant de __AMOUNT_FORMATED__, n'a toujours pas été réglée à ce jour.<br>Nous pensons qu'il s'agit d'un oubli, et nous vous remercions de bien vouloir nous adresser dans les plus brefs délais votre règlement.<br> Veuillez ne pas tenir compte de cet email si votre reglèment nous a été adressé avant la réception de ce courrier. <br>
+BillNotPaidContentious = Nous constatons que malgré plusieurs relances de notre part, la facture N° __REF__ d’un montant de __AMOUNT_FORMATED__, demeure toujours impayé à ce jour.<br>Ceci est notre dernier email de relance avant la mise en procédure judiciaire.<br>Pour mettre fin à ce contentieux, nous vous recommandons vivement de régler votre dû dans un délai de 14 jours. A défaut nous nous verrons dans l’obligation de poursuivre ce recouvrement par voie judiciaire.<br>Vous pouvez voir votre facture en pièce jointe.<br>
 LegalProceedingsIsLaunched = Nous constatons que malgré plusieurs relances de notre part, la facture N° __REF__ d’un montant de __AMOUNT_FORMATED__ demeure toujours impayé à ce jour.<br>Nous sommes donc au regret de vous informer du lancement de la procédure judiciaire.<br>
 
 
@@ -190,7 +190,7 @@ SendingEmailOnSupplierInvoice = Mail envoi facture fournisseur
 SendingEmailOnRelaunchSupplierBilling = Mail relance facture fournisseur
 
 #Sujet
-ShippingSupplierInvoice = Envoie facture fournisseur
+ShippingSupplierInvoice = Envoi facture fournisseur
 RelaunchSupplierBilling = Relance facture fournisseur
 
 

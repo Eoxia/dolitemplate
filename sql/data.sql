@@ -28,7 +28,7 @@ VALUES (0,'propal','propal_send','',0,null,null,'(SendingEmailOnSecondProposalRe
 
 /* PR_Cloture-proposition */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'propal','propal_send','',0,null,null,'(SendingEmailOnEndProposal)',140,'$conf->propal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(EndProposal)__','__(Hello)__,<br><br>\n\n__(NotAvailableProposalDenied)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
+VALUES (0,'propal','propal_send','',0,null,null,'(SendingEmailOnEndProposal)',140,'$conf->propal->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(EndProposal)__ __REF__','__(Hello)__,<br><br>\n\n__(NotAvailableProposalDenied)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
 
 
 
@@ -66,16 +66,16 @@ VALUES (0,'supplier_proposal','supplier_proposal_send','',0,null,null,'(SendingE
 
 /* Commandes fournisseurs */
 /* PO_Envoi-commande-fournisseur */
-INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'supplier_order','order_supplier_send','',0,null,null,'(SendingEmailOnSupplierOrder)',220,'$conf->supplier_order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(SendSupplierOrder)__ __REF__','__(Hello)__,<br><br>\n\n__(HereIsOrderRequestDetails)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
+-- INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
+-- VALUES (0,'supplier_order','order_supplier_send','',0,null,null,'(SendingEmailOnSupplierOrder)',220,'$conf->supplier_order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(SendSupplierOrder)__ __REF__','__(Hello)__,<br><br>\n\n__(HereIsOrderRequestDetails)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
 
 /* PO_Envoi-reception-fournisseur */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
 VALUES (0,'supplier_order','order_supplier_send','',0,null,null,'(SendingEmailOnDeliveryReceiptSupplier)',70,'$conf->supplier_order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(DeliveryReceiptSupplier)__ __REF__','__(Hello)__,<br><br>\n\n__(HereIsYourOrderSupplier)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n<br>__MYCOMPANY_FULLADDRESS__<br>\n<br>__MYCOMPANY_EMAIL__',null, 1);
 
 /* PO_Relance-commande-fournisseur */
-INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'supplier_order','order_supplier_send','',0,null,null,'(SendingEmailOnSupplierOrderRelaunch)',230,'$conf->supplier_order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(SupplierOrderRelaunch)__ __REF__','__(Hello)__,<br><br>\n\n__(RelaunchHereIsOrderRequestDetails)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
+-- INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
+-- VALUES (0,'supplier_order','order_supplier_send','',0,null,null,'(SendingEmailOnSupplierOrderRelaunch)',230,'$conf->supplier_order->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(SupplierOrderRelaunch)__ __REF__','__(Hello)__,<br><br>\n\n__(RelaunchHereIsOrderRequestDetails)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
 
 
 /* Dans le module Facturation/Paiement */
@@ -103,22 +103,22 @@ VALUES (0,'facture','facture_send','',0,null,null,'(SendingEmailOnRelaunchConten
 /* Factures fournisseurs */
 /* SI_Envoi-facture-fournisseur */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'supplier_invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnSupplierInvoice)',240,'$conf->supplier_invoice->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ShippingSupplierInvoice)__','__(Hello)__,<br><br>\n\n__(HereIsOrderBill)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
+VALUES (0,'supplier_invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnSupplierInvoice)',240,'$conf->supplier_invoice->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(ShippingSupplierInvoice)__ __REF__','__(Hello)__,<br><br>\n\n__(HereIsOrderBill)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
 
 /* SI_Relance-facture-fournisseur */
 INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'supplier_invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnRelaunchSupplierBilling)',250,'$conf->supplier_invoice->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchSupplierBilling)__ __REF_CLIENT__','__(Hello)__,<br><br>\n\n__(BillNotPaidRelaunch)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
+VALUES (0,'supplier_invoice','invoice_supplier_send','',0,null,null,'(SendingEmailOnRelaunchSupplierBilling)',250,'$conf->supplier_invoice->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(RelaunchSupplierBilling)__ __REF__','__(Hello)__,<br><br>\n\n__(BillNotPaidRelaunch)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 1);
 
 
 /* Dans le module Ticket */
 /* TS_Ouverture-ticket */
-INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'ticket','ticket_send','',0,null,null,'(SendingEmailOnNewTicket)',310,'$conf->ticket->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(NewTicket)__','__(Hello)__,<br><br>\n\n__(NewTicketInfos)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 0);
-
-/* TS_Envoi-mise-a-jour-ticket */
-INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'ticket','ticket_send','',0,null,null,'(SendingEmailOnTicketUpdated)',320,'$conf->ticket->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(TicketUpdated)__','__(Hello)__,<br><br>\n\n__(TicketUpdatesInfos)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 0);
-
-/* TS_Cloture-ticket */
-INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
-VALUES (0,'ticket','ticket_send','',0,null,null,'(SendingEmailOnTicketClosed)',330,'$conf->ticket->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(TicketClosed)__','__(Hello)__,<br><br>\n\n__(TicketCloseInfos)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 0);
+-- INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
+-- VALUES (0,'ticket','ticket_send','',0,null,null,'(SendingEmailOnNewTicket)',310,'$conf->ticket->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(NewTicket)__ __REF__','__(Hello)__,<br><br>\n\n__(NewTicketInfos)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 0);
+--
+-- /* TS_Envoi-mise-a-jour-ticket */
+-- INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
+-- VALUES (0,'ticket','ticket_send','',0,null,null,'(SendingEmailOnTicketUpdated)',320,'$conf->ticket->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(TicketUpdated)__ __REF__','__(Hello)__,<br><br>\n\n__(TicketUpdatesInfos)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 0);
+--
+-- /* TS_Cloture-ticket */
+-- INSERT INTO llx_c_email_templates (entity,module,type_template,lang,private,fk_user,datec,label,position,enabled,active,topic,content,content_lines,joinfiles)
+-- VALUES (0,'ticket','ticket_send','',0,null,null,'(SendingEmailOnTicketClosed)',330,'$conf->ticket->enabled',1,'[__[MAIN_INFO_SOCIETE_NOM]__] __(TicketClosed)__ __REF__','__(Hello)__,<br><br>\n\n__(TicketCloseInfos)__<br><br>\n__(WithKindRegards)__,<br><br>\n\n__(AdministrativeService)__<br>__MYCOMPANY_NAME__<br>\n__MYCOMPANY_FULLADDRESS__<br>\n__MYCOMPANY_EMAIL__',null, 0);

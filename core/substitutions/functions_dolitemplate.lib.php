@@ -33,7 +33,20 @@
  */
 function dolitemplate_completesubstitutionarray(&$substitutionarray,$langs,$object)
 {
+    global $conf;
+
 	$substitutionarray['__PRODUCT_NAME__'] = $object->label;
 	$substitutionarray['__PRODUCT_REF__'] = $object->ref;
 	$substitutionarray['__PRODUCT_AMOUNT__'] = $object->ref;
+
+    if ($object->element == 'project') {
+        $substitutionarray['__PROJECT_TITLE__'] = $object->title;
+        $substitutionarray['__PROJECT_DESCRIPTION__'] = $object->description;
+        $substitutionarray['__PROJECT_DATE_START__'] = dol_print_date($object->date_start);
+        $substitutionarray['__PROJECT_DATE_END__'] = dol_print_date($object->date_end);
+    }
+
+     if ($object->element == 'supplier_proposal') {
+         $substitutionarray['__COMPANY_OBJECT__'] = $conf->global->MAIN_INFO_SOCIETE_OBJECT;
+     }
 }
