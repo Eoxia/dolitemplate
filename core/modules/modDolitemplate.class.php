@@ -45,7 +45,7 @@ class modDolitemplate extends DolibarrModules
 		$this->rights_class    = 'dolitemplate';
         $this->family          = '';
         $this->module_position = '';
-        $this->familyinfo      = array('Eoxia' => array('position' => '02', 'label' => $langs->trans("Eoxia")));
+        $this->familyinfo      = array('Eoxia' => array('position' => '01', 'label' => $langs->trans("Eoxia")));
 		$this->name            = preg_replace('/^mod/i', '', get_class($this));
 		$this->description     = $langs->trans("DolitemplateDescription");
 		$this->descriptionlong = $langs->trans("DolitemplateDescriptionLong");

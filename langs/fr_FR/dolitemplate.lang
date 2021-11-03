@@ -17,27 +17,36 @@
 # Générique
 #
 
-DolitemplateDescription = Description de Dolitemplate
-DolitemplateDescriptionLong = Description de Dolitemplate
+ModuleDolitemplateName = Dolitemplate
+DolitemplateDescription = Template d'email pour les différents objets de Dolibarr
+DolitemplateDescriptionLong = Génération automatique de template d'email pour les différents objets de Dolibarr
 
+
+#
+# Page d'administration
+#
+
+# Data - Donnée
+Settings = Réglages
+DolitemplateSetup = Configuration du module Dolitemplate
 
 
 #
 # Page À propos
 #
+
 About = À propos
 DolitemplateAbout = À propos de Dolitemplate
-
 
 
 #
 #Autres traductions
 #
+
 Hello = Bonjour
 Sincerely = Sincèrement
 AdministrativeService = Service administratif
 WithKindRegards = Bien cordialement
-
 
 
 #
