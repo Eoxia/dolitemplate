@@ -1,8 +1,5 @@
 <?php
-/* Copyright (C) 2004-2018  Laurent Destailleur     <eldy@users.sourceforge.net>
- * Copyright (C) 2018-2019  Nicolas ZABOURI         <info@inovea-conseil.com>
- * Copyright (C) 2019-2020  Frédéric France         <frederic.france@netlogic.fr>
- * Copyright (C) 2019-2021 Eoxia <dev@eoxia.com>
+/* Copyright (C) 2021 Eoxia <dev@eoxia.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -44,23 +41,19 @@ class modDolitemplate extends DolibarrModules
 
 		$this->db = $db;
 
-		$this->numero = 500000; // TODO Go on page https://wiki.dolibarr.org/index.php/List_of_modules_id to reserve an id number for your module
-		$this->rights_class = 'dolitemplate';
-		// Family can be 'base' (core modules),'crm','financial','hr','projects','products','ecm','technic' (transverse modules),'interface' (link with external tools),'other','...'
-		// It is used to group modules by family in module setup page
-		$this->family = "other";
-		// Module position in the family on 2 digits ('01', '10', '20', ...)
-		$this->module_position = '90';
-		// Gives the possibility for the module, to provide his own family info and position of this family (Overwrite $this->family and $this->module_position. Avoid this)
-		//$this->familyinfo = array('myownfamily' => array('position' => '01', 'label' => $langs->trans("MyOwnFamily")));
-		$this->name = preg_replace('/^mod/i', '', get_class($this));
-		$this->description = $langs->trans("DolitemplateDescription");
+		$this->numero          = 436352;
+		$this->rights_class    = 'dolitemplate';
+        $this->family          = '';
+        $this->module_position = '';
+        $this->familyinfo      = array('Eoxia' => array('position' => '02', 'label' => $langs->trans("Eoxia")));
+		$this->name            = preg_replace('/^mod/i', '', get_class($this));
+		$this->description     = $langs->trans("DolitemplateDescription");
 		$this->descriptionlong = $langs->trans("DolitemplateDescriptionLong");
-		$this->editor_name = 'Eoxia';
-		$this->editor_url = 'https://www.eoxia.com';
-		$this->version = '1.0.0';
-		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);
-		$this->picto = 'dolitemplate@dolitemplate';
+		$this->editor_name     = 'Eoxia';
+		$this->editor_url      = 'https://www.eoxia.com';
+		$this->version         = '1.0.0';
+		$this->const_name      = 'MAIN_MODULE_'.strtoupper($this->name);
+		$this->picto           = 'dolitemplate@dolitemplate';
 
 		$this->module_parts = array(
 			// Set this to 1 if module has its own trigger directory (core/triggers)
@@ -88,14 +81,13 @@ class modDolitemplate extends DolibarrModules
 				'data' => array(
 					'toprightmenu',
 				),
-				//   'entity' => '0',
 			),
 			// Set this to 1 if features of module are opened to external users
 			'moduleforexternal' => 0,
 		);
 
 		// Config pages. Put here list of php page, stored into dolitemplate/admin directory, to use to setup module.
-		$this->config_page_url = array("about.php@dolitemplate");
+		$this->config_page_url = array("setup.php@dolitemplate");
 
 		// Dependencies
 		// List of module class names as string that must be enabled if this module is enabled. Example: array('always1'=>'modModuleToEnable1','always2'=>'modModuleToEnable2', 'FR1'=>'modModuleToEnableFR'...)
