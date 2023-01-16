@@ -80,6 +80,7 @@ class modDolitemplate extends DolibarrModules
 			'hooks' => array(
 				'data' => array(
 					'toprightmenu',
+                    'cronjoblist'
 				),
 			),
 			// Set this to 1 if features of module are opened to external users
