@@ -62,8 +62,8 @@ SendingEmailOnProjectRecap = Mail création de projet
 SendingEmailOnProjectSummary = Mail bilan de projet
 
 #Contenu
-InfosBeginningProjectRecap = Pour récapituler ce début de projet :\n<br> - nom du projet : __PROJECT_TITLE__<br> - description du projet : __PROJECT_DESCRIPTION__<br> - date de début : __PROJECT_DATE_START__ <br> - date de fin : __PROJECT_DATE_END__<br>
-HereIsCustomerRequest = Demande du client : [écrire la demande] <br>- Date de début : __PROJECT_DATE_START__ <br> - Date de fin : __PROJECT_DATE_END__ <br> - Résultats atteints : <br> - Ecarts : <br> - Observations :  <br>- Conclusion : <br>
+InfosBeginningProjectRecap = Voici un récapitulatif des informations principales de ce lancement de projet : __PROJECT_TITLE__<br> - description du projet : __PROJECT_DESCRIPTION__<br> - date de début : __PROJECT_DATE_START__ <br> - date de fin : __PROJECT_DATE_END__<br>
+HereIsCustomerRequest = Voici le bilan de votre projet :<br> Demande initiale du client:[écrire la demande] <br>- Date de début : __PROJECT_DATE_START__ <br> - Date de fin : __PROJECT_DATE_END__ <br> - Résultats atteints : <br> - Ecarts : <br> - Observations :  <br>- Conclusion : <br>
 
 
 #
@@ -83,8 +83,9 @@ SecondProposalRelaunch = 2ème relance de proposition
 EndProposal = Clôture proposition
 
 #Contenu
-HereIsCommercialProposal = Je vous prie de trouver en pièce jointe notre proposition commerciale concernant le projet __PROJECT_NAME__. La présente offre annule et remplace toute proposition antérieure.<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au  __DATE_END_PROPAL__.<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
-NeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail. Êtes-vous disponible pour un rapide appel téléphonique le __DAY_TEXT__  __DAY__ ?<br>Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ? Merci de votre réponse.<br>
+HereIsCommercialProposal = Je vous prie de trouver en pièce jointe notre proposition commerciale concernant le __PROJECT_NAME__.<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au  __DATE_END_PROPAL__.<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation signée éléctroniquement grâce à ce lien __ONLINE_PAYMENT_URL__.<br>
+NeedToContactYou = Je reviens vers vous pour savoir si vous avez pris le temps de consulter notre proposition. Seriez-vous disponible pour un appel téléphonique le  __DAY_TEXT__  __DAY__ ?<br>Pourrais-je contacter quelqu’un de votre part pour faire avancer la situation ? Merci de votre réponse.<br>
+NeedToContactYouAgain = Je reviens vers vous pour savoir si vous avez pris le temps de consulter notre proposition. Seriez-vous disponible pour un appel téléphonique le __DAY_TEXT__ __DAY__?<br>Pourrais-je contacter quelqu’un de votre part pour faire avancer la situation ? Merci de votre réponse.<br>
 NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition.<br>Nous sommes actuellement sous contrat jusqu’au __DATE_YMD__. Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.<br>
 
 
