@@ -83,7 +83,7 @@ SecondProposalRelaunch = 2ème relance de proposition
 EndProposal = Clôture proposition
 
 #Contenu
-HereIsCommercialProposal = Je vous prie de trouver en pièce jointe notre proposition commerciale concernant le projet __PROJECT_NAME__. La présente offre annule et remplace toute proposition antérieure.<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au __DATE_YMD__.<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
+HereIsCommercialProposal = Je vous prie de trouver en pièce jointe notre proposition commerciale concernant le projet __PROJECT_NAME__. La présente offre annule et remplace toute proposition antérieure.<br>Nous attirons votre attention sur le fait que cette proposition commerciale est valable jusqu'au  __DATE_END_PROPAL__.<br>Je vous remercie de bien vouloir nous retourner cette offre de prestation en y apposant la mention « bon pour accord », votre signature et la date.<br>
 NeedToContactYou = Je reviens vers vous pour savoir si vous aviez pu prendre connaissance de mon précédent mail. Êtes-vous disponible pour un rapide appel téléphonique le __DAY_TEXT__  __DAY__ ?<br>Où puis-je contacter quelqu’un de votre part pour avancer sur cette problématique ? Merci de votre réponse.<br>
 NotAvailableProposalDenied = Je vous remercie de l’intérêt que vous portez à notre société, je regrette toutefois que nous ne puissions accepter votre proposition.<br>Nous sommes actuellement sous contrat jusqu’au __DATE_YMD__. Cependant après l’expiration de ce contrat, nous serons heureux de discuter avec vous de la possibilité de faire des affaires à l’avenir.<br>
 
