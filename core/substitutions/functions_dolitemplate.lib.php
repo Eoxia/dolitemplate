@@ -33,7 +33,10 @@
  */
 function dolitemplate_completesubstitutionarray(&$substitutionarray,$langs,$object)
 {
-    global $conf;
+	// make_substitutions() is also called without object (ex. home page)
+	if (!is_object($object)) {
+		return;
+	}
 
 	$substitutionarray['__PRODUCT_NAME__'] = $object->label;
 	$substitutionarray['__PRODUCT_REF__'] = $object->ref;
@@ -47,6 +50,6 @@ function dolitemplate_completesubstitutionarray(&$substitutionarray,$langs,$obje
     }
 
      if ($object->element == 'supplier_proposal') {
-         $substitutionarray['__COMPANY_OBJECT__'] = $conf->global->MAIN_INFO_SOCIETE_OBJECT;
+         $substitutionarray['__COMPANY_OBJECT__'] = getDolGlobalString('MAIN_INFO_SOCIETE_OBJECT');
      }
 }
